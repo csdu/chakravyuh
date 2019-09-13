@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Socialite;
 use App\Http\Controllers\Controller;
+use GuzzleHttp\Exception\RequestException;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
+
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -26,6 +29,7 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = '/home';
+
 
     /**
      * Create a new controller instance.

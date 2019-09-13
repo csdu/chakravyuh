@@ -92,8 +92,8 @@
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/google/login">google+</a>
+                    <a href="/facebook/login">Facebook</a>
                 </div>
             </div>
         </div>
