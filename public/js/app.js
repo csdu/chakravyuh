@@ -1886,48 +1886,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuestionPanel.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuestionTitle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuestionTitle */ "./resources/js/components/QuestionTitle.vue");
-/* harmony import */ var _QuestionImage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuestionImage */ "./resources/js/components/QuestionImage.vue");
-/* harmony import */ var _AnswerInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AnswerInput */ "./resources/js/components/AnswerInput.vue");
-/* harmony import */ var _SubmitButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SubmitButton */ "./resources/js/components/SubmitButton.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      text: "This is a question"
-    };
-  },
-  components: {
-    QuestionTitle: _QuestionTitle__WEBPACK_IMPORTED_MODULE_0__["default"],
-    QuestionImage: _QuestionImage__WEBPACK_IMPORTED_MODULE_1__["default"]
-  },
-  props: ['userId']
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/ducs/code/chakravyuh/resources/js/components/QuestionPanel.vue: Unexpected token, expected \",\" (54:8)\n\n\u001b[0m \u001b[90m 52 | \u001b[39m        \u001b[32m'userId'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 | \u001b[39m        \u001b[32m'question_url'\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 | \u001b[39m        \u001b[32m'evaluate_url'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 | \u001b[39m    ]\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 56 | \u001b[39m    methods\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 57 | \u001b[39m        getQuestion() {\u001b[0m\n    at Parser.raise (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:6420:17)\n    at Parser.unexpected (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:7773:16)\n    at Parser.expect (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:7759:28)\n    at Parser.parseExprList (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:9621:14)\n    at Parser.parseExprAtom (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8925:32)\n    at Parser.parseExprSubscripts (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8556:23)\n    at Parser.parseMaybeUnary (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8536:21)\n    at Parser.parseExprOps (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8402:23)\n    at Parser.parseMaybeConditional (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8375:23)\n    at Parser.parseMaybeAssign (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8325:21)\n    at Parser.parseObjectProperty (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:9441:101)\n    at Parser.parseObjPropValue (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:9466:101)\n    at Parser.parseObjectMember (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:9390:10)\n    at Parser.parseObj (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:9314:25)\n    at Parser.parseExprAtom (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8939:28)\n    at Parser.parseExprSubscripts (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8556:23)\n    at Parser.parseMaybeUnary (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8536:21)\n    at Parser.parseExprOps (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8402:23)\n    at Parser.parseMaybeConditional (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8375:23)\n    at Parser.parseMaybeAssign (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:8325:21)\n    at Parser.parseExportDefaultExpression (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:11187:24)\n    at Parser.parseExport (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:11088:31)\n    at Parser.parseStatementContent (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:10113:27)\n    at Parser.parseStatement (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:10009:17)\n    at Parser.parseBlockOrModuleBlockBody (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:10585:25)\n    at Parser.parseBlockBody (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:10572:10)\n    at Parser.parseTopLevel (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:9940:10)\n    at Parser.parse (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:11447:17)\n    at parse (/home/ducs/code/chakravyuh/node_modules/@babel/parser/lib/index.js:11483:38)\n    at parser (/home/ducs/code/chakravyuh/node_modules/@babel/core/lib/transformation/normalize-file.js:168:34)\n    at normalizeFile (/home/ducs/code/chakravyuh/node_modules/@babel/core/lib/transformation/normalize-file.js:102:11)\n    at runSync (/home/ducs/code/chakravyuh/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/home/ducs/code/chakravyuh/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/home/ducs/code/chakravyuh/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
 
 /***/ }),
 
@@ -20328,20 +20289,57 @@ var render = function() {
     _c("div", { staticClass: "bg-white max-w-md rounded-lg mx-auto panel" }, [
       _c(
         "form",
-        { attrs: { action: "" } },
         [
-          _c("question-title", { attrs: { "question-no": "1" } }),
-          _vm._v(" "),
-          _c("question-image", {
-            attrs: {
-              "img-url":
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwzjut_ZHze45kLkPphi92WtTtsrwezL6bSjB5e6Dkc0RvjIRAFw"
-            }
+          _c("question-title", {
+            attrs: { "question-no": _vm.currentQuestionIndex + 1 }
           }),
           _vm._v(" "),
-          _c("answer-input"),
+          _c("question-image", {
+            attrs: { "img-url": _vm.questions[_vm.currentQuestionIndex].src }
+          }),
           _vm._v(" "),
-          _c("submit-button")
+          _c("div", { staticClass: "mx-auto flex justify-center " }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.answer,
+                  expression: "answer"
+                }
+              ],
+              staticClass:
+                "bg-gray-900 font-mono  text-xl rounded-sm m-6 text-center p-1 max-w-4xl",
+              attrs: { type: "text" },
+              domProps: { value: _vm.answer },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.answer = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "flex justify-center" }, [
+            _c(
+              "button",
+              {
+                staticClass:
+                  "bg-blue-500 rounded px-4 py-1 shadow-md hover:bg-blue-600",
+                attrs: { type: "submit" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.evaluate($event)
+                  }
+                }
+              },
+              [_vm._v("Submit")]
+            )
+          ])
         ],
         1
       )
@@ -33000,8 +32998,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/abhishall/Documents/projects/chakravyuh/chakravyuh/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/abhishall/Documents/projects/chakravyuh/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/ducs/code/chakravyuh/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/ducs/code/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
