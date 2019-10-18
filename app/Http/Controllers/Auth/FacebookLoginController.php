@@ -8,6 +8,7 @@ use Auth;
 use Socialite;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\User;
 
 class FacebookLoginController extends Controller
 {
@@ -30,7 +31,6 @@ class FacebookLoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('facebook')->user();
-        //dd($user);
 
         $user = User::updateOrCreate(
             [
@@ -43,5 +43,6 @@ class FacebookLoginController extends Controller
      
         Auth::login($user, true);
         return redirect()->to('/');
+
     }
 }
