@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\User;
+use Exception;
+use Auth;
 use Socialite;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -27,8 +30,18 @@ class FacebookLoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('facebook')->user();
+        //dd($user);
 
-        dd($user);
-        // $user->token;
+        $user = User::updateOrCreate(
+            [
+                'email' => $user->email,
+                'token' => $user->token,
+                'name'  =>  $user->name,
+                'avatar' => $user->avatar
+            ]
+        );
+     
+        Auth::login($user, true);
+        return redirect()->to('/');
     }
 }

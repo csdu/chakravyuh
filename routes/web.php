@@ -16,9 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/facebook/login', 'Auth\FacebookLoginController@redirectToProvider');
-
 Route::get('/facebook/callback', 'Auth\FacebookLoginController@handleProviderCallback');
-
 Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider');
-
 Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback');
