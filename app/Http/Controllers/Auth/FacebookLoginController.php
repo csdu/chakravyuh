@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use Socialite;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\User;
 
 class FacebookLoginController extends Controller
 {
@@ -27,8 +28,7 @@ class FacebookLoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('facebook')->user();
-
-        dd($user);
-        // $user->token;
+        session()->put('user', $user);
+        return redirect('/home');
     }
 }

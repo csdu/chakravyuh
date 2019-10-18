@@ -11,9 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@show');
+Route::get('/home', 'HomeController@show');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Route::get('/home', function () {
+//     //dd(session()->get('user')->name);
+//     return view('home');
+// });
 
 Route::get('/facebook/login', 'Auth\FacebookLoginController@redirectToProvider');
 
