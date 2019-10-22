@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', 'WelcomeController@show');
+
+Route::get('/', 'WelcomeController@show')->middleware('guest');
+Route::get('/facebook/login', 'Auth\FacebookLoginController@redirectToProvider')->middleware('guest');
+Route::get('/facebook/callback', 'Auth\FacebookLoginController@handleProviderCallback')->middleware('guest');
+Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider')->middleware('guest');
+Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback')->middleware('guest');
+Route::post('/logout', 'Auth\LoginController@logout')->middleware('guest');
+
 Route::get('/home', 'HomeController@show')->middleware('auth');
-
-Route::get('/facebook/login', 'Auth\FacebookLoginController@redirectToProvider');
-Route::get('/facebook/callback', 'Auth\FacebookLoginController@handleProviderCallback');
-Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider');
-Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback');
-
-Route::post('/logout', 'Auth\LoginController@logout');

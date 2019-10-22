@@ -36,7 +36,7 @@ class FacebookLoginController extends Controller
             [
                 'token' => $user->token,
                 'name'  =>  $user->getName(),
-                'avatar-url' => $user->getAvatar()
+                'avatar_url' => $user->getAvatar()
             ]
         );
     
