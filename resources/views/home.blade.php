@@ -1,4 +1,4 @@
 @extends('layouts.master')
-@section('content')
-
+@section('main')
+    <a href="/playarea">Enter Game</a>
 @endsection

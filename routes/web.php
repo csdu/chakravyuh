@@ -19,4 +19,7 @@ Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider')->mi
 Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback')->middleware('guest');
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('guest');
 
+Route::get('/playarea', 'PlayAreaController@showQuestion')->middleware('auth');
+Route::post('/submitanswer', 'PlayAreaController@evaluateAnswer')->middleware('auth');
+
 Route::get('/home', 'HomeController@show')->middleware('auth');
