@@ -8,9 +8,9 @@
     <title>Chakravyuh</title>
 </head>
 
-<body style="color: white; background-color: black">
-    <header class="container mx-auto flex justify-between py-2">
-        <h1 class="text-3xl font-mono font-bold text-orange-400">Chakravyuh</h1>
+<body style="color: white;">
+    <header class="container mx-auto flex justify-end py-2">
+        
         <div class="flex items-center">
             @if(Auth::check())
             <img src="{{ Auth::user()->avatar_url }}" alt="{{ Auth::user()->name }}" class="rounded-full mr-3 h-8">
