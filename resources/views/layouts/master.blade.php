@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> --}}
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap" rel="stylesheet">
     <title>Chakravyuh</title>
 </head>
 
-<body style="color: white;">
+<body style="color: white; font-family: 'Nunito', sans-serif;">
+
     <header class="container mx-auto flex justify-end py-2">
-        
+
         <div class="flex items-center">
             @if(Auth::check())
             <img src="{{ Auth::user()->avatar_url }}" alt="{{ Auth::user()->name }}" class="rounded-full mr-3 h-8">
@@ -24,7 +27,11 @@
             @endif
         </div>
     </header>
-    
+
+
+    <div class="svg-container w-8/12 md:w-5/12 m-auto">
+            @include('svg.circular')
+    </div>
 
     <div class="content">
         @yield('main')
