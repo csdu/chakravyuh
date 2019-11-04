@@ -9,14 +9,14 @@ use Illuminate\Support\Facades\Redirect;
 
 class PlayAreaController extends Controller
 {
-    public function show()
+    public function showQuestion()
     {
         $user = Auth::user();
         $question = Question::where('level', $user->current_level)->first();
         return view('playarea', compact('question'));
     }
 
-    public function postAnswer(Request $request)
+    public function evaluateAnswer(Request $request)
     {
         $user_answer = strtolower($request->answer);
 

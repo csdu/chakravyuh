@@ -16,9 +16,7 @@
     @endif
     
     @if (Session::has('status'))
-        <p>
-            {{ Session::get('status') }}
-        </p>
+        {{ Session::get('status') }}
     @endif
 
     <form action="/submitanswer" method="post">
