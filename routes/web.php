@@ -20,6 +20,6 @@ Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallbac
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('guest');
 
 Route::get('/playarea', 'PlayAreaController@showQuestion')->middleware('auth');
-Route::post('/submitanswer', 'PlayAreaController@evaluateAnswer')->middleware('auth');
+Route::post('/playarea', 'PlayAreaController@evaluateAnswer')->middleware('auth');
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
