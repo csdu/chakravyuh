@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Socialite;
 use App\Http\Controllers\Controller;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -40,4 +39,5 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
 }

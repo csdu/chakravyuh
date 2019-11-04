@@ -16,10 +16,12 @@
     @endif
     
     @if (Session::has('status'))
-        {{ Session::get('status') }}
+        <p>
+            {{ Session::get('status') }}
+        </p>
     @endif
 
-    <form action="/submitanswer" method="post">
+    <form action="/playarea" method="post">
         <br>
         @csrf
         <input type="text" name="answer" placeholder="Enter answer" style="color: black">
