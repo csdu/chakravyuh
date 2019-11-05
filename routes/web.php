@@ -17,6 +17,9 @@ Route::get('/facebook/login', 'Auth\FacebookLoginController@redirectToProvider')
 Route::get('/facebook/callback', 'Auth\FacebookLoginController@handleProviderCallback')->middleware('guest');
 Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider')->middleware('guest');
 Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback')->middleware('guest');
-Route::post('/logout', 'Auth\LoginController@logout')->middleware('guest');
+Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
+
+Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
+Route::post('/playarea', 'PlayAreaController@postAnswer')->middleware('auth');
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
