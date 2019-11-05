@@ -62,19 +62,6 @@ svg .inner-line {
 
 //----------- CHAKRAVYUH LOGO END -----------------
 
-
-//------------ EVENT PAGE START -----------------
-.page-container {
-  box-shadow: 7px 8px 4px #aaa;
-}
-
-.page {
-  background-color: #f8f5de;
-  background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
-  box-shadow: inset 0 0 55px rgba(255,210,0,0.3), inset 0 0 20px rgba(255,210,0,0.4), inset 0 0 20px rgba(220,120,0,0.8);
-  color: rgba(0,0,0,0.5);
-}
-
 .nav-link:hover {
   color: #d4af37;
   border-bottom: 2px solid #d4af37 ;
@@ -84,5 +71,3 @@ svg .inner-line {
   color: #d4af37;
   border-bottom: 0;
 }
-
-//------------ EVENT PAGE END -----------------

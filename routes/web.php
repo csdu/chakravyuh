@@ -20,7 +20,3 @@ Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallbac
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('guest');
 
 Route::get('/home', 'HomeController@show')->middleware('auth')->name('home');
-
-Route::get('/about', 'AboutController@show')->name('about');
-Route::get('/rules', 'RulesController@show')->name('rules');
-Route::get('/leaderboard', 'LeaderboardController@show')->name('leaderboard');

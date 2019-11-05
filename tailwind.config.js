@@ -5,5 +5,3 @@ module.exports = {
     variants: {},
     plugins: []
 };
-
-// fontSize["7xl"] = "rem";

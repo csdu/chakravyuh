@@ -6,10 +6,10 @@
 
 @section('main')
 <div class="links flex justify-around w-screen text-sm md:text-4xl">
-        <a class="mr-2 nav-link" href="{{ route('home')}}">HOME</a>
-        <a class="mr-2 nav-link" href="{{ route('about')}}">ABOUT</a>
-        <a class="mr-2 nav-link" href="{{ route('rules')}}">RULES</a>
-        <a class="mr-2 nav-link" href="{{ route('leaderboard')}}">LEADERBOARD</a>        
+        <a class="mr-2 nav-link" href="#">HOME</a>
+        <a class="mr-2 nav-link" href="#">ABOUT</a>
+        <a class="mr-2 nav-link" href="#">RULES</a>
+        <a class="mr-2 nav-link" href="#">LEADERBOARD</a>        
 </div>
 
 <h1 class="chakravyuh-title text-2xl md:text-5xl">CHAKRAVYUH</h1>
