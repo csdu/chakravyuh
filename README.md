@@ -1,5 +1,5 @@
 # Chakravyuh
-Chakravyuh is the online quiz organised by students of Department of Computer Science, University of Delhi. This is student managed application, built with Laravel, Vue.js & TailwindCSS.
+Chakravyuh is the online Treasure hunt organised by students of Department of Computer Science, University of Delhi. This is student managed application, built with Laravel, Vue.js & TailwindCSS.
 
 ## Local Development
 This is project is built with Laravel & Vue.js. Before you can start local development you need to take care of a few prerequisites, required by laravel.
@@ -106,6 +106,15 @@ Make sure you change database configuration according to your credentials. Mostl
 - `DB_USERNAME` - This is your mysql user.
 - `DB_PASSWORD` - This is your mysql password for that user.
 
+##### Setting up Facebook and Google Auth system
+To use facebook authentication in the application, head over to [Facebook for Developers](developers.facebook.com) and create an App and then setup facebook login for web. 
+Obtain the App ID and App Secret from the App basic settings and copy them in the corresponding `env` variables. Similary you can Obtain App ID and secret for Google authentication from [Google Developers Console](https://console.developers.google.com).
+```
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+FACEBOOK_CLIENT_ID=
+FACEBOOK_CLIENT_SECRET=
+```
 That's pretty much it. You're done with the configuration.
 
 ### Start Local Development Server
@@ -115,7 +124,7 @@ To begin browsing & testing the portal you'd need to start a local development s
 ```bash
 php artisan serve
 ```
-
+---
 This will serve your website at `localhost:8000`, you can now open this up in your browser.
 
 But, wait a minute! we have not created the tables in our database, you might get error on some pages even. To create all the tables & seed your database with dummy data, run:
