@@ -4,6 +4,15 @@
 
 @tailwind utilities;
 
+@responsive{
+  .text-2xs{
+    font-size:0.6rem;
+  }
+  .text-title{
+    font-size:4rem;
+  }
+}
+
 .body-all{
   // background-color: #111122;
     // background-image: linear-gradient(red, yellow);
@@ -13,25 +22,13 @@
   // background-image: radial-gradient(rgba(17,17,0,0.5),rgba(17,17,17,0.5));
   // background-image: radial-gradient(#111,#111100);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased;
 }
-.text-2xs{
-  font-size:0.6rem;
-}
-.text-title{
-    font-size:4rem;
-}
 .title{
   font-family: 'Major Mono Display', monospace;
-}
-.navigation{
-    position:fixed;
-    top:0%;
-    left:50%;
-    transform:  translateX(-50%);
-    // background-color: rgba(0,0,0,.1);
 }
 #about{
   position:absolute;
@@ -57,7 +54,4 @@
   top:85%;
   left:50%;
   transform: translateX(-50%);
-}
-.active{
-  border-bottom : 2px solid #ffdc34;
 }

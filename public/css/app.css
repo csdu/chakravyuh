@@ -11361,15 +11361,6 @@ video {
   z-index: auto;
 }
 
-.body-all {
-  background-image: radial-gradient(#111100, #111), url("./29203411.jpg");
-  background-blend-mode: hue;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: "Inconsolata", monospace;
-  -webkit-font-smoothing: antialiased;
-}
-
 .text-2xs {
   font-size: 0.6rem;
 }
@@ -11378,15 +11369,18 @@ video {
   font-size: 4rem;
 }
 
-.title {
-  font-family: "Major Mono Display", monospace;
+.body-all {
+  background-image: radial-gradient(#111100, #111), url("./29203411.jpg");
+  background-blend-mode: hue;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inconsolata", monospace;
+  -webkit-font-smoothing: antialiased;
 }
 
-.navigation {
-  position: fixed;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
+.title {
+  font-family: "Major Mono Display", monospace;
 }
 
 #about {
@@ -11415,10 +11409,6 @@ video {
   top: 85%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.active {
-  border-bottom: 2px solid #ffdc34;
 }
 
 @media (min-width: 640px) {
@@ -22154,6 +22144,14 @@ video {
 
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:text-2xs {
+    font-size: 0.6rem;
+  }
+
+  .sm\:text-title {
+    font-size: 4rem;
   }
 }
 
@@ -32891,6 +32889,14 @@ video {
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:text-2xs {
+    font-size: 0.6rem;
+  }
+
+  .md\:text-title {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -43627,6 +43633,14 @@ video {
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:text-2xs {
+    font-size: 0.6rem;
+  }
+
+  .lg\:text-title {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -54362,5 +54376,13 @@ video {
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:text-2xs {
+    font-size: 0.6rem;
+  }
+
+  .xl\:text-title {
+    font-size: 4rem;
   }
 }

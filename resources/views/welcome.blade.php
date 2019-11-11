@@ -30,16 +30,16 @@
     <timer class="timer-position"></timer>
 
     <div class="h-full" id="about">
-      <div class="w-1/2 mx-auto my-24 ">
-        <h1 class="text-4xl mb-6 text-black font-bold">About Chakravyuh</h1>
-        <p class="text-sm text-gray-700">
+      <div class="md:w-1/2 w-4/5 mx-auto md:my-24 my-12">
+        <h1 class="md:text-4xl text-xl mb-6 text-black font-bold">About Chakravyuh</h1>
+        <p class="md:text-sm text-xs text-gray-700">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis, massa eget molestie accumsan, risus diam lacinia mi, ac tempus nunc tortor sed sem. Sed laoreet, massa in aliquet feugiat, dui est ultrices odio, quis scelerisque turpis purus quis quam. Vivamus urna nunc, semper eget condimentum eget, molestie nec sem. Integer in odio eros. Etiam et feugiat quam. Sed condimentum sem at justo vulputate, a convallis nibh commodo. Nullam faucibus ipsum quis tincidunt aliquam. In ac porttitor magna. Aliquam nisl quam, interdum at lacus ut, accumsan rhoncus quam. Nunc justo ligula, blandit fringilla eleifend sit amet, elementum sit amet nibh. Mauris aliquam semper eros a vehicula. Duis imperdiet odio fermentum, dignissim leo eu, placerat odio. Duis vestibulum vulputate elementum.
         </p>
       </div>
-      <div class="logins ">
-        <h3 class="text-lg mb-4 text-gray-900">To get updates about chakravyuh, login using google or facebook</h3>
-        <a href="#" class="border border-black rounded p-2 m-1 bg-gray-900 hover:bg-gray-100 hover:text-black">FB Login</a>
-        <a href="#" class="border border-black rounded p-2 m-1 bg-gray-100 text-black">G Login</a>
+      <div class="logins md:w-1/2 w-4/5 mx-auto">
+        <h3 class="md:text-lg text-sm mb-4 text-gray-900">To get updates about chakravyuh, login using google or facebook</h3>
+        <a href="#" class="md:text-base text-xs border border-black rounded p-2 m-1 bg-gray-900 hover:bg-gray-100 hover:text-black ">FB Login</a>
+        <a href="#" class="md:text-base text-xs border border-black rounded p-2 m-1 bg-gray-100 text-black">G Login</a>
       </div>
 
       </div>
