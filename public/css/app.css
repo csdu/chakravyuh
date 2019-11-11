@@ -11361,6 +11361,66 @@ video {
   z-index: auto;
 }
 
+.body-all {
+  background-image: radial-gradient(#111100, #111), url("./29203411.jpg");
+  background-blend-mode: hue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inconsolata", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-2xs {
+  font-size: 0.6rem;
+}
+
+.text-title {
+  font-size: 4rem;
+}
+
+.title {
+  font-family: "Major Mono Display", monospace;
+}
+
+.navigation {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#about {
+  position: absolute;
+  display: block;
+  top: 100%;
+  background-image: radial-gradient(#fff, #e2e2e2);
+}
+
+.absolute-center {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.absolute-center-40 {
+  left: 50%;
+  top: 40%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.timer-position {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.active {
+  border-bottom: 2px solid #ffdc34;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
