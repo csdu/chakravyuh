@@ -1,6 +1,7 @@
 <?php
 
 use App\Question;
+use App\QuestionAttachment;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,6 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(QuestionTableSeeder::class);
+        foreach(range(1, 20) as $level) {
+            $question = factory(Question::class)->create(['level' => $level]);
+
+            factory(QuestionAttachment::class)->create([
+                'question_id' => $question->id
+            ]);
+        }
     }
 }
