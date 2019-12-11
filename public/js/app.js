@@ -20399,7 +20399,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("feFlood", {
                   attrs: {
-                    "flood-color": "rgba(0,0,0,0.5)",
+                    "flood-color": "rgba(0,0,0,0.3)",
                     result: "glowColor"
                   }
                 }),

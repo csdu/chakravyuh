@@ -12,7 +12,7 @@
             		<!-- Use a gaussian blur to create the soft blurriness of the glow -->
             		<feGaussianBlur in="thicken" stdDeviation="10" result="blurred" />
             		<!-- Change the colour -->
-            		<feFlood flood-color="rgba(0,0,0,0.5)" result="glowColor" />
+            		<feFlood flood-color="rgba(0,0,0,0.3)" result="glowColor" />
             		<!-- Color in the glows -->
             		<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
             		<!--	Layer the effects together -->
