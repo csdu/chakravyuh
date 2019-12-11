@@ -11411,6 +11411,13 @@ video {
   transform: translateX(-50%);
 }
 
+.tiles {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
