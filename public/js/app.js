@@ -1982,6 +1982,841 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topNavigationBar.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topNavigationBar.vue?vue&type=script&lang=js& ***!
@@ -2059,6 +2894,25 @@ exports.push([module.i, ".timer[data-v-25dc86c2]{\n  font-weight : 700;\n}\n.day
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".radials[data-v-9a23d4d0]{\n  opacity:0.9;\n  transform: translateY(15px);\n}\n.tiles[data-v-9a23d4d0]{\n  transform: translateY(20%);\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topNavigationBar.vue?vue&type=style&index=0&id=38fe1b55&lang=css&scoped=true&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topNavigationBar.vue?vue&type=style&index=0&id=38fe1b55&lang=css&scoped=true& ***!
@@ -2071,7 +2925,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".navigation[data-v-38fe1b55]{\n  position:fixed;\n  top:0%;\n  left:50%;\n  transform:  translateX(-50%);\n}\n.nav-login-sm[data-v-38fe1b55]{\n  position:absolute;\n  top:65%;\n  left:50%;\n  transform: translateX(-50%);\n}\n.active[data-v-38fe1b55]{\n  border-bottom : 2px solid #ffdc34;\n}\n.hober[data-v-38fe1b55]{\n  border-width:1px;\n  border-bottom-width:1px;\n  border-color:#ecc94b;\n}\n@media (min-width: 640px){\n.sm\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 768px){\n.md\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 1024px){\n.lg\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 1280px){\n.xl\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n", ""]);
+exports.push([module.i, ".navigation[data-v-38fe1b55]{\n  position:fixed;\n  top:0%;\n  left:50%;\n  transform:  translateX(-50%);\n  z-index:10;\n}\n.nav-login-sm[data-v-38fe1b55]{\n  position:absolute;\n  top:65%;\n  left:50%;\n  transform: translateX(-50%);\n}\n.active[data-v-38fe1b55]{\n  border-bottom : 2px solid #ffdc34;\n}\n.hober[data-v-38fe1b55]{\n  border-width:1px;\n  border-bottom-width:1px;\n  border-color:#ecc94b;\n}\n@media (min-width: 640px){\n.sm\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 768px){\n.md\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 1024px){\n.lg\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 1280px){\n.xl\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n", ""]);
 
 // exports
 
@@ -19726,6 +20580,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topNavigationBar.vue?vue&type=style&index=0&id=38fe1b55&lang=css&scoped=true&":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topNavigationBar.vue?vue&type=style&index=0&id=38fe1b55&lang=css&scoped=true& ***!
@@ -20815,6 +21699,2265 @@ var render = function() {
           )
         ]
       )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", {}, [
+    _c("div", { staticClass: "w-full fixed bottom-0 tiles" }, [
+      _c(
+        "svg",
+        {
+          attrs: {
+            viewBox: "0 0 1440 264",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg"
+          }
+        },
+        [
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line1",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line1",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line2",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line2",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "1s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line3",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line3",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "2s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line4",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line4",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "3s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line5",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line5",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "4s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line6",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line6",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "5s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line7",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line7",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "6s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line8",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line8",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "7s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line9",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line9",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "8s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line10",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line10",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "9s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line11",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line11",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "10s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line12",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line12",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "11s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line13",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line13",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "12s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line14",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line14",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "13s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line15",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line15",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "14s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line16",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line16",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "15s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line17",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line17",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "16s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line18",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line18",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "18s",
+                  begin: "17s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line19",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line19",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "17s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line20",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line20",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "16s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line21",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line21",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "15s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line22",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line22",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "14s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line23",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line23",
+                  attributeName: "d",
+                  values:
+                    "\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "13s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line24",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line24",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "12s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line25",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line25",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "11s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line26",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line26",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "10s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line27",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line27",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "9s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line28",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line28",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "8s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line29",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line29",
+                  attributeName: "d",
+                  values:
+                    "\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "7s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line30",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line30",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "6s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line31",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line31",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "5s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line32",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line32",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "4s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line33",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line33",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "3s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "line34",
+                stroke: "#D2D201",
+                "stroke-opacity": "0.2",
+                "stroke-width": "1"
+              }
+            },
+            [
+              _c("animate", {
+                attrs: {
+                  id: "line34",
+                  attributeName: "d",
+                  values:
+                    "\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
+                  dur: "2s",
+                  repeatCount: "1"
+                }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "284.708",
+              y2: "-1.5",
+              transform:
+                "matrix(0.387027 -0.922068 0.987605 0.156957 581.086 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "331.423",
+              y2: "-1.5",
+              transform:
+                "matrix(0.608115 -0.793849 0.960417 0.278566 452.06 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "383.32",
+              y2: "-1.5",
+              transform:
+                "matrix(0.727252 -0.686371 0.928097 0.372339 331.511 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "442.325",
+              y2: "-1.5",
+              transform:
+                "matrix(0.804833 -0.593502 0.889588 0.456764 207.194 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "503.642",
+              y2: "-1.5",
+              transform:
+                "matrix(0.852704 -0.522395 0.850647 0.525737 84.7614 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "530.559",
+              y2: "-1.5",
+              transform:
+                "matrix(0.883997 -0.467493 0.813085 0.582145 1.88373 251.367)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "467.37",
+              y2: "-1.5",
+              transform:
+                "matrix(0.90679 -0.421583 0.775388 0.631485 1.88373 200.368)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "411.86",
+              y2: "-1.5",
+              transform:
+                "matrix(0.930679 -0.365838 0.720223 0.693742 1.88373 154.01)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "360.417",
+              y2: "-1.5",
+              transform:
+                "matrix(0.951154 -0.308717 0.650823 0.759229 1.88373 114.6)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "307.865",
+              y2: "-1.5",
+              transform:
+                "matrix(0.966676 -0.256002 0.573147 0.819453 1.88373 82.1475)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "261.657",
+              y2: "-1.5",
+              transform:
+                "matrix(0.979021 -0.203761 0.481703 0.876335 1.88373 56.6494)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "151.497",
+              y2: "-1.5",
+              transform:
+                "matrix(0.994652 -0.103282 0.264477 0.964392 6.10352e-05 18.9805)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "106.55",
+              y2: "-1.5",
+              transform:
+                "matrix(0.998801 -0.04895 0.128365 0.991727 6.10352e-05 8.54883)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "216.15",
+              y2: "-1.5",
+              transform:
+                "matrix(0.989068 -0.14746 0.366377 0.930467 6.10352e-05 35.208)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "284.708",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.387027 -0.922068 -0.987605 0.156957 857.972 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "331.423",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.608115 -0.793849 -0.960417 0.278566 986.998 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "383.32",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.727252 -0.686371 -0.928097 0.372339 1107.55 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "442.325",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.804833 -0.593502 -0.889588 0.456764 1231.86 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "503.642",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.852704 -0.522395 -0.850647 0.525737 1354.3 266.435)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "530.559",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.883997 -0.467493 -0.813085 0.582145 1437.17 251.367)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "467.37",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.90679 -0.421583 -0.775388 0.631485 1437.17 200.368)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "411.86",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.930679 -0.365838 -0.720223 0.693742 1437.17 154.01)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "360.417",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.951154 -0.308717 -0.650823 0.759229 1437.17 114.6)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "307.865",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.966676 -0.256002 -0.573147 0.819453 1437.17 82.1475)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "261.657",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.979021 -0.203761 -0.481703 0.876335 1437.17 56.6494)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "151.497",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.994652 -0.103282 -0.264477 0.964392 1439.06 18.9805)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "216.15",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.989068 -0.14746 -0.366377 0.930467 1439.06 35.208)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("line", {
+            attrs: {
+              y1: "-1.5",
+              x2: "106.55",
+              y2: "-1.5",
+              transform:
+                "matrix(-0.998801 -0.04895 -0.128365 0.991727 1439.06 8.54883)",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("path", {
+            attrs: {
+              d: "M722.354 263.943L722.355 3.33006",
+              stroke: "#D2D201",
+              "stroke-opacity": "0.2",
+              "stroke-width": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("path", { attrs: { id: "aline1", d: "M3 96L312 3" } }),
+          _vm._v(" "),
+          _c("path", { attrs: { id: "aline2", d: "M1 231L442.5 3.5" } }),
+          _vm._v(" "),
+          _c("path", { attrs: { id: "aline3", d: "M277 263L582 2" } }),
+          _vm._v(" "),
+          _c("path", { attrs: { id: "aline4", d: "M901 263L762 3.5" } }),
+          _vm._v(" "),
+          _c("path", { attrs: { id: "aline5", d: "M1288.5 263.5L919 2" } }),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect3",
+                d: "M69.439 0H219L176.268 55H0L69.439 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                {
+                  attrs: { dur: "18s", repeatCount: "indefinite", begin: "3s" }
+                },
+                [_c("mpath", { attrs: { "xlink:href": "#aline3" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite",
+                  begin: "3s"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect3",
+                d: "M69.439 0H219L176.268 55H0L69.439 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                {
+                  attrs: { dur: "18s", repeatCount: "indefinite", begin: "11s" }
+                },
+                [_c("mpath", { attrs: { "xlink:href": "#aline3" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite",
+                  begin: "11s"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect4",
+                d: "M0 0H145.168L189 50H30.7951L0 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                {
+                  attrs: { dur: "18s", repeatCount: "indefinite", begin: "5s" }
+                },
+                [_c("mpath", { attrs: { "xlink:href": "#aline4" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite",
+                  begin: "5s"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect2",
+                d: "M27.1686 0H140L72.9799 41H-60L27.1686 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                { attrs: { dur: "18s", repeatCount: "indefinite" } },
+                [_c("mpath", { attrs: { "xlink:href": "#aline2" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect1",
+                d: "M69.18 0H132L74.0378 23H0L69.18 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                {
+                  attrs: { dur: "18s", repeatCount: "indefinite", begin: "8s" }
+                },
+                [_c("mpath", { attrs: { "xlink:href": "#aline1" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite",
+                  begin: "8s"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect5",
+                d: "M0 0H147.153L228 47H67.6327L0 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                {
+                  attrs: { dur: "18s", repeatCount: "indefinite", begin: "11s" }
+                },
+                [_c("mpath", { attrs: { "xlink:href": "#aline5" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite",
+                  begin: "11s"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "path",
+            {
+              attrs: {
+                id: "rect6",
+                d: "M0 0H147.153L228 47H67.6327L0 0Z",
+                fill: "#D2D201",
+                "fill-opacity": "0.3"
+              }
+            },
+            [
+              _c(
+                "animateMotion",
+                {
+                  attrs: { dur: "18s", repeatCount: "indefinite", begin: "2s" }
+                },
+                [_c("mpath", { attrs: { "xlink:href": "#aline5" } })],
+                1
+              ),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  attributeType: "XML",
+                  type: "scale",
+                  from: "1.0",
+                  to: "0.2",
+                  dur: "18s",
+                  repeatCount: "indefinite",
+                  begin: "2s"
+                }
+              })
+            ],
+            1
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "w-full absolute bottom-0 radials" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 1440 833",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("path", {
+              attrs: {
+                d:
+                  "M1075 479C1075 675.613 915.613 835 719 835C522.387 835 363 675.613 363 479C363 282.387 522.387 123 719 123C915.613 123 1075 282.387 1075 479Z",
+                fill: "url(#paint0_radial)",
+                "fill-opacity": "0.64"
+              }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M904 535.5C904 618.067 823.411 685 724 685C624.589 685 544 618.067 544 535.5C544 452.933 624.589 386 724 386C823.411 386 904 452.933 904 535.5Z",
+                fill: "url(#paint2_radial)",
+                "fill-opacity": "0.64"
+              }
+            }),
+            _vm._v(" "),
+            _c("g", { attrs: { filter: "url(#filter2_f)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M1479 568.5C1479 591.42 1139.41 610 720.5 610C301.592 610 -38 591.42 -38 568.5C-38 545.58 301.592 527 720.5 527C1139.41 527 1479 545.58 1479 568.5Z",
+                  fill: "url(#paint3_radial)"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("g", { attrs: { filter: "url(#filter3_f)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M1490 560.5C1490 570.165 1142.57 578 714 578C285.427 578 -62 570.165 -62 560.5C-62 550.835 285.427 543 714 543C1142.57 543 1490 550.835 1490 560.5Z",
+                  fill: "url(#paint4_radial)"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M1074 560.265C1074 578.636 921.329 585 733 585C544.671 585 392 578.636 392 560.265C392 541.893 544.671 527 733 527C921.329 527 1074 541.893 1074 560.265Z",
+                fill: "url(#paint7_radial)"
+              }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M1062 564.088C1062 577.392 909.329 582 721 582C532.671 582 380 577.392 380 564.088C380 550.785 532.671 540 721 540C909.329 540 1062 550.785 1062 564.088Z",
+                fill: "url(#paint8_radial)"
+              }
+            }),
+            _vm._v(" "),
+            _c("g", { attrs: { filter: "url(#filter6_f)" } }, [
+              _c("ellipse", {
+                attrs: {
+                  cx: "730.5",
+                  cy: "562.5",
+                  rx: "133.5",
+                  ry: "9.5",
+                  fill: "white"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("path", {
+              attrs: {
+                d:
+                  "M1444 567.5C1444 596.495 1121.42 620 723.5 620C325.579 620 3 596.495 3 567.5C3 538.505 325.579 515 723.5 515C1121.42 515 1444 538.505 1444 567.5Z",
+                fill: "url(#paint9_radial)",
+                "fill-opacity": "0.64"
+              }
+            }),
+            _vm._v(" "),
+            _c("g", { staticStyle: { "mix-blend-mode": "hard-light" } }, [
+              _c("ellipse", {
+                attrs: {
+                  cx: "724",
+                  cy: "566.5",
+                  rx: "335",
+                  ry: "26.5",
+                  fill: "url(#paint10_radial)"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "defs",
+              [
+                _c(
+                  "filter",
+                  {
+                    attrs: {
+                      id: "filter2_f",
+                      x: "-42",
+                      y: "523",
+                      width: "1525",
+                      height: "91",
+                      filterUnits: "userSpaceOnUse",
+                      "color-interpolation-filters": "sRGB"
+                    }
+                  },
+                  [
+                    _c("feFlood", {
+                      attrs: {
+                        "flood-opacity": "0",
+                        result: "BackgroundImageFix"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feBlend", {
+                      attrs: {
+                        mode: "normal",
+                        in: "SourceGraphic",
+                        in2: "BackgroundImageFix",
+                        result: "shape"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feGaussianBlur", {
+                      attrs: {
+                        stdDeviation: "2",
+                        result: "effect1_foregroundBlur"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "filter",
+                  {
+                    attrs: {
+                      id: "filter3_f",
+                      x: "-66",
+                      y: "539",
+                      width: "1560",
+                      height: "43",
+                      filterUnits: "userSpaceOnUse",
+                      "color-interpolation-filters": "sRGB"
+                    }
+                  },
+                  [
+                    _c("feFlood", {
+                      attrs: {
+                        "flood-opacity": "0",
+                        result: "BackgroundImageFix"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feBlend", {
+                      attrs: {
+                        mode: "normal",
+                        in: "SourceGraphic",
+                        in2: "BackgroundImageFix",
+                        result: "shape"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feGaussianBlur", {
+                      attrs: {
+                        stdDeviation: "2",
+                        result: "effect1_foregroundBlur"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "filter",
+                  {
+                    attrs: {
+                      id: "filter4_f",
+                      x: "-42",
+                      y: "523",
+                      width: "1525",
+                      height: "91",
+                      filterUnits: "userSpaceOnUse",
+                      "color-interpolation-filters": "sRGB"
+                    }
+                  },
+                  [
+                    _c("feFlood", {
+                      attrs: {
+                        "flood-opacity": "0",
+                        result: "BackgroundImageFix"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feBlend", {
+                      attrs: {
+                        mode: "normal",
+                        in: "SourceGraphic",
+                        in2: "BackgroundImageFix",
+                        result: "shape"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feGaussianBlur", {
+                      attrs: {
+                        stdDeviation: "2",
+                        result: "effect1_foregroundBlur"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "filter",
+                  {
+                    attrs: {
+                      id: "filter5_f",
+                      x: "-3",
+                      y: "522",
+                      width: "1443",
+                      height: "86",
+                      filterUnits: "userSpaceOnUse",
+                      "color-interpolation-filters": "sRGB"
+                    }
+                  },
+                  [
+                    _c("feFlood", {
+                      attrs: {
+                        "flood-opacity": "0",
+                        result: "BackgroundImageFix"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feBlend", {
+                      attrs: {
+                        mode: "normal",
+                        in: "SourceGraphic",
+                        in2: "BackgroundImageFix",
+                        result: "shape"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feGaussianBlur", {
+                      attrs: {
+                        stdDeviation: "2",
+                        result: "effect1_foregroundBlur"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "filter",
+                  {
+                    attrs: {
+                      id: "filter6_f",
+                      x: "593",
+                      y: "549",
+                      width: "275",
+                      height: "27",
+                      filterUnits: "userSpaceOnUse",
+                      "color-interpolation-filters": "sRGB"
+                    }
+                  },
+                  [
+                    _c("feFlood", {
+                      attrs: {
+                        "flood-opacity": "0",
+                        result: "BackgroundImageFix"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feBlend", {
+                      attrs: {
+                        mode: "normal",
+                        in: "SourceGraphic",
+                        in2: "BackgroundImageFix",
+                        result: "shape"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feGaussianBlur", {
+                      attrs: {
+                        stdDeviation: "2",
+                        result: "effect1_foregroundBlur"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint0_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(719 479) rotate(90) scale(356)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.0001",
+                        "stop-color": "#DAF438",
+                        "stop-opacity": "0.567708"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.348958",
+                        "stop-color": "#FCE300",
+                        "stop-opacity": "0.369639"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.46875",
+                        "stop-color": "#FFF500",
+                        "stop-opacity": "0.301625"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#FCE156",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint1_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(719.5 526.5) rotate(90) scale(526.5)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.0001",
+                        "stop-color": "#DAF438",
+                        "stop-opacity": "0.567708"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.348958",
+                        "stop-color": "#FCE300",
+                        "stop-opacity": "0.369639"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.46875",
+                        "stop-color": "#FFF500",
+                        "stop-opacity": "0.301625"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#FCE156",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint2_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(724 535.5) rotate(90) scale(149.5 180)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.0001",
+                        "stop-color": "#DAF438",
+                        "stop-opacity": "0.567708"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.348958",
+                        "stop-color": "#FCE300",
+                        "stop-opacity": "0.369639"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.46875",
+                        "stop-color": "#FFF500",
+                        "stop-opacity": "0.301625"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#FCE156",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint3_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(720.5 568.5) rotate(90) scale(41.4999 758.5)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFF851" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.505208",
+                        "stop-color": "#E9FF2B",
+                        "stop-opacity": "0.270833"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#DBFF00",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint4_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(714 560.5) rotate(90) scale(17.5 776)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFF851" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.505208",
+                        "stop-color": "#E9FF2B",
+                        "stop-opacity": "0.270833"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#DBFF00",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint5_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(720.5 568.5) rotate(90) scale(41.4999 758.5)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFF851" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.505208",
+                        "stop-color": "#E9FF2B",
+                        "stop-opacity": "0.270833"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#DBFF00",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint6_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(720.185 561.243) rotate(90) scale(32.842 717.5)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "white" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.505208",
+                        "stop-color": "white",
+                        "stop-opacity": "0.270833"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "white",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint7_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(733 560.265) rotate(90) scale(33.2647 341)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "white" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.53125",
+                        "stop-color": "white",
+                        "stop-opacity": "0.46875"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#F9E95F",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint8_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(721 564.088) rotate(90) scale(24.0882 341)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "white" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.53125",
+                        "stop-color": "white",
+                        "stop-opacity": "0.1788"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#FFE600",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint9_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(723.5 567.5) rotate(90) scale(52.5 720.5)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.0001",
+                        "stop-color": "#DAF438",
+                        "stop-opacity": "0.567708"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.348958",
+                        "stop-color": "#FCE300",
+                        "stop-opacity": "0.369639"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.46875",
+                        "stop-color": "#FFF500",
+                        "stop-opacity": "0.301625"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "#FCE156",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "radialGradient",
+                  {
+                    attrs: {
+                      id: "paint10_radial",
+                      cx: "0",
+                      cy: "0",
+                      r: "1",
+                      gradientUnits: "userSpaceOnUse",
+                      gradientTransform:
+                        "translate(724 566.5) rotate(90) scale(26.5 335)"
+                    }
+                  },
+                  [
+                    _c("stop", { attrs: { "stop-color": "white" } }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "0.682292",
+                        "stop-color": "white",
+                        "stop-opacity": "0"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("stop", {
+                      attrs: {
+                        offset: "1",
+                        "stop-color": "white",
+                        "stop-opacity": "0"
+                      }
+                    })
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ]
+        )
+      ])
     ])
   ])
 }
@@ -33131,6 +36274,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.component('timer', __webpack_require__(/*! ./components/countdownTimer.vue */ "./resources/js/components/countdownTimer.vue")["default"]);
 Vue.component('top-navigation-bar', __webpack_require__(/*! ./components/topNavigationBar.vue */ "./resources/js/components/topNavigationBar.vue")["default"]);
+Vue.component('tiles-background', __webpack_require__(/*! ./components/tilesBackground.vue */ "./resources/js/components/tilesBackground.vue")["default"]);
 var app = new Vue({
   el: '#app'
 });
@@ -33251,6 +36395,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_countdownTimer_vue_vue_type_template_id_25dc86c2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_countdownTimer_vue_vue_type_template_id_25dc86c2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/tilesBackground.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/tilesBackground.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& */ "./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&");
+/* harmony import */ var _tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tilesBackground.vue?vue&type=script&lang=js& */ "./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& */ "./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "9a23d4d0",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/tilesBackground.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/tilesBackground.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& ***!
+  \************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

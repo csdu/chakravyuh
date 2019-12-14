@@ -16,14 +16,17 @@
 .body-all{
   // background-color: #111122;
     // background-image: linear-gradient(red, yellow);
-  background-image: radial-gradient(#111100,#111),url('./29203411.jpg');
-  background-blend-mode:hue;
+    background-image:url('./bg3.jpg');
+
+  // background-image: radial-gradient(#111100,#000),url('./bg3.jpg');
+  // background-blend-mode:hue;
   // #111100,#111
   // background-image: radial-gradient(rgba(17,17,0,0.5),rgba(17,17,17,0.5));
   // background-image: radial-gradient(#111,#111100);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased;
 }
@@ -34,8 +37,9 @@
   position:absolute;
   display:block;
   top:100%;
+  // background-color: rgba(255,255,255,0.1);
   // background-color: #fff;
-  background-image: radial-gradient(#fff,#e2e2e2);
+  // background-image: radial-gradient(#fff,#e2e2e2);
 }
 .absolute-center{
   left:50%;
@@ -49,6 +53,13 @@
   position:absolute;
   transform: translate(-50%,-50%);
 }
+.fixed-center-40{
+  left:50%;
+  top:40%;
+  position:fixed;
+  transform: translate(-50%,-50%);
+}
+
 .timer-position{
   position: absolute;
   top:85%;
@@ -56,8 +67,5 @@
   transform: translateX(-50%);
 }
 .tiles{
-  position: absolute;
-  bottom:0;
-  left:50%;
-  transform: translateX(-50%);
+  transform: translateY(20%);
 }
