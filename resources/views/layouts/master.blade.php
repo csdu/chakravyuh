@@ -29,6 +29,7 @@
     </header> -->
 
     <top-navigation-bar class="w-full"> </top-navigation-bar>
+
     @yield('main')
   </div>
 

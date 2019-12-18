@@ -34,8 +34,8 @@
 
         <div class="days-container absolute-center w-1/2 ">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#000">{{days}}</text>
-            <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#000">DAYS</text>
+            <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#eee">{{days}}</text>
+            <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#eee">DAYS</text>
           </svg>
         </div>
 
@@ -53,8 +53,8 @@
 
         <div class="hours-container w-1/3">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#000">{{hours}}</text>
-            <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#000">Hours</text>
+            <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#eee">{{hours}}</text>
+            <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#eee">Hours</text>
           </svg>
         </div>
 
@@ -72,8 +72,8 @@
 
         <div class="minutes-container w-1/4">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#000">{{minutes}}</text>
-            <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#000">Minutes</text>
+            <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#eee">{{minutes}}</text>
+            <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#eee">Minutes</text>
           </svg>
         </div>
 
@@ -91,7 +91,7 @@
 
         <div class="seconds-container w-1/5">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="7rem" fill="#000">{{seconds}}</text>
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="7rem" fill="#eee">{{seconds}}</text>
           </svg>
         </div>
     </div>
@@ -154,7 +154,11 @@ export default{
 <style lang="css" scoped>
 
   .timer{
-      font-weight : 700;
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform: translateX(-50%);
+    font-weight : 500;
   }
   .days-container{
 

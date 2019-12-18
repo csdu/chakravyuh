@@ -653,50 +653,50 @@
           <path id="aline3" d="M277 263L582 2" />
           <path id="aline4" d="M901 263L762 3.5" />
           <path id="aline5" d="M1288.5 263.5L919 2" />
-          <path id="rect3" d="M69.439 0H219L176.268 55H0L69.439 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect3" v-if="rect3" d="M69.439 0H219L176.268 55H0L69.439 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite" begin="3s">
               <mpath xlink:href="#aline3"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" begin="3s"/>
           </path>
-          <path id="rect3" d="M69.439 0H219L176.268 55H0L69.439 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect7" v-if="rect7" d="M69.439 0H219L176.268 55H0L69.439 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite" begin="11s">
               <mpath xlink:href="#aline3"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" begin="11s"/>
           </path>
-          <path id="rect4" d="M0 0H145.168L189 50H30.7951L0 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect4"v-if="rect7" d="M0 0H145.168L189 50H30.7951L0 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite" begin="5s">
               <mpath xlink:href="#aline4"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" begin="5s"/>
           </path>
-          <path id="rect2" d="M27.1686 0H140L72.9799 41H-60L27.1686 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect2" v-if="rect2" d="M27.1686 0H140L72.9799 41H-60L27.1686 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite">
               <mpath xlink:href="#aline2"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" />
           </path>
-          <path id="rect1" d="M69.18 0H132L74.0378 23H0L69.18 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect1" v-if="rect1" d="M69.18 0H132L74.0378 23H0L69.18 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite" begin="8s">
               <mpath xlink:href="#aline1"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" begin="8s"/>
           </path>
-          <path id="rect5" d="M0 0H147.153L228 47H67.6327L0 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect5" v-if="rect5" d="M0 0H147.153L228 47H67.6327L0 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite" begin="11s">
               <mpath xlink:href="#aline5"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" begin="11s"/>
           </path>
-          <path id="rect6" d="M0 0H147.153L228 47H67.6327L0 0Z" fill="#D2D201" fill-opacity="0.3">
+          <path id="rect6" v-if="rect6" d="M0 0H147.153L228 47H67.6327L0 0Z" fill="#D2D201" fill-opacity="0.3">
             <animateMotion dur="18s" repeatCount="indefinite" begin="2s">
               <mpath xlink:href="#aline5"/>
             </animateMotion>
             <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1.0" to="0.2" dur="18s" repeatCount="indefinite" begin="2s"/>
           </path>
         </svg>
-        <div class="w-full absolute bottom-0 radials">
+        <div class="w-full absolute bottom-0">
           <svg  viewBox="0 0 1440 833" fill="none" xmlns="http://www.w3.org/2000/svg">
 
             <path d="M1075 479C1075 675.613 915.613 835 719 835C522.387 835 363 675.613 363 479C363 282.387 522.387 123 719 123C915.613 123 1075 282.387 1075 479Z" fill="url(#paint0_radial)" fill-opacity="0.64"/>
@@ -822,16 +822,54 @@
 
 <script>
 export default {
+  data: function(){
+    return{
+      rect1 : false,
+      rect2 : false,
+      rect3 : false,
+      rect4 : false,
+      rect5 : false,
+      rect6 : false,
+      rect7 : false,
+
+    }
+  },
+  mounted: function(){
+    var self = this ;
+    setTimeout(function(){
+      self.rect1 =true;
+    },9000);
+    setTimeout(function(){
+      self.rect2 =true;
+    },1000);
+    setTimeout(function(){
+      self.rect3=true;
+    },4000);
+    setTimeout(function(){
+      self.rect4=true;
+    },6000);
+    setTimeout(function(){
+      self.rect5=true;
+      self.rect7=true;
+    },12000);
+    setTimeout(function(){
+      self.rect6=true;
+    },3000);
+  }
 }
 </script>
 
 <style lang="css" scoped>
-  .radials{
+@responsive{
+  .radials-md{
     opacity:0.9;
     transform: translateY(15px);
   }
   .tiles{
     transform: translateY(20%);
   }
+
+
+}
 
 </style>

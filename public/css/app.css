@@ -11410,17 +11410,6 @@ video {
   transform: translate(-50%, -50%);
 }
 
-.timer-position {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.tiles {
-  transform: translateY(20%);
-}
-
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

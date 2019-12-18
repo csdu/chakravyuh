@@ -14,15 +14,7 @@
 }
 
 .body-all{
-  // background-color: #111122;
-    // background-image: linear-gradient(red, yellow);
-    background-image:url('./bg3.jpg');
-
-  // background-image: radial-gradient(#111100,#000),url('./bg3.jpg');
-  // background-blend-mode:hue;
-  // #111100,#111
-  // background-image: radial-gradient(rgba(17,17,0,0.5),rgba(17,17,17,0.5));
-  // background-image: radial-gradient(#111,#111100);
+  background-image:url('./bg3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,11 +50,4 @@
   top:40%;
   position:fixed;
   transform: translate(-50%,-50%);
-}
-
-.timer-position{
-  position: absolute;
-  top:85%;
-  left:50%;
-  transform: translateX(-50%);
 }
