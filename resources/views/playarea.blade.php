@@ -7,11 +7,15 @@
         <img src="/question_attachments/{{ $question->attachment->id }}">
     @elseif($question->attachment->type == 'video')
         <div>
-            video
+            <video width="480" height="200" controls>
+                <source src = "/question_attachments/{{ $question->attachment->id }}" type="video/mp4">
+            </video>
         </div>
     @else
         <div>
-            audio
+            <audio controls>
+                <source src = "/question_attachments/{{ $question->attachment->id }}" type="audio/mpeg">
+            </audio>
         </div>
     @endif
     
