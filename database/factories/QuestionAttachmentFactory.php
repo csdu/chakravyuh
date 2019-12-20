@@ -2,6 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
+use App\Question;
 use App\QuestionAttachment;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

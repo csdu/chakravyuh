@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('main')
     <h3>Playground</h3>
-    <p><strong>level:</strong> {{ Auth::User()->current_level }}</p>
+    <p><strong>level:</strong> {{ Auth::user()->current_level }}</p>
 
     @if ($question->attachment->type == 'image')
         <img src="/question_attachments/{{ $question->attachment->id }}">
@@ -11,11 +11,15 @@
                 <source src = "/question_attachments/{{ $question->attachment->id }}" type="video/mp4">
             </video>
         </div>
-    @else
+    @elseif($question->attachment->type == 'audio')
         <div>
             <audio controls>
                 <source src = "/question_attachments/{{ $question->attachment->id }}" type="audio/mpeg">
             </audio>
+        </div>
+    @else
+        <div>
+            <p>Error: Question not found.</p>
         </div>
     @endif
     
