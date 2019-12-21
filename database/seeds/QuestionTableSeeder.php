@@ -13,13 +13,10 @@ class QuestionTableSeeder extends Seeder
      */
     public function run()
     {
-        //factory(App\Question::class, 50)->create();
-        foreach(range(1, 20) as $level) {
-            $question = factory(Question::class)->create(['level' => $level]);
-
+        factory(Question::class, 20)->create()->each(function ($question) {
             factory(QuestionAttachment::class)->create([
                 'question_id' => $question->id
             ]);
-        }
+        });
     }
 }
