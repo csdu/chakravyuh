@@ -9,23 +9,32 @@ use Illuminate\Support\Facades\Storage;
 use Faker\Generator as Faker;
 
 $factory->define(QuestionAttachment::class, function (Faker $faker) {
-    $type = $faker->randomElement(['image', 'audio', 'video']);
-    //$type = 'image';
+    $questionAttachments = [
+        [
+            'path' => 'factories/files/image.jpg',
+            'name' => 'image.jpg',
+            'type' => 'image',
+        ],
+        [
+            'path' => 'factories/files/video.mp4',
+            'name' => 'video.mp4',
+            'type' => 'video',
+        ],
+        [
+            'path' => 'factories/files/audio.mp3',
+            'name' => 'audio.mp3',
+            'type' => 'audio',
+        ],
+    ];
+    $questionAttachment = $faker->randomElement($questionAttachments);
+
     return [
-        'path' => function() use ($type) {
-            if ($type == 'image'){
-                $file = new UploadedFile(database_path('factories/files/image.jpg'), 'image.jpg');
-            }
-            elseif($type == 'video'){
-                $file = new UploadedFile(database_path('factories/files/video.mp4'), 'video.mp4');
-            }
-            else{
-                $file = new UploadedFile(database_path('factories/files/audio.mp3'), 'audio.mp3');
-            }
+        'path' => function () use ($questionAttachment) {
+            $file = new UploadedFile(database_path($questionAttachment['path']), $questionAttachment['name']);
             return Storage::putFile('attachments', $file);
         },
-        'type' => $type,
-        'question_id' => function() {
+        'type' => $questionAttachment['type'],
+        'question_id' => function () {
             return factory(Question::class)->create()->id;
         }
     ];
