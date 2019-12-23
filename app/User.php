@@ -27,14 +27,17 @@ class User extends Authenticatable
 
     public function addNew($input)
     {
-        $check = static::where('remember_token',$input['remember_token'])->first();
+        $check = static::where('remember_token', $input['remember_token'])->first();
 
-
-        if(is_null($check)){
+        if (is_null($check)) {
             return static::create($input);
         }
 
-
         return $check;
+    }
+
+    public function incrementLevel()
+    {
+        return $this->increment('level');
     }
 }
