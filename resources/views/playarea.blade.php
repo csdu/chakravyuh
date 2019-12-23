@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('main')
     <h3>Playground</h3>
-    <p><strong>level:</strong> {{ Auth::user()->current_level }}</p>
+    <p><strong>level:</strong> {{ Auth::user()->level }}</p>
 
     @if ($question->attachment->type == 'image')
         <img src="/question_attachments/{{ $question->attachment->id }}">
