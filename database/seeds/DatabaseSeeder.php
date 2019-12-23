@@ -1,6 +1,5 @@
 <?php
 
-use App\Question;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

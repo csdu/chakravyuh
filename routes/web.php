@@ -22,4 +22,6 @@ Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
 Route::post('/playarea', 'PlayAreaController@postAnswer')->middleware('auth');
 
+Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
+
 Route::get('/home', 'HomeController@show')->middleware('auth');

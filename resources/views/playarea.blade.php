@@ -1,17 +1,25 @@
 @extends('layouts.master')
 @section('main')
     <h3>Playground</h3>
-    <p><strong>level:</strong> {{ Auth::User()->current_level }}</p>
+    <p><strong>level:</strong> {{ Auth::user()->current_level }}</p>
 
-    @if ($question->type == 'photo')
-        <img src="{{ $question->source_url }}" alt="">
-    @elseif($question->type == 'video')
+    @if ($question->attachment->type == 'image')
+        <img src="/question_attachments/{{ $question->attachment->id }}">
+    @elseif($question->attachment->type == 'video')
         <div>
-            video
+            <video width="480" height="200" controls>
+                <source src = "/question_attachments/{{ $question->attachment->id }}" type="video/mp4">
+            </video>
+        </div>
+    @elseif($question->attachment->type == 'audio')
+        <div>
+            <audio controls>
+                <source src = "/question_attachments/{{ $question->attachment->id }}" type="audio/mpeg">
+            </audio>
         </div>
     @else
         <div>
-            audio
+            <p>Error: Question not found.</p>
         </div>
     @endif
     

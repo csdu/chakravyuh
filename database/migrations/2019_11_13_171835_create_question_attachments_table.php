@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateQuestionsTable extends Migration
+class CreateQuestionAttachmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateQuestionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('question_attachments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('level');
-            $table->integer('max_score');
-            $table->string('answer');
+            $table->unSignedBigInteger('question_id');
+            $table->string('path');
+            $table->enum('type', ['image', 'audio', 'video']);
             $table->timestamps();
+            
+            $table->foreign('question_id')->references('id')->on('questions');
         });
     }
 
@@ -29,6 +31,6 @@ class CreateQuestionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('question_attachments');
     }
 }
