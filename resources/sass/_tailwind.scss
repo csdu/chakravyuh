@@ -4,15 +4,6 @@
 
 @tailwind utilities;
 
-@responsive{
-  .text-2xs{
-    font-size:0.6rem;
-  }
-  .text-title{
-    font-size:4rem;
-  }
-}
-
 .body-all{
   background-image:url('./bg3.jpg');
   background-size: cover;
@@ -22,32 +13,37 @@
   font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased;
 }
-.title{
-  font-family: 'Major Mono Display', monospace;
-}
-#about{
-  position:absolute;
-  display:block;
-  top:100%;
-  // background-color: rgba(255,255,255,0.1);
-  // background-color: #fff;
-  // background-image: radial-gradient(#fff,#e2e2e2);
-}
-.absolute-center{
-  left:50%;
-  top:50%;
-  position:absolute;
-  transform: translate(-50%,-50%);
-}
-.absolute-center-40{
-  left:50%;
-  top:40%;
-  position:absolute;
-  transform: translate(-50%,-50%);
-}
-.fixed-center-40{
-  left:50%;
-  top:40%;
-  position:fixed;
-  transform: translate(-50%,-50%);
+
+@responsive{
+  .absolute-center{
+    left:50%;
+    top:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+  }
+  .absolute-center-40{
+    left:50%;
+    top:40%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+  }
+  .fixed-center{
+    left:50%;
+    top:50%;
+    position:fixed;
+    transform: translate(-50%,-50%);
+  }
+  .fixed-center-40{
+    left:50%;
+    top:40%;
+    position:fixed;
+    transform: translate(-50%,-50%);
+  }
+  .horizontal-center{
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .w-25{
+    width:250%;
+  }
 }

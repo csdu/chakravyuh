@@ -1829,49 +1829,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/about.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/countdownTimer.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/countdownTimer.vue?vue&type=script&lang=js& ***!
@@ -2025,913 +1982,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/maze.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/maze.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      rect1: false,
-      rect2: false,
-      rect3: false,
-      rect4: false,
-      rect5: false,
-      rect6: false,
-      rect7: false
-    };
-  },
-  mounted: function mounted() {
-    var self = this;
-    setTimeout(function () {
-      self.rect1 = true;
-    }, 9000);
-    setTimeout(function () {
-      self.rect2 = true;
-    }, 1000);
-    setTimeout(function () {
-      self.rect3 = true;
-    }, 4000);
-    setTimeout(function () {
-      self.rect4 = true;
-    }, 6000);
-    setTimeout(function () {
-      self.rect5 = true;
-      self.rect7 = true;
-    }, 12000);
-    setTimeout(function () {
-      self.rect6 = true;
-    }, 3000);
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/topNavigationBar.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/topNavigationBar.vue?vue&type=script&lang=js& ***!
@@ -2987,10 +2037,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      active: "home"
+      active: "home",
+      mdScreen: false
     };
   },
   computed: {
@@ -3005,28 +2097,17 @@ __webpack_require__.r(__webpack_exports__);
     },
     isLeaderbordActive: function isLeaderbordActive() {
       return this.active == 'leaderboard';
+    },
+    lgScreen: function lgScreen() {
+      if (window.innerWidth > 768) return true;else return false;
+    }
+  },
+  methods: {
+    showMenu: function showMenu(event) {
+      if (this.mdScreen == false) this.mdScreen = true;else this.mdScreen = false;
     }
   }
 });
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".nav-logins[data-v-0b0aedd2]{\n  color:#fff;\n  position:relative;\n  transition : color 0.4s linear;\n}\n.nav-logins[data-v-0b0aedd2]:hover{\n  color: #ffdc34;\n}\n.nav-logins[data-v-0b0aedd2]::before , .nav-logins[data-v-0b0aedd2]::after{\n  content:'';\n  position:absolute;\n  z-index: -1;\n  width:100%;\n  height:100%;\n  transition : transform 0.4s ;\n  transform-timing-function : cubic-beizer(0,0.7,1,0.5);\n}\n.nav-logins[data-v-0b0aedd2]::before {\n  left:0;\n  top:0;\n  border: 1px solid #ffdc34;\n  border-left: none;\n  border-right: none;\n  border-top:none;\n  transform-origin:bottom;\n  transform : scaleX(0);\n}\n.nav-logins[data-v-0b0aedd2]::after {\n  right:0;\n  top:0;\n  transform-origin:top;\n  background-color: #000;\n  transform : scaleY(0);\n}\n.nav-logins[data-v-0b0aedd2]:hover::before{\n  transform: scaleX(1);\n}\n.nav-logins[data-v-0b0aedd2]:hover::after{\n  transform: scaleY(1);\n}\r\n\r\n\r\n", ""]);
-
-// exports
-
 
 /***/ }),
 
@@ -3042,26 +2123,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".timer[data-v-25dc86c2]{\n  position: absolute;\n  top:85%;\n  left:50%;\n  transform: translateX(-50%);\n  font-weight : 500;\n}\n.days-container[data-v-25dc86c2]{\n  perspective: 100px;\n}\n.hours-container[data-v-25dc86c2]{\n  position:absolute;\n  right:0;\n  transform: translate(-35%,-107%);\n}\n.minutes-container[data-v-25dc86c2]{\n  position:absolute;\n  left: 16%;\n  transform: translateY(-7%);\n}\n.seconds-container[data-v-25dc86c2]{\n  position:absolute;\n  right: 0;\n  transform: translate(-47%,-56%);\n}\n\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".radials-md[data-v-9a23d4d0]{\n  opacity:0.9;\n  transform: translateY(15px);\n}\n.tiles[data-v-9a23d4d0]{\n  transform: translateY(20%);\n}\n@media (min-width: 640px){\n.sm\\:radials-md[data-v-9a23d4d0]{\n    opacity:0.9;\n    transform: translateY(15px);\n}\n.sm\\:tiles[data-v-9a23d4d0]{\n    transform: translateY(20%);\n}\n}\n@media (min-width: 768px){\n.md\\:radials-md[data-v-9a23d4d0]{\n    opacity:0.9;\n    transform: translateY(15px);\n}\n.md\\:tiles[data-v-9a23d4d0]{\n    transform: translateY(20%);\n}\n}\n@media (min-width: 1024px){\n.lg\\:radials-md[data-v-9a23d4d0]{\n    opacity:0.9;\n    transform: translateY(15px);\n}\n.lg\\:tiles[data-v-9a23d4d0]{\n    transform: translateY(20%);\n}\n}\n@media (min-width: 1280px){\n.xl\\:radials-md[data-v-9a23d4d0]{\n    opacity:0.9;\n    transform: translateY(15px);\n}\n.xl\\:tiles[data-v-9a23d4d0]{\n    transform: translateY(20%);\n}\n}\r\n\r\n", ""]);
+exports.push([module.i, ".timer[data-v-25dc86c2]{\n  position: absolute;\n  top:87%;\n  left:50%;\n  transform: translateX(-50%);\n  font-weight : 400;\n}\n.days-container[data-v-25dc86c2]{\n  perspective: 100px;\n}\n.hours-container[data-v-25dc86c2]{\n  position:absolute;\n  right:0;\n  transform: translate(-35%,-107%);\n}\n.minutes-container[data-v-25dc86c2]{\n  position:absolute;\n  left: 16%;\n  transform: translateY(-7%);\n}\n.seconds-container[data-v-25dc86c2]{\n  position:absolute;\n  right: 0;\n  transform: translate(-47%,-56%);\n}\n\n", ""]);
 
 // exports
 
@@ -3080,7 +2142,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".navigation[data-v-38fe1b55]{\n  position:fixed;\n  top:0%;\n  left:50%;\n  transform:  translateX(-50%);\n  z-index:10;\n}\n.nav-button[data-v-38fe1b55]{\n  transition : color 0.4s linear;\n  position: relative;\n}\n.nav-button[data-v-38fe1b55]:hover{\n  color: #ffdc34;\n}\n.nav-logins[data-v-38fe1b55]{\n  color:#fff;\n  position:relative;\n  transition : color 0.4s linear;\n}\n.nav-logins[data-v-38fe1b55]:hover{\n  color: #ffdc34;\n}\n.nav-logins[data-v-38fe1b55]::before , .nav-button[data-v-38fe1b55]::before{\n  content:'';\n  position:absolute;\n  z-index: -1;\n  left:0;\n  top:0;\n  width:100%;\n  height:100%;\n  border: 1px solid #ffdc34;\n  border-left: none;\n  border-right: none;\n  border-top:none;\n  transition : transform 0.4s ;\n  transform-timing-function : cubic-beizer(0,0.7,1,0.5);\n  transform : scaleX(0);\n}\n.nav-logins[data-v-38fe1b55]::before {\n  transform-origin:bottom;\n}\n.nav-button[data-v-38fe1b55]::before{\n  transform-origin:left;\n}\n.nav-logins[data-v-38fe1b55]:hover::before, .nav-button[data-v-38fe1b55]:hover::before{\n  transform: scaleX(1);\n}\n.nav-login-sm[data-v-38fe1b55]{\n  position:absolute;\n  top:60%;\n  left:50%;\n  transform: translateX(-50%);\n}\n.active[data-v-38fe1b55]{\n  border-bottom : 1px solid #ffdc34;\n  color: #ffdc34  ;\n}\n.hober[data-v-38fe1b55]{\n  border-width:1px;\n  border-bottom-width:1px;\n  border-color:#ecc94b;\n}\n@media (min-width: 640px){\n.sm\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 768px){\n.md\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 1024px){\n.lg\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n@media (min-width: 1280px){\n.xl\\:hober[data-v-38fe1b55]{\n    border-width:1px;\n    border-bottom-width:1px;\n    border-color:#ecc94b;\n}\n}\n", ""]);
+exports.push([module.i, ".active[data-v-38fe1b55]{\n  border-bottom : 1px solid #ffdc34;\n  color: #ffdc34  ;\n}\n.navigation[data-v-38fe1b55]{\n  position:fixed;\n  top:0%;\n  left:50%;\n  transform:  translateX(-50%);\n  z-index:10;\n}\n.nav-button[data-v-38fe1b55]{\n  position: relative;\n  transition : color 0.4s linear;\n}\n.nav-button[data-v-38fe1b55]:hover{\n  color: #ffdc34;\n}\n.nav-button[data-v-38fe1b55]::before{\n  content:'';\n  position:absolute;\n  z-index: -1;\n  left:0;\n  top:0;\n  width:100%;\n  height:100%;\n  border: 1px solid #ffdc34;\n  border-left: none;\n  border-right: none;\n  border-top:none;\n  transition : transform 0.4s ;\n  transform-timing-function : cubic-beizer(0,0.7,1,0.5);\n  transform-origin:left;\n  transform : scaleX(0);\n}\n.nav-logins[data-v-38fe1b55]{\n  color:#fff;\n  position:relative;\n}\n.nav-logins[data-v-38fe1b55]::before{\n  content:'';\n  position:absolute;\n  z-index: -1;\n  left:0;\n  top:0;\n  width:100%;\n  height:100%;\n  border: 1px solid #ffdc34;\n  transition : transform 0.4s ;\n  transform-origin:bottom;\n  transform-timing-function : cubic-beizer(0,0.7,1,0.5);\n  transform : scaleX(0);\n}\n.nav-logins[data-v-38fe1b55]:hover::before, .nav-button[data-v-38fe1b55]:hover::before{\n  transform: scaleX(1);\n}\n.nav-login-sm[data-v-38fe1b55]{\n  position:absolute;\n  top:20%;\n  left:50%;\n  transform: translateX(-50%);\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -20705,36 +19767,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true&":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/countdownTimer.vue?vue&type=style&index=0&id=25dc86c2&lang=css&scoped=true&":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/countdownTimer.vue?vue&type=style&index=0&id=25dc86c2&lang=css&scoped=true& ***!
@@ -20744,36 +19776,6 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./countdownTimer.vue?vue&type=style&index=0&id=25dc86c2&lang=css&scoped=true& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/countdownTimer.vue?vue&type=style&index=0&id=25dc86c2&lang=css&scoped=true&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -21409,121 +20411,6 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=template&id=0b0aedd2&scoped=true&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/about.vue?vue&type=template&id=0b0aedd2&scoped=true& ***!
-  \********************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "h-full", attrs: { id: "about" } }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "logins md:w-1/2 w-4/5 mx-auto" }, [
-      _c("h3", { staticClass: "md:text-lg text-sm mb-4 text-gray-100" }, [
-        _vm._v(
-          "To get updates about chakravyuh, login using google or facebook"
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "md:text-sm text-xs p-2 m-1 nav-logins",
-          attrs: { href: "#" }
-        },
-        [
-          _c(
-            "svg",
-            {
-              staticClass: "inline",
-              attrs: {
-                width: "0.5rem",
-                xmlns: "http://www.w3.org/2000/svg",
-                viewBox: "0 0 320 512"
-              }
-            },
-            [
-              _c("path", {
-                attrs: {
-                  fill: "white",
-                  d:
-                    "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                }
-              })
-            ]
-          ),
-          _vm._v("\n      Login")
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "md:text-sm text-xs p-2 m-1 nav-logins",
-          attrs: { href: "#" }
-        },
-        [
-          _c(
-            "svg",
-            {
-              staticClass: "inline",
-              attrs: {
-                width: "0.75rem",
-                xmlns: "http://www.w3.org/2000/svg",
-                viewBox: "0 0 488 512"
-              }
-            },
-            [
-              _c("path", {
-                attrs: {
-                  fill: "white",
-                  d:
-                    "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-                }
-              })
-            ]
-          ),
-          _vm._v("\n      Login")
-        ]
-      )
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "md:w-1/2 w-4/5 mx-auto md:my-24 my-12" }, [
-      _c(
-        "h1",
-        { staticClass: "md:text-4xl text-xl mb-6 text-white font-bold" },
-        [_vm._v("About Chakravyuh")]
-      ),
-      _vm._v(" "),
-      _c("p", { staticClass: "md:text-sm text-xs text-gray-200" }, [
-        _vm._v(
-          "\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis, massa eget molestie accumsan, risus diam lacinia mi, ac tempus nunc tortor sed sem. Sed laoreet, massa in aliquet feugiat, dui est ultrices odio, quis scelerisque turpis purus quis quam. Vivamus urna nunc, semper eget condimentum eget, molestie nec sem. Integer in odio eros. Etiam et feugiat quam. Sed condimentum sem at justo vulputate, a convallis nibh commodo. Nullam faucibus ipsum quis tincidunt aliquam. In ac porttitor magna. Aliquam nisl quam, interdum at lacus ut, accumsan rhoncus quam. Nunc justo ligula, blandit fringilla eleifend sit amet, elementum sit amet nibh. Mauris aliquam semper eros a vehicula. Duis imperdiet odio fermentum, dignissim leo eu, placerat odio. Duis vestibulum vulputate elementum.\n    "
-        )
-      ])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/countdownTimer.vue?vue&type=template&id=25dc86c2&scoped=true&":
 /*!*****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/countdownTimer.vue?vue&type=template&id=25dc86c2&scoped=true& ***!
@@ -21539,2880 +20426,472 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "timer p-2 absolute md:w-1/5 w-1/2" }, [
-    _c("div", { staticClass: "days-container absolute-center w-1/2 " }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c("defs", [
-            _c(
-              "filter",
-              {
-                attrs: {
-                  id: "sofGlow",
-                  height: "300%",
-                  width: "300%",
-                  x: "-75%",
-                  y: "-75%"
-                }
-              },
-              [
-                _c("feMorphology", {
-                  attrs: {
-                    operator: "dilate",
-                    radius: "4",
-                    in: "SourceAlpha",
-                    result: "thicken"
-                  }
-                }),
-                _vm._v(" "),
-                _c("feGaussianBlur", {
-                  attrs: {
-                    in: "thicken",
-                    stdDeviation: "10",
-                    result: "blurred"
-                  }
-                }),
-                _vm._v(" "),
-                _c("feFlood", {
-                  attrs: {
-                    "flood-color": "rgba(0,0,0,0.3)",
-                    result: "glowColor"
-                  }
-                }),
-                _vm._v(" "),
-                _c("feComposite", {
-                  attrs: {
-                    in: "glowColor",
-                    in2: "blurred",
-                    operator: "in",
-                    result: "softGlow_colored"
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "feMerge",
-                  [
-                    _c("feMergeNode", { attrs: { in: "softGlow_colored" } }),
-                    _vm._v(" "),
-                    _c("feMergeNode", { attrs: { in: "SourceGraphic" } })
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-            _c("path", {
-              attrs: {
-                d:
-                  "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                fill: "#ffdc34"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("animateTransform", {
-            attrs: {
-              attributeName: "transform",
-              type: "rotate",
-              from: "0",
-              to: "360",
-              dur: "100s",
-              repeatCount: "indefinite"
-            }
-          })
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "days-container absolute-center w-1/2 " }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "45%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "6rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v(_vm._s(_vm.days))]
-          ),
-          _vm._v(" "),
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "58%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "3rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v("DAYS")]
-          )
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "hours-container w-1/3" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-            _c("path", {
-              attrs: {
-                d:
-                  "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                fill: "#ffdc34"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("animateTransform", {
-            attrs: {
-              attributeName: "transform",
-              type: "rotate",
-              from: "360",
-              to: "0",
-              dur: "60s",
-              repeatCount: "indefinite"
-            }
-          })
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "hours-container w-1/3" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "45%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "6rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v(_vm._s(_vm.hours))]
-          ),
-          _vm._v(" "),
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "58%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "3rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v("Hours")]
-          )
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "minutes-container w-1/4" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-            _c("path", {
-              attrs: {
-                d:
-                  "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                fill: "#ffdc34"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("animateTransform", {
-            attrs: {
-              attributeName: "transform",
-              type: "rotate",
-              from: "360",
-              to: "0",
-              dur: "30s",
-              repeatCount: "indefinite"
-            }
-          })
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "minutes-container w-1/4" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "45%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "6rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v(_vm._s(_vm.minutes))]
-          ),
-          _vm._v(" "),
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "58%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "3rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v("Minutes")]
-          )
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "seconds-container w-1/5" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-            _c("path", {
-              attrs: {
-                d:
-                  "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                fill: "#ffdc34"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                fill: "#ffdc34"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("animateTransform", {
-            attrs: {
-              attributeName: "transform",
-              type: "rotate",
-              from: "0",
-              to: "360",
-              dur: "3s",
-              repeatCount: "indefinite"
-            }
-          })
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "seconds-container w-1/5" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 428 424",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c(
-            "text",
-            {
-              attrs: {
-                x: "50%",
-                y: "50%",
-                "text-anchor": "middle",
-                "dominant-baseline": "middle",
-                "font-size": "7rem",
-                fill: "#eee"
-              }
-            },
-            [_vm._v(_vm._s(_vm.seconds))]
-          )
-        ]
-      )
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/maze.vue?vue&type=template&id=886fb9ec&scoped=true&":
-/*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/maze.vue?vue&type=template&id=886fb9ec&scoped=true& ***!
-  \*******************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "md:w-1/3 w-1/2 mx-auto fixed-center-40 ",
-      attrs: { id: "icon" }
-    },
+    { staticClass: "timer p-2 absolute lg:w-1/5 md:w-1/4 w-1/2" },
     [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 681 681",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c("path", {
-            attrs: {
-              id: "path1",
-              d:
-                "M639.005 340.5C639.005 295.159 628.711 250.41 608.898 209.627C589.086 168.845 560.272 133.092 524.63 105.067C488.989 77.0408 447.449 57.4732 403.144 47.8391C358.838 38.2051 315.561 38.3055 271.5 49L276.869 73.2419C241.772 81.4674 208.639 96.5252 179.362 117.556C150.084 138.586 125.236 165.177 106.235 195.811C87.2338 226.444 74.4527 260.52 68.6211 296.093C62.7895 331.666 64.0217 368.04 72.2472 403.137L96.4604 396.886C86.8858 355.617 87.9779 312.588 99.6336 271.857C111.289 231.126 133.125 194.034 163.082 164.077L180.76 181.755C206.834 155.68 238.93 136.43 274.21 125.705C309.49 114.98 346.87 113.111 383.044 120.262C419.218 127.414 453.074 143.366 481.62 166.708C510.166 190.051 533.809 223.466 548 257.5L519.964 267.941C531.674 297.063 536.161 328.586 533.044 359.818L493.121 357.012C490.306 383.196 480.845 408.227 465.636 429.727C450.426 451.226 429.974 468.482 406.22 479.854C382.466 491.226 356.2 496.337 329.915 494.702C303.63 493.067 278.2 484.741 256.038 470.513L269.026 443.13C285.936 454.743 305.454 461.997 325.843 464.248L336.72 419.951C319.829 419.359 303.567 413.4 290.293 402.937C277.019 392.475 267.425 378.054 262.903 361.769C258.381 345.483 259.168 328.181 265.148 312.372C271.127 296.564 281.99 283.073 296.158 273.858L311.114 299.952C316.439 296.224 322.446 293.58 328.792 292.174C335.138 290.767 341.7 290.623 348.101 291.752C354.503 292.881 360.62 295.26 366.102 298.752C371.584 302.245 376.325 306.783 380.054 312.108",
-              stroke: "white",
-              "stroke-opacity": "0.15"
-            }
-          }),
-          _vm._v(" "),
-          _c("path", {
-            attrs: {
-              id: "path2",
-              d:
-                "M638.788 351.789C637.006 399.02 624.07 445.158 601.04 486.432C578.01 527.705 545.538 562.942 506.28 589.262C467.022 615.582 422.093 632.236 375.165 637.864C328.237 643.493 280.643 637.934 236.275 621.644L245.96 598.566C191.188 578.713 144.152 541.948 111.659 493.591C79.1656 445.233 62.9009 387.792 65.218 329.578L90.1791 331.063C91.6676 291.718 102.447 253.283 121.636 218.902C140.824 184.52 167.878 155.168 200.584 133.246C233.29 111.323 270.721 97.4526 309.815 92.7678C348.909 88.083 388.556 92.7171 425.516 106.291L417 129.5C444.785 139.358 467.923 154.009 489.821 173.749C511.718 193.49 529.513 217.35 542.189 243.967C554.865 270.585 562.175 299.438 563.7 328.88C565.225 358.323 560.937 387.777 551.079 415.562L522.411 406.634C506.442 450.795 475.036 487.688 433.99 510.501C392.944 533.315 345.03 540.508 299.095 530.752C253.16 520.997 212.305 494.951 184.074 457.425C155.842 419.899 142.141 373.426 145.499 326.587L185.639 326.469C183.425 350.75 186.99 375.21 196.041 397.849C205.092 420.489 219.372 440.665 237.715 456.727C256.058 472.79 277.941 484.284 301.577 490.269C325.213 496.253 353.059 495.667 376.836 490.269L371.025 460.938C386.842 456.799 401.688 449.584 414.717 439.706C427.745 429.829 438.701 417.482 446.958 403.371C455.215 389.259 460.611 373.66 462.839 357.462C465.067 341.265 464.083 324.788 459.944 308.971C455.804 293.155 448.589 278.308 438.712 265.279C428.834 252.251 416.487 241.295 402.376 233.039C388.264 224.782 372.665 219.385 356.468 217.157C340.271 214.929 323.793 215.913 307.977 220.053L316.271 264.465C326.255 261.414 336.743 260.36 347.134 261.363C357.526 262.365 367.619 265.405 376.836 270.308C386.053 275.211 394.215 281.881 400.854 289.938C407.493 297.995 412.48 307.281 415.531 317.265L386.838 326.023C389.894 336.02 389.707 346.727 386.304 356.611",
-              stroke: "white",
-              "stroke-opacity": "0.15"
-            }
-          }),
-          _vm._v(" "),
-          _c("path", {
-            attrs: {
-              id: "path3",
-              d:
-                "M44.3528 391.367C31.9765 319.562 46.201 245.708 84.3625 183.637C122.524 121.565 182.005 75.5345 251.664 54.1653L258 78C323.786 59.4605 401.165 64.4171 462.293 94.9914C523.422 125.566 570.945 177.845 595.569 241.604L572.292 250.725C586.458 287.462 591.729 327.03 587.674 366.195C583.618 405.359 570.351 443.008 548.957 476.062C527.563 509.117 498.65 536.639 464.581 556.378C430.513 576.117 392.256 587.513 352.94 589.633V565C319.195 565.941 278.491 559.168 247.686 545.362C216.88 531.556 189.585 510.98 167.831 485.166C146.076 459.352 130.424 428.965 122.038 396.265C113.652 363.565 112.748 329.395 119.394 296.298L148.795 302.263C153.816 277.219 163.721 253.41 177.943 232.194C192.165 210.977 210.427 192.77 231.686 178.612C252.945 164.454 276.784 154.621 301.843 149.676C326.902 144.731 352.69 144.769 377.733 149.79L368.012 188.649C336.424 182.718 303.774 186.786 274.607 200.285C245.44 213.785 221.209 236.044 205.288 263.963L229.528 282.133C242.855 257.02 264.376 237.226 290.512 226.039C316.648 214.852 345.825 212.948 373.194 220.642C400.563 228.335 424.474 245.164 440.953 268.331C457.432 291.497 465.485 319.606 463.775 347.984L418.749 346.823C417.554 361.785 412.148 376.103 403.156 388.121C394.165 400.139 381.955 409.367 367.938 414.736L356.735 386.898C348.313 390.026 339.2 390.803 330.37 389.146C321.541 387.489 313.329 383.46 306.614 377.492C299.9 371.524 294.937 363.84 292.256 355.266C289.575 346.692 289.278 337.55 291.397 328.82",
-              stroke: "white",
-              "stroke-opacity": "0.15"
-            }
-          }),
-          _vm._v(" "),
-          _c(
-            "circle",
-            { attrs: { r: "7", fill: "white" } },
-            [
-              _c(
-                "animateMotion",
-                { attrs: { dur: "20s", repeatCount: "indefinite" } },
-                [_c("mpath", { attrs: { "xlink:href": "#path1" } })],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "circle",
-            { attrs: { r: "5", fill: "#ffff00" } },
-            [
-              _c(
-                "animateMotion",
-                { attrs: { dur: "15s", repeatCount: "indefinite" } },
-                [_c("mpath", { attrs: { "xlink:href": "#path2" } })],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "circle",
-            { attrs: { r: "3", fill: "#fefefe" } },
-            [
-              _c(
-                "animateMotion",
-                { attrs: { dur: "10s", repeatCount: "indefinite" } },
-                [_c("mpath", { attrs: { "xlink:href": "#path3" } })],
-                1
-              )
-            ],
-            1
-          )
-        ]
-      )
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& ***!
-  \******************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", {}, [
-    _c("div", { staticClass: "w-full fixed bottom-0 tiles" }, [
-      _c(
-        "svg",
-        {
-          attrs: {
-            viewBox: "0 0 1440 264",
-            fill: "none",
-            xmlns: "http://www.w3.org/2000/svg"
-          }
-        },
-        [
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line1",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line1",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line2",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line2",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "1s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line3",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line3",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "2s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line4",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line4",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "3s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line5",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line5",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "4s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line6",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line6",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "5s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line7",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line7",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "6s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line8",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line8",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "7s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line9",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line9",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "8s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line10",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line10",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "9s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line11",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line11",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "10s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line12",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line12",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "11s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line13",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line13",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "12s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line14",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line14",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "13s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line15",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line15",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "14s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line16",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line16",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "15s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line17",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line17",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "16s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line18",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line18",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 252.259H0V251.259H1439.06V252.259Z;\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "18s",
-                  begin: "17s",
-                  repeatCount: "indefinite"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line19",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line19",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 222.125H0V221.125H1439.06V222.125Z;\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "17s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line20",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line20",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 193.729H0V192.729H1439.06V193.729Z;\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "16s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line21",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line21",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 167.073H0V166.073H1439.06V167.073Z;\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "15s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line22",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line22",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 143.89H0V142.89H1439.06V143.89Z;\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "14s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line23",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line23",
-                  attributeName: "d",
-                  values:
-                    "\n          M1440 123.606H0.941772V122.606H1440V123.606Z;\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "13s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line24",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line24",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 104.484H0V103.484H1439.06V104.484Z;\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "12s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line25",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line25",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "11s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line26",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line26",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "10s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line27",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line27",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "9s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line28",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line28",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "8s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line29",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line29",
-                  attributeName: "d",
-                  values:
-                    "\n          M1440 33.7822H0.941772V32.7822H1440V33.7822Z;\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "7s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line30",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line30",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 26.249H0V25.249H1439.06V26.249Z;\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "6s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line31",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line31",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "5s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line32",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line32",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 13.499H0V12.499H1439.06V13.499Z;\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "4s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line33",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line33",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "3s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "path",
-            {
-              attrs: {
-                id: "line34",
-                stroke: "#D2D201",
-                "stroke-opacity": "0.2",
-                "stroke-width": "1"
-              }
-            },
-            [
-              _c("animate", {
-                attrs: {
-                  id: "line34",
-                  attributeName: "d",
-                  values:
-                    "\n          M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;\n          M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;",
-                  dur: "2s",
-                  repeatCount: "1"
-                }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "284.708",
-              y2: "-1.5",
-              transform:
-                "matrix(0.387027 -0.922068 0.987605 0.156957 581.086 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "331.423",
-              y2: "-1.5",
-              transform:
-                "matrix(0.608115 -0.793849 0.960417 0.278566 452.06 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "383.32",
-              y2: "-1.5",
-              transform:
-                "matrix(0.727252 -0.686371 0.928097 0.372339 331.511 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "442.325",
-              y2: "-1.5",
-              transform:
-                "matrix(0.804833 -0.593502 0.889588 0.456764 207.194 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "503.642",
-              y2: "-1.5",
-              transform:
-                "matrix(0.852704 -0.522395 0.850647 0.525737 84.7614 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "530.559",
-              y2: "-1.5",
-              transform:
-                "matrix(0.883997 -0.467493 0.813085 0.582145 1.88373 251.367)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "467.37",
-              y2: "-1.5",
-              transform:
-                "matrix(0.90679 -0.421583 0.775388 0.631485 1.88373 200.368)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "411.86",
-              y2: "-1.5",
-              transform:
-                "matrix(0.930679 -0.365838 0.720223 0.693742 1.88373 154.01)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "360.417",
-              y2: "-1.5",
-              transform:
-                "matrix(0.951154 -0.308717 0.650823 0.759229 1.88373 114.6)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "307.865",
-              y2: "-1.5",
-              transform:
-                "matrix(0.966676 -0.256002 0.573147 0.819453 1.88373 82.1475)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "261.657",
-              y2: "-1.5",
-              transform:
-                "matrix(0.979021 -0.203761 0.481703 0.876335 1.88373 56.6494)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "151.497",
-              y2: "-1.5",
-              transform:
-                "matrix(0.994652 -0.103282 0.264477 0.964392 6.10352e-05 18.9805)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "106.55",
-              y2: "-1.5",
-              transform:
-                "matrix(0.998801 -0.04895 0.128365 0.991727 6.10352e-05 8.54883)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "216.15",
-              y2: "-1.5",
-              transform:
-                "matrix(0.989068 -0.14746 0.366377 0.930467 6.10352e-05 35.208)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "284.708",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.387027 -0.922068 -0.987605 0.156957 857.972 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "331.423",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.608115 -0.793849 -0.960417 0.278566 986.998 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "383.32",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.727252 -0.686371 -0.928097 0.372339 1107.55 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "442.325",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.804833 -0.593502 -0.889588 0.456764 1231.86 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "503.642",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.852704 -0.522395 -0.850647 0.525737 1354.3 266.435)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "530.559",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.883997 -0.467493 -0.813085 0.582145 1437.17 251.367)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "467.37",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.90679 -0.421583 -0.775388 0.631485 1437.17 200.368)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "411.86",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.930679 -0.365838 -0.720223 0.693742 1437.17 154.01)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "360.417",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.951154 -0.308717 -0.650823 0.759229 1437.17 114.6)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "307.865",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.966676 -0.256002 -0.573147 0.819453 1437.17 82.1475)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "261.657",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.979021 -0.203761 -0.481703 0.876335 1437.17 56.6494)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "151.497",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.994652 -0.103282 -0.264477 0.964392 1439.06 18.9805)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "216.15",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.989068 -0.14746 -0.366377 0.930467 1439.06 35.208)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("line", {
-            attrs: {
-              y1: "-1.5",
-              x2: "106.55",
-              y2: "-1.5",
-              transform:
-                "matrix(-0.998801 -0.04895 -0.128365 0.991727 1439.06 8.54883)",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("path", {
-            attrs: {
-              d: "M722.354 263.943L722.355 3.33006",
-              stroke: "#D2D201",
-              "stroke-opacity": "0.2",
-              "stroke-width": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("path", { attrs: { id: "aline1", d: "M3 96L312 3" } }),
-          _vm._v(" "),
-          _c("path", { attrs: { id: "aline2", d: "M1 231L442.5 3.5" } }),
-          _vm._v(" "),
-          _c("path", { attrs: { id: "aline3", d: "M277 263L582 2" } }),
-          _vm._v(" "),
-          _c("path", { attrs: { id: "aline4", d: "M901 263L762 3.5" } }),
-          _vm._v(" "),
-          _c("path", { attrs: { id: "aline5", d: "M1288.5 263.5L919 2" } }),
-          _vm._v(" "),
-          _vm.rect3
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect3",
-                    d: "M69.439 0H219L176.268 55H0L69.439 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    {
-                      attrs: {
-                        dur: "18s",
-                        repeatCount: "indefinite",
-                        begin: "3s"
-                      }
-                    },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline3" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite",
-                      begin: "3s"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.rect7
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect7",
-                    d: "M69.439 0H219L176.268 55H0L69.439 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    {
-                      attrs: {
-                        dur: "18s",
-                        repeatCount: "indefinite",
-                        begin: "11s"
-                      }
-                    },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline3" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite",
-                      begin: "11s"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.rect7
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect4",
-                    d: "M0 0H145.168L189 50H30.7951L0 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    {
-                      attrs: {
-                        dur: "18s",
-                        repeatCount: "indefinite",
-                        begin: "5s"
-                      }
-                    },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline4" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite",
-                      begin: "5s"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.rect2
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect2",
-                    d: "M27.1686 0H140L72.9799 41H-60L27.1686 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    { attrs: { dur: "18s", repeatCount: "indefinite" } },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline2" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.rect1
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect1",
-                    d: "M69.18 0H132L74.0378 23H0L69.18 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    {
-                      attrs: {
-                        dur: "18s",
-                        repeatCount: "indefinite",
-                        begin: "8s"
-                      }
-                    },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline1" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite",
-                      begin: "8s"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.rect5
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect5",
-                    d: "M0 0H147.153L228 47H67.6327L0 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    {
-                      attrs: {
-                        dur: "18s",
-                        repeatCount: "indefinite",
-                        begin: "11s"
-                      }
-                    },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline5" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite",
-                      begin: "11s"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.rect6
-            ? _c(
-                "path",
-                {
-                  attrs: {
-                    id: "rect6",
-                    d: "M0 0H147.153L228 47H67.6327L0 0Z",
-                    fill: "#D2D201",
-                    "fill-opacity": "0.3"
-                  }
-                },
-                [
-                  _c(
-                    "animateMotion",
-                    {
-                      attrs: {
-                        dur: "18s",
-                        repeatCount: "indefinite",
-                        begin: "2s"
-                      }
-                    },
-                    [_c("mpath", { attrs: { "xlink:href": "#aline5" } })],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      attributeType: "XML",
-                      type: "scale",
-                      from: "1.0",
-                      to: "0.2",
-                      dur: "18s",
-                      repeatCount: "indefinite",
-                      begin: "2s"
-                    }
-                  })
-                ],
-                1
-              )
-            : _vm._e()
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "w-full absolute bottom-0" }, [
+      _c("div", { staticClass: "days-container absolute-center w-1/2 " }, [
         _c(
           "svg",
           {
             attrs: {
-              viewBox: "0 0 1440 833",
+              viewBox: "0 0 428 424",
               fill: "none",
               xmlns: "http://www.w3.org/2000/svg"
             }
           },
           [
-            _c("path", {
-              attrs: {
-                d:
-                  "M1075 479C1075 675.613 915.613 835 719 835C522.387 835 363 675.613 363 479C363 282.387 522.387 123 719 123C915.613 123 1075 282.387 1075 479Z",
-                fill: "url(#paint0_radial)",
-                "fill-opacity": "0.64"
-              }
-            }),
+            _c("defs", [
+              _c(
+                "filter",
+                {
+                  attrs: {
+                    id: "sofGlow",
+                    height: "300%",
+                    width: "300%",
+                    x: "-75%",
+                    y: "-75%"
+                  }
+                },
+                [
+                  _c("feMorphology", {
+                    attrs: {
+                      operator: "dilate",
+                      radius: "4",
+                      in: "SourceAlpha",
+                      result: "thicken"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("feGaussianBlur", {
+                    attrs: {
+                      in: "thicken",
+                      stdDeviation: "10",
+                      result: "blurred"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("feFlood", {
+                    attrs: {
+                      "flood-color": "rgba(0,0,0,0.3)",
+                      result: "glowColor"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("feComposite", {
+                    attrs: {
+                      in: "glowColor",
+                      in2: "blurred",
+                      operator: "in",
+                      result: "softGlow_colored"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "feMerge",
+                    [
+                      _c("feMergeNode", { attrs: { in: "softGlow_colored" } }),
+                      _vm._v(" "),
+                      _c("feMergeNode", { attrs: { in: "SourceGraphic" } })
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ]),
             _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M904 535.5C904 618.067 823.411 685 724 685C624.589 685 544 618.067 544 535.5C544 452.933 624.589 386 724 386C823.411 386 904 452.933 904 535.5Z",
-                fill: "url(#paint2_radial)",
-                "fill-opacity": "0.64"
-              }
-            }),
-            _vm._v(" "),
-            _c("g", { attrs: { filter: "url(#filter2_f)" } }, [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
               _c("path", {
                 attrs: {
                   d:
-                    "M1479 568.5C1479 591.42 1139.41 610 720.5 610C301.592 610 -38 591.42 -38 568.5C-38 545.58 301.592 527 720.5 527C1139.41 527 1479 545.58 1479 568.5Z",
-                  fill: "url(#paint3_radial)"
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
                 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("g", { attrs: { filter: "url(#filter3_f)" } }, [
+              }),
+              _vm._v(" "),
               _c("path", {
                 attrs: {
                   d:
-                    "M1490 560.5C1490 570.165 1142.57 578 714 578C285.427 578 -62 570.165 -62 560.5C-62 550.835 285.427 543 714 543C1142.57 543 1490 550.835 1490 560.5Z",
-                  fill: "url(#paint4_radial)"
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
                 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M1074 560.265C1074 578.636 921.329 585 733 585C544.671 585 392 578.636 392 560.265C392 541.893 544.671 527 733 527C921.329 527 1074 541.893 1074 560.265Z",
-                fill: "url(#paint7_radial)"
-              }
-            }),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M1062 564.088C1062 577.392 909.329 582 721 582C532.671 582 380 577.392 380 564.088C380 550.785 532.671 540 721 540C909.329 540 1062 550.785 1062 564.088Z",
-                fill: "url(#paint8_radial)"
-              }
-            }),
-            _vm._v(" "),
-            _c("g", { attrs: { filter: "url(#filter6_f)" } }, [
-              _c("ellipse", {
+              }),
+              _vm._v(" "),
+              _c("path", {
                 attrs: {
-                  cx: "730.5",
-                  cy: "562.5",
-                  rx: "133.5",
-                  ry: "9.5",
-                  fill: "white"
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
                 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("path", {
-              attrs: {
-                d:
-                  "M1444 567.5C1444 596.495 1121.42 620 723.5 620C325.579 620 3 596.495 3 567.5C3 538.505 325.579 515 723.5 515C1121.42 515 1444 538.505 1444 567.5Z",
-                fill: "url(#paint9_radial)",
-                "fill-opacity": "0.64"
-              }
-            }),
-            _vm._v(" "),
-            _c("g", { staticStyle: { "mix-blend-mode": "hard-light" } }, [
-              _c("ellipse", {
+              }),
+              _vm._v(" "),
+              _c("path", {
                 attrs: {
-                  cx: "724",
-                  cy: "566.5",
-                  rx: "335",
-                  ry: "26.5",
-                  fill: "url(#paint10_radial)"
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
                 }
               })
             ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "0",
+                to: "360",
+                dur: "100s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "days-container absolute-center w-1/2 " }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "45%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "6rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.days))]
+            ),
             _vm._v(" "),
             _c(
-              "defs",
-              [
-                _c(
-                  "filter",
-                  {
-                    attrs: {
-                      id: "filter2_f",
-                      x: "-42",
-                      y: "523",
-                      width: "1525",
-                      height: "91",
-                      filterUnits: "userSpaceOnUse",
-                      "color-interpolation-filters": "sRGB"
-                    }
-                  },
-                  [
-                    _c("feFlood", {
-                      attrs: {
-                        "flood-opacity": "0",
-                        result: "BackgroundImageFix"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feBlend", {
-                      attrs: {
-                        mode: "normal",
-                        in: "SourceGraphic",
-                        in2: "BackgroundImageFix",
-                        result: "shape"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feGaussianBlur", {
-                      attrs: {
-                        stdDeviation: "2",
-                        result: "effect1_foregroundBlur"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "filter",
-                  {
-                    attrs: {
-                      id: "filter3_f",
-                      x: "-66",
-                      y: "539",
-                      width: "1560",
-                      height: "43",
-                      filterUnits: "userSpaceOnUse",
-                      "color-interpolation-filters": "sRGB"
-                    }
-                  },
-                  [
-                    _c("feFlood", {
-                      attrs: {
-                        "flood-opacity": "0",
-                        result: "BackgroundImageFix"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feBlend", {
-                      attrs: {
-                        mode: "normal",
-                        in: "SourceGraphic",
-                        in2: "BackgroundImageFix",
-                        result: "shape"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feGaussianBlur", {
-                      attrs: {
-                        stdDeviation: "2",
-                        result: "effect1_foregroundBlur"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "filter",
-                  {
-                    attrs: {
-                      id: "filter4_f",
-                      x: "-42",
-                      y: "523",
-                      width: "1525",
-                      height: "91",
-                      filterUnits: "userSpaceOnUse",
-                      "color-interpolation-filters": "sRGB"
-                    }
-                  },
-                  [
-                    _c("feFlood", {
-                      attrs: {
-                        "flood-opacity": "0",
-                        result: "BackgroundImageFix"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feBlend", {
-                      attrs: {
-                        mode: "normal",
-                        in: "SourceGraphic",
-                        in2: "BackgroundImageFix",
-                        result: "shape"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feGaussianBlur", {
-                      attrs: {
-                        stdDeviation: "2",
-                        result: "effect1_foregroundBlur"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "filter",
-                  {
-                    attrs: {
-                      id: "filter5_f",
-                      x: "-3",
-                      y: "522",
-                      width: "1443",
-                      height: "86",
-                      filterUnits: "userSpaceOnUse",
-                      "color-interpolation-filters": "sRGB"
-                    }
-                  },
-                  [
-                    _c("feFlood", {
-                      attrs: {
-                        "flood-opacity": "0",
-                        result: "BackgroundImageFix"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feBlend", {
-                      attrs: {
-                        mode: "normal",
-                        in: "SourceGraphic",
-                        in2: "BackgroundImageFix",
-                        result: "shape"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feGaussianBlur", {
-                      attrs: {
-                        stdDeviation: "2",
-                        result: "effect1_foregroundBlur"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "filter",
-                  {
-                    attrs: {
-                      id: "filter6_f",
-                      x: "593",
-                      y: "549",
-                      width: "275",
-                      height: "27",
-                      filterUnits: "userSpaceOnUse",
-                      "color-interpolation-filters": "sRGB"
-                    }
-                  },
-                  [
-                    _c("feFlood", {
-                      attrs: {
-                        "flood-opacity": "0",
-                        result: "BackgroundImageFix"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feBlend", {
-                      attrs: {
-                        mode: "normal",
-                        in: "SourceGraphic",
-                        in2: "BackgroundImageFix",
-                        result: "shape"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("feGaussianBlur", {
-                      attrs: {
-                        stdDeviation: "2",
-                        result: "effect1_foregroundBlur"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint0_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(719 479) rotate(90) scale(356)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.0001",
-                        "stop-color": "#DAF438",
-                        "stop-opacity": "0.567708"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.348958",
-                        "stop-color": "#FCE300",
-                        "stop-opacity": "0.369639"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.46875",
-                        "stop-color": "#FFF500",
-                        "stop-opacity": "0.301625"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#FCE156",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint1_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(719.5 526.5) rotate(90) scale(526.5)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.0001",
-                        "stop-color": "#DAF438",
-                        "stop-opacity": "0.567708"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.348958",
-                        "stop-color": "#FCE300",
-                        "stop-opacity": "0.369639"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.46875",
-                        "stop-color": "#FFF500",
-                        "stop-opacity": "0.301625"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#FCE156",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint2_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(724 535.5) rotate(90) scale(149.5 180)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.0001",
-                        "stop-color": "#DAF438",
-                        "stop-opacity": "0.567708"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.348958",
-                        "stop-color": "#FCE300",
-                        "stop-opacity": "0.369639"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.46875",
-                        "stop-color": "#FFF500",
-                        "stop-opacity": "0.301625"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#FCE156",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint3_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(720.5 568.5) rotate(90) scale(41.4999 758.5)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFF851" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.505208",
-                        "stop-color": "#E9FF2B",
-                        "stop-opacity": "0.270833"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#DBFF00",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint4_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(714 560.5) rotate(90) scale(17.5 776)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFF851" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.505208",
-                        "stop-color": "#E9FF2B",
-                        "stop-opacity": "0.270833"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#DBFF00",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint5_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(720.5 568.5) rotate(90) scale(41.4999 758.5)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFF851" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.505208",
-                        "stop-color": "#E9FF2B",
-                        "stop-opacity": "0.270833"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#DBFF00",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint6_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(720.185 561.243) rotate(90) scale(32.842 717.5)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "white" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.505208",
-                        "stop-color": "white",
-                        "stop-opacity": "0.270833"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "white",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint7_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(733 560.265) rotate(90) scale(33.2647 341)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "white" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.53125",
-                        "stop-color": "white",
-                        "stop-opacity": "0.46875"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#F9E95F",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint8_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(721 564.088) rotate(90) scale(24.0882 341)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "white" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.53125",
-                        "stop-color": "white",
-                        "stop-opacity": "0.1788"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#FFE600",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint9_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(723.5 567.5) rotate(90) scale(52.5 720.5)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "#FFD600" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.0001",
-                        "stop-color": "#DAF438",
-                        "stop-opacity": "0.567708"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.348958",
-                        "stop-color": "#FCE300",
-                        "stop-opacity": "0.369639"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.46875",
-                        "stop-color": "#FFF500",
-                        "stop-opacity": "0.301625"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "#FCE156",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "radialGradient",
-                  {
-                    attrs: {
-                      id: "paint10_radial",
-                      cx: "0",
-                      cy: "0",
-                      r: "1",
-                      gradientUnits: "userSpaceOnUse",
-                      gradientTransform:
-                        "translate(724 566.5) rotate(90) scale(26.5 335)"
-                    }
-                  },
-                  [
-                    _c("stop", { attrs: { "stop-color": "white" } }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "0.682292",
-                        "stop-color": "white",
-                        "stop-opacity": "0"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("stop", {
-                      attrs: {
-                        offset: "1",
-                        "stop-color": "white",
-                        "stop-opacity": "0"
-                      }
-                    })
-                  ],
-                  1
-                )
-              ],
-              1
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "58%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "3rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v("DAYS")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "hours-container w-1/3" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "360",
+                to: "0",
+                dur: "60s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "hours-container w-1/3" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "45%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "6rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.hours))]
+            ),
+            _vm._v(" "),
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "58%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "3rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v("Hours")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "minutes-container w-1/4" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "360",
+                to: "0",
+                dur: "30s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "minutes-container w-1/4" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "45%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "6rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.minutes))]
+            ),
+            _vm._v(" "),
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "58%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "3rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v("Minutes")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "seconds-container w-1/5" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "0",
+                to: "360",
+                dur: "3s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "seconds-container w-1/5" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "50%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "7rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.seconds))]
             )
           ]
         )
       ])
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -24441,81 +20920,192 @@ var render = function() {
       "div",
       {
         staticClass:
-          "navigation w-full flex md:justify-between justify-around p-1 md:px-10  "
+          "navigation w-full flex flex-col lg:flex-row lg:justify-between justify-around p-1 lg:px-10 lg:text-base text-sm "
       },
       [
-        _c("div", { staticClass: "flex justify-start" }, [
-          _c(
-            "a",
-            {
-              staticClass:
-                "nav-button md:text-sm text-xs self-center pt-6 pb-2 px-3 m-1 ",
-              class: { active: _vm.isHomeActive },
-              attrs: { href: "#" },
-              on: {
-                click: function($event) {
-                  _vm.active = "home"
+        _c(
+          "div",
+          { staticClass: "lg:hidden p-2 flex justify-between p-4 text-base" },
+          [
+            _c("p", { staticClass: "inline-block" }, [
+              _vm._v("Chakravyuh 2020")
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.showMenu($event)
+                  }
                 }
-              }
-            },
-            [_vm._v("Home")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "nav-button md:text-sm text-xs self-center pt-6 pb-2 px-3 m-1",
-              class: { active: _vm.isAboutActive },
-              attrs: { href: "#about" },
-              on: {
-                click: function($event) {
-                  _vm.active = "about"
-                }
-              }
-            },
-            [_vm._v("About")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "nav-button md:text-sm text-xs self-center pt-6 pb-2 px-3 m-1",
-              class: { active: _vm.isRulesActive },
-              attrs: { href: "#" },
-              on: {
-                click: function($event) {
-                  _vm.active = "rules"
-                }
-              }
-            },
-            [_vm._v("Rules")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "nav-button md:text-sm text-xs self-center pt-6 pb-2 px-3 m-1",
-              class: { active: _vm.isLeaderbordActive },
-              attrs: { href: "#" },
-              on: {
-                click: function($event) {
-                  _vm.active = "leaderboard"
-                }
-              }
-            },
-            [_vm._v("Leaderboard")]
-          )
-        ]),
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      fill: "#f1f1f1",
+                      width: "1.5rem",
+                      version: "1.1",
+                      xmlns: "http://www.w3.org/2000/svg",
+                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                      viewBox: "0 0 56 56",
+                      "xml:space": "preserve"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M8,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,40,8,40z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M28,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,40,28,40z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M48,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S52.411,40,48,40z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M8,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,20,8,20z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M28,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,20,28,20z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M48,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S52.411,20,48,20z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M8,0C3.589,0,0,3.589,0,8s3.589,8,8,8s8-3.589,8-8S12.411,0,8,0z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M28,0c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,0,28,0z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M48,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S43.589,16,48,16z"
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "flex md:inline-block hidden mt-6" }, [
+        _vm.mdScreen || _vm.lgScreen
+          ? _c(
+              "div",
+              {
+                staticClass:
+                  "flex lg:flex-row flex-col lg:inline-block lg:bg-transparent bg-olive"
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1 ",
+                    class: { active: _vm.isHomeActive },
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        _vm.active = "home"
+                      }
+                    }
+                  },
+                  [_vm._v("Home")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1",
+                    class: { active: _vm.isAboutActive },
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        _vm.active = "about"
+                      }
+                    }
+                  },
+                  [_vm._v("About")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1",
+                    class: { active: _vm.isRulesActive },
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        _vm.active = "rules"
+                      }
+                    }
+                  },
+                  [_vm._v("Rules")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1",
+                    class: { active: _vm.isLeaderbordActive },
+                    attrs: { href: "#" },
+                    on: {
+                      click: function($event) {
+                        _vm.active = "leaderboard"
+                      }
+                    }
+                  },
+                  [_vm._v("Leaderboard")]
+                )
+              ]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex lg:inline-block hidden mt-6" }, [
           _c(
             "a",
             {
-              staticClass:
-                "md:text-sm text-xs self-center p-2 px-3 m-1 nav-logins",
+              staticClass: "self-center p-3 m-1 nav-logins",
               attrs: { href: "#" }
             },
             [
@@ -24524,30 +21114,56 @@ var render = function() {
                 {
                   staticClass: "inline",
                   attrs: {
-                    width: "0.5rem",
+                    height: "1.2rem",
+                    version: "1.1",
                     xmlns: "http://www.w3.org/2000/svg",
-                    viewBox: "0 0 320 512"
+                    "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                    viewBox: "0 0 512 512",
+                    "xml:space": "preserve"
                   }
                 },
                 [
                   _c("path", {
+                    staticStyle: { fill: "#FBBB00" },
                     attrs: {
-                      fill: "white",
                       d:
-                        "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        "M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256\n        \tc0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456\n        \tC103.821,274.792,107.225,292.797,113.47,309.408z"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("path", {
+                    staticStyle: { fill: "#518EF8" },
+                    attrs: {
+                      d:
+                        "M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451\n        \tc-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535\n        \tc29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("path", {
+                    staticStyle: { fill: "#28B446" },
+                    attrs: {
+                      d:
+                        "M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512\n        \tc-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771\n        \tc28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("path", {
+                    staticStyle: { fill: "#F14336" },
+                    attrs: {
+                      d:
+                        "M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012\n        \tc-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0\n        \tC318.115,0,375.068,22.126,419.404,58.936z"
                     }
                   })
                 ]
               ),
-              _vm._v("\n        Login")
+              _vm._v(" Login\n      ")
             ]
           ),
           _vm._v(" "),
           _c(
             "a",
             {
-              staticClass:
-                "md:text-sm text-xs self-center p-2 px-3 m-1 nav-logins",
+              staticClass: "self-center p-3 m-1 nav-logins",
               attrs: { href: "#" }
             },
             [
@@ -24556,22 +21172,25 @@ var render = function() {
                 {
                   staticClass: "inline",
                   attrs: {
-                    width: "0.75rem",
+                    height: "1.2rem",
+                    version: "1.1",
                     xmlns: "http://www.w3.org/2000/svg",
-                    viewBox: "0 0 488 512"
+                    "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                    viewBox: "0 0 512 512",
+                    "xml:space": "preserve"
                   }
                 },
                 [
                   _c("path", {
                     attrs: {
-                      fill: "white",
+                      fill: "blue",
                       d:
-                        "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                        "M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"
                     }
                   })
                 ]
               ),
-              _vm._v("\n        Login")
+              _vm._v(" Login\n      ")
             ]
           )
         ])
@@ -24581,13 +21200,14 @@ var render = function() {
     _c(
       "div",
       {
-        staticClass: "md:hidden inline-block flex justify-center nav-login-sm"
+        staticClass:
+          "lg:hidden flex justify-center inline-block nav-login-sm text-sm"
       },
       [
         _c(
           "a",
           {
-            staticClass: "text-2xs self-center p-2 px-3 m-1 nav-logins",
+            staticClass: "self-center p-2 m-1 border border-yellow-500 rounded",
             attrs: { href: "#" }
           },
           [
@@ -24596,29 +21216,56 @@ var render = function() {
               {
                 staticClass: "inline",
                 attrs: {
-                  width: "0.5rem",
+                  height: "1rem",
+                  version: "1.1",
                   xmlns: "http://www.w3.org/2000/svg",
-                  viewBox: "0 0 320 512"
+                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  viewBox: "0 0 512 512",
+                  "xml:space": "preserve"
                 }
               },
               [
                 _c("path", {
+                  staticStyle: { fill: "#FBBB00" },
                   attrs: {
-                    fill: "white",
                     d:
-                      "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      "M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256\n        c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456\n        C103.821,274.792,107.225,292.797,113.47,309.408z"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  staticStyle: { fill: "#518EF8" },
+                  attrs: {
+                    d:
+                      "M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451\n        c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535\n        c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  staticStyle: { fill: "#28B446" },
+                  attrs: {
+                    d:
+                      "M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512\n        c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771\n        c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  staticStyle: { fill: "#F14336" },
+                  attrs: {
+                    d:
+                      "M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012\n        c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0\n        C318.115,0,375.068,22.126,419.404,58.936z"
                   }
                 })
               ]
             ),
-            _vm._v("\n      Login")
+            _vm._v(" Login\n    ")
           ]
         ),
         _vm._v(" "),
         _c(
           "a",
           {
-            staticClass: "text-2xs self-center p-2 px-3 m-1 nav-logins",
+            staticClass: "self-center p-2 m-1 border border-yellow-500 rounded",
             attrs: { href: "#" }
           },
           [
@@ -24627,22 +21274,25 @@ var render = function() {
               {
                 staticClass: "inline",
                 attrs: {
-                  width: "0.75rem",
+                  height: "1rem",
+                  version: "1.1",
                   xmlns: "http://www.w3.org/2000/svg",
-                  viewBox: "0 0 488 512"
+                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                  viewBox: "0 0 512 512",
+                  "xml:space": "preserve"
                 }
               },
               [
                 _c("path", {
                   attrs: {
-                    fill: "white",
+                    fill: "blue",
                     d:
-                      "M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                      "M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"
                   }
                 })
               ]
             ),
-            _vm._v("\n      Login")
+            _vm._v(" Login\n    ")
           ]
         )
       ]
@@ -36801,17 +33451,9 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.component('timer', __webpack_require__(/*! ./components/countdownTimer.vue */ "./resources/js/components/countdownTimer.vue")["default"]);
 Vue.component('top-navigation-bar', __webpack_require__(/*! ./components/topNavigationBar.vue */ "./resources/js/components/topNavigationBar.vue")["default"]);
-Vue.component('tiles-background', __webpack_require__(/*! ./components/tilesBackground.vue */ "./resources/js/components/tilesBackground.vue")["default"]);
-Vue.component('maze', __webpack_require__(/*! ./components/maze.vue */ "./resources/js/components/maze.vue")["default"]);
-Vue.component('about', __webpack_require__(/*! ./components/about.vue */ "./resources/js/components/about.vue")["default"]); // library.add(faUserSecret)
-// Vue.component('font-awesome-icon', FontAwesomeIcon)
-
 var app = new Vue({
   el: '#app'
 });
@@ -36847,93 +33489,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
-
-/***/ }),
-
-/***/ "./resources/js/components/about.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/components/about.vue ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _about_vue_vue_type_template_id_0b0aedd2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.vue?vue&type=template&id=0b0aedd2&scoped=true& */ "./resources/js/components/about.vue?vue&type=template&id=0b0aedd2&scoped=true&");
-/* harmony import */ var _about_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.vue?vue&type=script&lang=js& */ "./resources/js/components/about.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true& */ "./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _about_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _about_vue_vue_type_template_id_0b0aedd2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _about_vue_vue_type_template_id_0b0aedd2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "0b0aedd2",
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/about.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/about.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/components/about.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./about.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true&":
-/*!****************************************************************************************************!*\
-  !*** ./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true& ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=style&index=0&id=0b0aedd2&lang=css&scoped=true&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_0b0aedd2_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
-/***/ "./resources/js/components/about.vue?vue&type=template&id=0b0aedd2&scoped=true&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/components/about.vue?vue&type=template&id=0b0aedd2&scoped=true& ***!
-  \**************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_template_id_0b0aedd2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./about.vue?vue&type=template&id=0b0aedd2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/about.vue?vue&type=template&id=0b0aedd2&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_template_id_0b0aedd2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_template_id_0b0aedd2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
 
 /***/ }),
 
@@ -37019,162 +33574,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_countdownTimer_vue_vue_type_template_id_25dc86c2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_countdownTimer_vue_vue_type_template_id_25dc86c2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/maze.vue":
-/*!******************************************!*\
-  !*** ./resources/js/components/maze.vue ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _maze_vue_vue_type_template_id_886fb9ec_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./maze.vue?vue&type=template&id=886fb9ec&scoped=true& */ "./resources/js/components/maze.vue?vue&type=template&id=886fb9ec&scoped=true&");
-/* harmony import */ var _maze_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./maze.vue?vue&type=script&lang=js& */ "./resources/js/components/maze.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _maze_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _maze_vue_vue_type_template_id_886fb9ec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _maze_vue_vue_type_template_id_886fb9ec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "886fb9ec",
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/maze.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/maze.vue?vue&type=script&lang=js&":
-/*!*******************************************************************!*\
-  !*** ./resources/js/components/maze.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_maze_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./maze.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/maze.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_maze_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/maze.vue?vue&type=template&id=886fb9ec&scoped=true&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/components/maze.vue?vue&type=template&id=886fb9ec&scoped=true& ***!
-  \*************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_maze_vue_vue_type_template_id_886fb9ec_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./maze.vue?vue&type=template&id=886fb9ec&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/maze.vue?vue&type=template&id=886fb9ec&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_maze_vue_vue_type_template_id_886fb9ec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_maze_vue_vue_type_template_id_886fb9ec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/tilesBackground.vue":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/tilesBackground.vue ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& */ "./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&");
-/* harmony import */ var _tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tilesBackground.vue?vue&type=script&lang=js& */ "./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& */ "./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "9a23d4d0",
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/tilesBackground.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/tilesBackground.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&":
-/*!**************************************************************************************************************!*\
-  !*** ./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=style&index=0&id=9a23d4d0&lang=css&scoped=true&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_style_index_0_id_9a23d4d0_lang_css_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
-/***/ "./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&":
-/*!************************************************************************************************!*\
-  !*** ./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& ***!
-  \************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tilesBackground.vue?vue&type=template&id=9a23d4d0&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_tilesBackground_vue_vue_type_template_id_9a23d4d0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

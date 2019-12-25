@@ -13,7 +13,7 @@
   <div class="" id="app">
 
 
-    <!-- <header class="container mx-auto flex justify-between py-2">
+    <header class="container mx-auto flex justify-between py-2">
       <div class="flex items-center">
         @if(Auth::check())
         <img src="{{ Auth::user()->avatar_url }}" alt="{{ Auth::user()->name }}" class="rounded-full mr-3 h-8">
@@ -26,19 +26,18 @@
         </form>
         @endif
       </div>
-    </header> -->
+    </header>
 
-    <top-navigation-bar class="w-full"> </top-navigation-bar>
+    <top-navigation-bar class="w-full"> </top-navigation-bar> 
 
     @yield('main')
   </div>
 
-<!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/fb20b3c2cd.js" crossorigin="anonymous"></script>
 <!-- googlefont -->
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
 <!-- local js -->
+
   <script src="{{asset('js/app.js')}}"></script>
 
 </body>

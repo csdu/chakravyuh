@@ -1,7 +1,7 @@
 <template>
 
 
-      <div class="timer p-2 absolute md:w-1/5 w-1/2">
+      <div class="timer p-2 absolute lg:w-1/5 md:w-1/4 w-1/2">
 
         <div class="days-container absolute-center w-1/2 ">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,10 +155,10 @@ export default{
 
   .timer{
     position: absolute;
-    top:85%;
+    top:87%;
     left:50%;
     transform: translateX(-50%);
-    font-weight : 500;
+    font-weight : 400;
   }
   .days-container{
 
