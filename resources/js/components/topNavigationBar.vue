@@ -5,14 +5,14 @@
     <div class="navigation w-full flex flex-row md:justify-between justify-center p-1 lg:px-10 md:px-5 lg:text-base sm:text-sm text-xs">
 
       <div class="flex md:w-auto w-full justify-around lg:mt-3"  >
-        <a href="#" class="nav-button self-center p-2 px-3 m-1" :class="{active:isHomeActive}" @click="active='home'">Home</a>
-        <a href="#" class="nav-button self-center p-2 px-3 m-1" :class="{active:isAboutActive}" @click="active='about'">About</a>
-        <a href="#" class="nav-button self-center p-2 px-3 m-1" :class="{active:isRulesActive}" @click="active='rules'">Rules</a>
-        <a href="#" class="nav-button self-center p-2 px-3 m-1" :class="{active:isLeaderbordActive}" @click="active='leaderboard'">Leaderboard</a>
+        <a href="#" class="nav-button self-center p-2 px-4 m-1" :class="{active:isHomeActive}" @click="active='home'">Home</a>
+        <a href="#" class="nav-button self-center p-2 px-4 m-1" :class="{active:isAboutActive}" @click="active='about'">About</a>
+        <a href="#" class="nav-button self-center p-2 px-4 m-1" :class="{active:isRulesActive}" @click="active='rules'">Rules</a>
+        <a href="#" class="nav-button self-center p-2 px-4 m-1" :class="{active:isLeaderbordActive}" @click="active='leaderboard'">Leaderboard</a>
       </div>
 
       <div class="md:flex hidden lg:mt-3">
-        <a href="#" class="nav-logins self-center p-2 px-3 m-1">
+        <a href="#" class="nav-logins self-center p-2 px-4 m-1">
           <svg class="inline" height="1.2rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
           <path style="fill:#FBBB00;" d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
           	c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
@@ -28,7 +28,7 @@
           	C318.115,0,375.068,22.126,419.404,58.936z"/>
           </svg> Login
         </a>
-        <a href="#" class="nav-logins self-center p-2 px-3 m-1">
+        <a href="#" class="nav-logins self-center p-2 px-4 m-1">
           <svg class="inline" height="1.2rem" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
           		<path fill="blue" d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
           </svg> Login

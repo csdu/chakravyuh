@@ -8,9 +8,11 @@
     <title>Chakravyuh</title>
 </head>
 
-<body class="body-all text-white text-center h-screen overflow-y-hidden">
+<body class="bg-fixed bg-center bg-no-repeat bg-cover h-screen overflow-y-hidden"
+style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconsolata', monospace;
+  -webkit-font-smoothing: antialiased; ">
 
-  <div class="" id="app">
+  <div class="text-white text-center" id="app">
 
     <header class="container mx-auto flex justify-between py-2">
       <div class="flex items-center">

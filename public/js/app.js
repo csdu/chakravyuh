@@ -20901,7 +20901,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "nav-button self-center p-2 px-3 m-1",
+                staticClass: "nav-button self-center p-2 px-4 m-1",
                 class: { active: _vm.isHomeActive },
                 attrs: { href: "#" },
                 on: {
@@ -20916,7 +20916,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "nav-button self-center p-2 px-3 m-1",
+                staticClass: "nav-button self-center p-2 px-4 m-1",
                 class: { active: _vm.isAboutActive },
                 attrs: { href: "#" },
                 on: {
@@ -20931,7 +20931,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "nav-button self-center p-2 px-3 m-1",
+                staticClass: "nav-button self-center p-2 px-4 m-1",
                 class: { active: _vm.isRulesActive },
                 attrs: { href: "#" },
                 on: {
@@ -20946,7 +20946,7 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "nav-button self-center p-2 px-3 m-1",
+                staticClass: "nav-button self-center p-2 px-4 m-1",
                 class: { active: _vm.isLeaderbordActive },
                 attrs: { href: "#" },
                 on: {
@@ -20964,7 +20964,7 @@ var render = function() {
           _c(
             "a",
             {
-              staticClass: "nav-logins self-center p-2 px-3 m-1",
+              staticClass: "nav-logins self-center p-2 px-4 m-1",
               attrs: { href: "#" }
             },
             [
@@ -21022,7 +21022,7 @@ var render = function() {
           _c(
             "a",
             {
-              staticClass: "nav-logins self-center p-2 px-3 m-1",
+              staticClass: "nav-logins self-center p-2 px-4 m-1",
               attrs: { href: "#" }
             },
             [
