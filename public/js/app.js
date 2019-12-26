@@ -2058,31 +2058,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      active: "home",
-      mdScreen: false
+      active: "home"
     };
   },
   computed: {
@@ -2097,14 +2076,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     isLeaderbordActive: function isLeaderbordActive() {
       return this.active == 'leaderboard';
-    },
-    lgScreen: function lgScreen() {
-      if (window.innerWidth > 768) return true;else return false;
-    }
-  },
-  methods: {
-    showMenu: function showMenu(event) {
-      if (this.mdScreen == false) this.mdScreen = true;else this.mdScreen = false;
     }
   }
 });
@@ -20920,192 +20891,80 @@ var render = function() {
       "div",
       {
         staticClass:
-          "navigation w-full flex flex-col lg:flex-row lg:justify-between justify-around p-1 lg:px-10 lg:text-base text-sm "
+          "navigation w-full flex flex-row md:justify-between justify-center p-1 lg:px-10 md:px-5 lg:text-base sm:text-sm text-xs"
       },
       [
         _c(
           "div",
-          { staticClass: "lg:hidden p-2 flex justify-between p-4 text-base" },
+          { staticClass: "flex md:w-auto w-full justify-around lg:mt-3" },
           [
-            _c("p", { staticClass: "inline-block" }, [
-              _vm._v("Chakravyuh 2020")
-            ]),
+            _c(
+              "a",
+              {
+                staticClass: "nav-button self-center p-2 px-3 m-1",
+                class: { active: _vm.isHomeActive },
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    _vm.active = "home"
+                  }
+                }
+              },
+              [_vm._v("Home")]
+            ),
             _vm._v(" "),
             _c(
               "a",
               {
+                staticClass: "nav-button self-center p-2 px-3 m-1",
+                class: { active: _vm.isAboutActive },
                 attrs: { href: "#" },
                 on: {
                   click: function($event) {
-                    $event.preventDefault()
-                    return _vm.showMenu($event)
+                    _vm.active = "about"
                   }
                 }
               },
-              [
-                _c(
-                  "svg",
-                  {
-                    attrs: {
-                      fill: "#f1f1f1",
-                      width: "1.5rem",
-                      version: "1.1",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                      viewBox: "0 0 56 56",
-                      "xml:space": "preserve"
-                    }
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M8,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,40,8,40z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M28,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,40,28,40z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M48,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S52.411,40,48,40z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M8,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,20,8,20z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M28,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,20,28,20z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M48,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S52.411,20,48,20z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M8,0C3.589,0,0,3.589,0,8s3.589,8,8,8s8-3.589,8-8S12.411,0,8,0z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M28,0c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,0,28,0z"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M48,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S43.589,16,48,16z"
-                      }
-                    })
-                  ]
-                )
-              ]
+              [_vm._v("About")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nav-button self-center p-2 px-3 m-1",
+                class: { active: _vm.isRulesActive },
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    _vm.active = "rules"
+                  }
+                }
+              },
+              [_vm._v("Rules")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "nav-button self-center p-2 px-3 m-1",
+                class: { active: _vm.isLeaderbordActive },
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    _vm.active = "leaderboard"
+                  }
+                }
+              },
+              [_vm._v("Leaderboard")]
             )
           ]
         ),
         _vm._v(" "),
-        _vm.mdScreen || _vm.lgScreen
-          ? _c(
-              "div",
-              {
-                staticClass:
-                  "flex lg:flex-row flex-col lg:inline-block lg:bg-transparent bg-olive"
-              },
-              [
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1 ",
-                    class: { active: _vm.isHomeActive },
-                    attrs: { href: "#" },
-                    on: {
-                      click: function($event) {
-                        _vm.active = "home"
-                      }
-                    }
-                  },
-                  [_vm._v("Home")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1",
-                    class: { active: _vm.isAboutActive },
-                    attrs: { href: "#" },
-                    on: {
-                      click: function($event) {
-                        _vm.active = "about"
-                      }
-                    }
-                  },
-                  [_vm._v("About")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1",
-                    class: { active: _vm.isRulesActive },
-                    attrs: { href: "#" },
-                    on: {
-                      click: function($event) {
-                        _vm.active = "rules"
-                      }
-                    }
-                  },
-                  [_vm._v("Rules")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "nav-button lg:inline-block block self-center pt-6 pb-2 px-3 m-1",
-                    class: { active: _vm.isLeaderbordActive },
-                    attrs: { href: "#" },
-                    on: {
-                      click: function($event) {
-                        _vm.active = "leaderboard"
-                      }
-                    }
-                  },
-                  [_vm._v("Leaderboard")]
-                )
-              ]
-            )
-          : _vm._e(),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex lg:inline-block hidden mt-6" }, [
+        _c("div", { staticClass: "md:flex hidden lg:mt-3" }, [
           _c(
             "a",
             {
-              staticClass: "self-center p-3 m-1 nav-logins",
+              staticClass: "nav-logins self-center p-2 px-3 m-1",
               attrs: { href: "#" }
             },
             [
@@ -21163,7 +21022,7 @@ var render = function() {
           _c(
             "a",
             {
-              staticClass: "self-center p-3 m-1 nav-logins",
+              staticClass: "nav-logins self-center p-2 px-3 m-1",
               attrs: { href: "#" }
             },
             [
@@ -21201,7 +21060,7 @@ var render = function() {
       "div",
       {
         staticClass:
-          "lg:hidden flex justify-center inline-block nav-login-sm text-sm"
+          "md:hidden flex justify-center inline-block nav-login-sm text-sm"
       },
       [
         _c(

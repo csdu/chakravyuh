@@ -8,10 +8,9 @@
     <title>Chakravyuh</title>
 </head>
 
-<body class="body-all text-white text-center h-screen">
+<body class="body-all text-white text-center h-screen overflow-y-hidden">
 
   <div class="" id="app">
-
 
     <header class="container mx-auto flex justify-between py-2">
       <div class="flex items-center">
@@ -28,7 +27,7 @@
       </div>
     </header>
 
-    <top-navigation-bar class="w-full"> </top-navigation-bar> 
+    <top-navigation-bar class="w-full"> </top-navigation-bar>
 
     @yield('main')
   </div>
