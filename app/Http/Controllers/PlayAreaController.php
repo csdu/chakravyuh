@@ -2,35 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use Auth; 
 use App\Question;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Auth;
 
 class PlayAreaController extends Controller
 {
     public function show()
     {
-        $user = Auth::user();
-        $question = Question::where('level', $user->current_level)->first();
+        $question = Question::find(Auth::user()->level);
+        abort_unless($question, 404, 'Question has not been uploaded yet');
+
         return view('playarea', compact('question'));
     }
 
     public function postAnswer(Request $request)
     {
-        $user_answer = strtolower($request->answer);
+        $question = Question::find(Auth::user()->level);
 
-        $user = Auth::user();
-        $question = Question::where('level', $user->current_level)->first();
-        $correct_answer = strtolower($question->answer);
-        
-        if($correct_answer == $user_answer){
-            $user->increment('current_level');
+        if ($question->isCorrectAnswer($request->answer)) {
+            Auth::user()->incrementLevel();
             $request->session()->flash('status', 'correct answer');
-        }
-        else{
+        } else {
             $request->session()->flash('status', 'Incorrect answer');
         }
-        return Redirect('playarea');
+
+        return redirect('playarea');
     }
 }

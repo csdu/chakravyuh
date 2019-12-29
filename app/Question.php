@@ -2,12 +2,23 @@
 
 namespace App;
 
-use App\QuestionAttachment;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Question extends Model
 {
-    public function attachment(){
+    public function attachment()
+    {
         return $this->hasOne(QuestionAttachment::class);
+    }
+
+    public function isCurrentLevel()
+    {
+        return $this->level == Auth::user()->level;
+    }
+
+    public function isCorrectAnswer($answer)
+    {
+        return $this->answer == strtolower($answer);
     }
 }
