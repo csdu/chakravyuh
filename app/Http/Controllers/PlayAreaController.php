@@ -11,8 +11,7 @@ class PlayAreaController extends Controller
     public function show()
     {
         $question = Question::find(Auth::user()->level);
-
-        abort_unless($question, 404, 'Question is not uploaded yet');
+        abort_unless($question, 404, 'Question has not been uploaded yet');
 
         return view('playarea', compact('question'));
     }
