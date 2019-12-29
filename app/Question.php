@@ -12,11 +12,6 @@ class Question extends Model
         return $this->hasOne(QuestionAttachment::class);
     }
 
-    public function getLevelAttribute()
-    {
-        return $this->id;
-    }
-
     public function isCurrentLevel()
     {
         return $this->level == Auth::user()->level;
