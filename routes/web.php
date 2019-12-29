@@ -11,6 +11,7 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WelcomeController@show')->middleware('guest');
 Route::get('/facebook/login', 'Auth\FacebookLoginController@redirectToProvider')->middleware('guest');
@@ -20,7 +21,7 @@ Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallbac
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 
 Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
-Route::post('/playarea', 'PlayAreaController@postAnswer')->middleware('auth');
+Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
 
 Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
 

@@ -29,7 +29,7 @@
         </p>
     @endif
 
-    <form action="/playarea" method="post">
+    <form action="/playarea/{{ $question->id }}/submit" method="post">
         <br>
         @csrf
         <input type="text" name="answer" placeholder="Enter answer" style="color: black">
