@@ -10,16 +10,14 @@ class PlayAreaController extends Controller
 {
     public function show()
     {
-        $question = Question::find(Auth::user()->level);
+        $question = Question::where('level', Auth::user()->level)->first();
         abort_unless($question, 404, 'Question has not been uploaded yet');
 
         return view('playarea', compact('question'));
     }
 
-    public function postAnswer(Request $request)
+    public function postAnswer(Question $question, Request $request)
     {
-        $question = Question::find(Auth::user()->level);
-
         if ($question->isCorrectAnswer($request->answer)) {
             Auth::user()->incrementLevel();
             $request->session()->flash('status', 'correct answer');
