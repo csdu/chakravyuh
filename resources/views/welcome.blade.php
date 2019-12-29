@@ -35,278 +35,48 @@
     <div class=" md:w-full w-25 fixed horizontal-center bottom-0">
       <svg  viewBox="0 0 1440 264" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-        @for ($i=0 ; $i<18 ; $i++)
-          <path id="line1" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line1" attributeName="d" values="
-            M1439.06 252.259H0V251.259H1439.06V252.259Z;
-            M1439.06 222.125H0V221.125H1439.06V222.125Z;
-            M1439.06 193.729H0V192.729H1439.06V193.729Z;
-            M1439.06 167.073H0V166.073H1439.06V167.073Z;
-            M1439.06 143.89H0V142.89H1439.06V143.89Z;
-            M1440 123.606H0.941772V122.606H1440V123.606Z;
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="18s" repeatCount="indefinite" begin="{{$i}}" />
-          </path>
-        @endfor
+        @foreach( range(0, 720, 50) as $index )
+        <line x1="{{ 720 - $index }}" y1="0" x2="{{ 720 - $index*4}}" y2="264" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
+        </line>
+        @endforeach
+        @foreach( range(0, 720, 50) as $index )
+        <line x1="{{ 720 + $index }}" y1="0" x2="{{ 720 + $index*4}}" y2="264" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
+        </line>
+        @endforeach
 
-          <path id="line19" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line19" attributeName="d" values="
-            M1439.06 222.125H0V221.125H1439.06V222.125Z;
-            M1439.06 193.729H0V192.729H1439.06V193.729Z;
-            M1439.06 167.073H0V166.073H1439.06V167.073Z;
-            M1439.06 143.89H0V142.89H1439.06V143.89Z;
-            M1440 123.606H0.941772V122.606H1440V123.606Z;
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="17s" repeatCount="1"/>
-          </path>
-          <path id="line20" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line20" attributeName="d" values="
-            M1439.06 193.729H0V192.729H1439.06V193.729Z;
-            M1439.06 167.073H0V166.073H1439.06V167.073Z;
-            M1439.06 143.89H0V142.89H1439.06V143.89Z;
-            M1440 123.606H0.941772V122.606H1440V123.606Z;
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="16s" repeatCount="1"/>
-          </path>
-          <path id="line21" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line21" attributeName="d" values="
-            M1439.06 167.073H0V166.073H1439.06V167.073Z;
-            M1439.06 143.89H0V142.89H1439.06V143.89Z;
-            M1440 123.606H0.941772V122.606H1440V123.606Z;
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="15s" repeatCount="1"/>
-          </path>
-          <path id="line22" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line22" attributeName="d" values="
-            M1439.06 143.89H0V142.89H1439.06V143.89Z;
-            M1440 123.606H0.941772V122.606H1440V123.606Z;
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="14s" repeatCount="1"/>
-          </path>
-          <path id="line23" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line23" attributeName="d" values="
-            M1440 123.606H0.941772V122.606H1440V123.606Z;
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="13s" repeatCount="1"/>
-          </path>
-          <path id="line24" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line24" attributeName="d" values="
-            M1439.06 104.484H0V103.484H1439.06V104.484Z;
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="12s" repeatCount="1"/>
-          </path>
-          <path id="line25" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line25" attributeName="d" values="
-            M1439.06 85.9404H0V84.9404H1439.06V85.9404Z;
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="11s" repeatCount="1"/>
-          </path>
-          <path id="line26" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line26" attributeName="d" values="
-            M1439.06 69.7129H0V68.7129H1439.06V69.7129Z;
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="10s" repeatCount="1"/>
-          </path>
-          <path id="line27" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1">
-            <animate id="line27" attributeName="d" values="
-            M1439.06 55.2236H0V54.2236H1439.06V55.2236Z;
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="9s" repeatCount="1"/>
-          </path>
-          <path id="line28" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line28" attributeName="d" values="
-            M1439.06 43.6348H0V42.6348H1439.06V43.6348Z;
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="8s" repeatCount="1"/>
-          </path>
-          <path id="line29" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line29" attributeName="d" values="
-            M1440 33.7822H0.941772V32.7822H1440V33.7822Z;
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="7s" repeatCount="1"/>
-          </path>
-          <path id="line30" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line30" attributeName="d" values="
-            M1439.06 26.249H0V25.249H1439.06V26.249Z;
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="6s" repeatCount="1"/>
-          </path>
-          <path id="line31" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line31" attributeName="d" values="
-            M1439.06 19.2959H0V18.2959H1439.06V19.2959Z;
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="5s" repeatCount="1"/>
-          </path>
-          <path id="line32" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line32" attributeName="d" values="
-            M1439.06 13.499H0V12.499H1439.06V13.499Z;
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="4s" repeatCount="1"/>
-          </path>
-          <path id="line33" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line33" attributeName="d" values="
-            M1439.06 8.28418H0V7.28418H1439.06V8.28418Z;
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="3s" repeatCount="1"/>
-          </path>
-          <path id="line34" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
-            <animate id="line34" attributeName="d" values="
-            M1439.06 4.22754H0V3.22754H1439.06V4.22754Z;
-            M1439.06 1.33008H0V0.330078H1439.06V1.33008Z;"
-            dur="2s" repeatCount="1"/>
-          </path>
+        @foreach (range(1,18,1) as $index)
+        <line x1="0" y1="0" x2="1440" y2="0" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
+            <animate dur="18s"
+                repeatCount="indefinite"
+                begin="{{$index}}s"
+                attributeName="y1"
+                values="{{ implode('; ', array_map(function($i){return $i*$i;}, range(18, 0, -1))) }}">
+            </animate>
+            <animate dur="18s"
+                repeatCount="indefinite"
+                begin="{{$index}}s"
+                attributeName="y2"
+                values="{{ implode('; ', array_map(function($i){return $i*$i;}, range(18, 0, -1))) }}">
+            </animate>
+        </line>
+        @endforeach
 
-
-          <line y1="-1.5" x2="284.708" y2="-1.5" transform="matrix(0.387027 -0.922068 0.987605 0.156957 581.086 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="331.423" y2="-1.5" transform="matrix(0.608115 -0.793849 0.960417 0.278566 452.06 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="383.32" y2="-1.5" transform="matrix(0.727252 -0.686371 0.928097 0.372339 331.511 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="442.325" y2="-1.5" transform="matrix(0.804833 -0.593502 0.889588 0.456764 207.194 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="503.642" y2="-1.5" transform="matrix(0.852704 -0.522395 0.850647 0.525737 84.7614 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="530.559" y2="-1.5" transform="matrix(0.883997 -0.467493 0.813085 0.582145 1.88373 251.367)" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
-          <line y1="-1.5" x2="467.37" y2="-1.5" transform="matrix(0.90679 -0.421583 0.775388 0.631485 1.88373 200.368)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="411.86" y2="-1.5" transform="matrix(0.930679 -0.365838 0.720223 0.693742 1.88373 154.01)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="360.417" y2="-1.5" transform="matrix(0.951154 -0.308717 0.650823 0.759229 1.88373 114.6)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="307.865" y2="-1.5" transform="matrix(0.966676 -0.256002 0.573147 0.819453 1.88373 82.1475)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="261.657" y2="-1.5" transform="matrix(0.979021 -0.203761 0.481703 0.876335 1.88373 56.6494)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="151.497" y2="-1.5" transform="matrix(0.994652 -0.103282 0.264477 0.964392 6.10352e-05 18.9805)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="106.55" y2="-1.5" transform="matrix(0.998801 -0.04895 0.128365 0.991727 6.10352e-05 8.54883)" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
-          <line y1="-1.5" x2="216.15" y2="-1.5" transform="matrix(0.989068 -0.14746 0.366377 0.930467 6.10352e-05 35.208)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="284.708" y2="-1.5" transform="matrix(-0.387027 -0.922068 -0.987605 0.156957 857.972 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="331.423" y2="-1.5" transform="matrix(-0.608115 -0.793849 -0.960417 0.278566 986.998 266.435)" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
-          <line y1="-1.5" x2="383.32" y2="-1.5" transform="matrix(-0.727252 -0.686371 -0.928097 0.372339 1107.55 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="442.325" y2="-1.5" transform="matrix(-0.804833 -0.593502 -0.889588 0.456764 1231.86 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="503.642" y2="-1.5" transform="matrix(-0.852704 -0.522395 -0.850647 0.525737 1354.3 266.435)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="530.559" y2="-1.5" transform="matrix(-0.883997 -0.467493 -0.813085 0.582145 1437.17 251.367)" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
-          <line y1="-1.5" x2="467.37" y2="-1.5" transform="matrix(-0.90679 -0.421583 -0.775388 0.631485 1437.17 200.368)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="411.86" y2="-1.5" transform="matrix(-0.930679 -0.365838 -0.720223 0.693742 1437.17 154.01)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="360.417" y2="-1.5" transform="matrix(-0.951154 -0.308717 -0.650823 0.759229 1437.17 114.6)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="307.865" y2="-1.5" transform="matrix(-0.966676 -0.256002 -0.573147 0.819453 1437.17 82.1475)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="261.657" y2="-1.5" transform="matrix(-0.979021 -0.203761 -0.481703 0.876335 1437.17 56.6494)" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
-          <line y1="-1.5" x2="151.497" y2="-1.5" transform="matrix(-0.994652 -0.103282 -0.264477 0.964392 1439.06 18.9805)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="216.15" y2="-1.5" transform="matrix(-0.989068 -0.14746 -0.366377 0.930467 1439.06 35.208)" stroke="#D2D201"   stroke-opacity="0.2" stroke-width="1"  />
-          <line y1="-1.5" x2="106.55" y2="-1.5" transform="matrix(-0.998801 -0.04895 -0.128365 0.991727 1439.06 8.54883)" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
-          <path d="M722.354 263.943L722.355 3.33006" stroke="#D2D201"  stroke-opacity="0.2" stroke-width="1"   />
+        @foreach (range(0,18,1) as $index)
+        <line x1="0" y1="0" x2="1440" y2="0" stroke="#D2D201" stroke-opacity="0.2" stroke-width="1">
+            <animate dur="{{18-$index}}s"
+                repeatCount="1"
+                begin="0s"
+                attributeName="y1"
+                values="{{ implode('; ', array_map(function($i){return $i*$i;}, range(18-$index, 0, -1))) }}">
+            </animate>
+            <animate dur="{{18-$index}}s"
+                repeatCount="1"
+                begin="0s"
+                attributeName="y2"
+                values="{{ implode('; ', array_map(function($i){return $i*$i;}, range(18-$index, 0, -1))) }}">
+            </animate>
+        </line>
+        @endforeach
 
           <path id="r1" fill="#D2D201" fill-opacity="0.15">
             <animate attributeName="d" values="
@@ -371,12 +141,6 @@
             <g filter="url(#filter3_f)">
               <path d="M1490 560.5C1490 570.165 1142.57 578 714 578C285.427 578 -62 570.165 -62 560.5C-62 550.835 285.427 543 714 543C1142.57 543 1490 550.835 1490 560.5Z" fill="url(#paint4_radial)"/>
             </g>
-            <!-- <g filter="url(#filter4_f)">
-              <path d="M1479 568.5C1479 591.42 1139.41 610 720.5 610C301.592 610 -38 591.42 -38 568.5C-38 545.58 301.592 527 720.5 527C1139.41 527 1479 545.58 1479 568.5Z" fill="url(#paint5_radial)"/>
-            </g>
-            <g filter="url(#filter5_f)">
-              <path d="M1436 560.895C1436 560.895 1123.84 587.081 718.5 604C334.919 571.158 41 577.316 1 560.895C17 560.895 346.27 558.842 718.5 526C1123.84 558.842 1436 560.895 1436 560.895Z" fill="url(#paint6_radial)"/>
-            </g> -->
             <path d="M1074 560.265C1074 578.636 921.329 585 733 585C544.671 585 392 578.636 392 560.265C392 541.893 544.671 527 733 527C921.329 527 1074 541.893 1074 560.265Z" fill="url(#paint7_radial)"/>
             <path d="M1062 564.088C1062 577.392 909.329 582 721 582C532.671 582 380 577.392 380 564.088C380 550.785 532.671 540 721 540C909.329 540 1062 550.785 1062 564.088Z" fill="url(#paint8_radial)"/>
             <g filter="url(#filter6_f)">
@@ -393,16 +157,6 @@
                 <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
               </filter>
               <filter id="filter3_f" x="-66" y="539" width="1560" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
-              </filter>
-              <filter id="filter4_f" x="-42" y="523" width="1525" height="91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
-              </filter>
-              <filter id="filter5_f" x="-3" y="522" width="1443" height="86" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                 <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/>
@@ -442,16 +196,6 @@
                 <stop stop-color="#FFF851"/>
                 <stop offset="0.505208" stop-color="#E9FF2B" stop-opacity="0.270833"/>
                 <stop offset="1" stop-color="#DBFF00" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="paint5_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720.5 568.5) rotate(90) scale(41.4999 758.5)">
-                <stop stop-color="#FFF851"/>
-                <stop offset="0.505208" stop-color="#E9FF2B" stop-opacity="0.270833"/>
-                <stop offset="1" stop-color="#DBFF00" stop-opacity="0"/>
-              </radialGradient>
-              <radialGradient id="paint6_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720.185 561.243) rotate(90) scale(32.842 717.5)">
-                <stop stop-color="white"/>
-                <stop offset="0.505208" stop-color="white" stop-opacity="0.270833"/>
-                <stop offset="1" stop-color="white" stop-opacity="0"/>
               </radialGradient>
               <radialGradient id="paint7_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(733 560.265) rotate(90) scale(33.2647 341)">
                 <stop stop-color="white"/>

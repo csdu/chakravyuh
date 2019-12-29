@@ -37,7 +37,6 @@ style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconso
 <!-- googlefont -->
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
-<!-- local js -->
 
   <script src="{{asset('js/app.js')}}"></script>
 
