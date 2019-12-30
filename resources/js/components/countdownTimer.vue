@@ -3,7 +3,7 @@
 
       <div class="timer p-2 absolute lg:w-1/5 md:w-1/4 w-1/2">
 
-        <div class="days-container absolute-center w-1/2 ">
+        <div class="days-container absolute left-50 translate-n50 top-50 w-1/2 ">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
@@ -32,7 +32,7 @@
           </svg>
         </div>
 
-        <div class="days-container absolute-center w-1/2 ">
+        <div class="days-container absolute left-50 translate-n50 top-50 w-1/2 ">
           <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">
             <text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="6rem" fill="#eee">{{days}}</text>
             <text x="50%" y="58%" text-anchor="middle" dominant-baseline="middle" font-size="3rem" fill="#eee">DAYS</text>
@@ -161,7 +161,6 @@ export default{
     font-weight : 400;
   }
   .days-container{
-
     perspective: 100px;
   }
   .hours-container{
