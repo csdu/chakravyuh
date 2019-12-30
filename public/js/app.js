@@ -1994,7 +1994,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".timer[data-v-25dc86c2]{\n  position: absolute;\n  top:87%;\n  left:50%;\n  transform: translateX(-50%);\n  font-weight : 400;\n}\n.days-container[data-v-25dc86c2]{\n  perspective: 100px;\n}\n.hours-container[data-v-25dc86c2]{\n  position:absolute;\n  right:0;\n  transform: translate(-35%,-107%);\n}\n.minutes-container[data-v-25dc86c2]{\n  position:absolute;\n  left: 16%;\n  transform: translateY(-7%);\n}\n.seconds-container[data-v-25dc86c2]{\n  position:absolute;\n  right: 0;\n  transform: translate(-47%,-56%);\n}\n\n", ""]);
+exports.push([module.i, ".timer[data-v-25dc86c2]{\n  position: absolute;\n  top:87%;\n  left:50%;\n  transform: translateX(-50%);\n  font-weight : 400;\n}\n.hours-container[data-v-25dc86c2]{\n  position:absolute;\n  right:0;\n  transform: translate(-35%,-107%);\n}\n.minutes-container[data-v-25dc86c2]{\n  position:absolute;\n  left: 16%;\n  transform: translateY(-7%);\n}\n.seconds-container[data-v-25dc86c2]{\n  position:absolute;\n  right: 0;\n  transform: translate(-47%,-56%);\n}\n\n", ""]);
 
 // exports
 

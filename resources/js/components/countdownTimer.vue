@@ -160,9 +160,6 @@ export default{
     transform: translateX(-50%);
     font-weight : 400;
   }
-  .days-container{
-    perspective: 100px;
-  }
   .hours-container{
     position:absolute;
     right:0;
