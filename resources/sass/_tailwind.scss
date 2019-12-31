@@ -3,3 +3,72 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.active{
+  border-bottom : 1px solid #ffdc34;
+  color: #ffdc34  ;
+}
+.nav-button{
+  position: relative;
+  transition : color 0.4s linear;
+}
+.nav-button:hover{
+  color: #ffdc34;
+}
+.nav-logins{
+  color:#fff;
+  position:relative;
+}
+.nav-button::before , .nav-logins::before{
+  content:'';
+  position:absolute;
+  z-index: -1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  border: 1px solid #ffdc34;
+  transition : transform 0.4s ;
+  transform-timing-function : cubic-beizer(0,0.7,1,0.5);
+  transform : scaleX(0);
+}
+.nav-button::before{
+  transform-origin:left;
+  border-left: none;
+  border-right: none;
+  border-top:none;
+}
+.nav-logins::before{
+  border-radius: 2px;
+  transform-origin:bottom;
+}
+.nav-logins:hover::before, .nav-button:hover::before{
+  transform: scaleX(1);
+}
+
+@responsive{
+  .top-20{
+    top:20%;
+  }
+  .top-40{
+    top:40%;
+  }
+  .top-50{
+    top:50%;
+  }
+  .left-50{
+    left:50%;
+  }
+  .translateX-n50{
+    transform: translateX(-50%);
+  }
+  .translateY-n50{
+    transform: translateY(-50%);
+  }
+  .translate-n50{
+    transform: translate(-50%,-50%);
+  }
+  .w-250{
+    width:250%;
+  }
+}
