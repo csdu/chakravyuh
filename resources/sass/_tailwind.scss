@@ -70,6 +70,10 @@
 .text-shadow-2{
   text-shadow: 2px 2px 8px #000;
 }
+.text-shadow-md {
+  text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+}
+
 // scrollbar
   /* width */
 ::-webkit-scrollbar {
