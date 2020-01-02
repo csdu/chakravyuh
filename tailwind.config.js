@@ -6,6 +6,10 @@ module.exports = {
         'dark-brown': '#0e0101',
         'light-brown': '#543107',
       },
+      inset: {
+        '-4': '-1.5rem',
+        '-8': '-3rem'
+      }
     }
   },
   variants: {
