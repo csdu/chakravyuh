@@ -26,3 +26,7 @@ Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->mid
 Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
+
+Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
+    Route::get('/', 'Admin\PagesController@participants')->name('admin.participants');
+});
