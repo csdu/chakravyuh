@@ -11486,6 +11486,14 @@ video {
   transform: scaleX(1);
 }
 
+.font-display {
+  font-family: "Major Mono Display", monospace;
+}
+
+.h-80 {
+  height: 22rem;
+}
+
 .top-20 {
   top: 20%;
 }

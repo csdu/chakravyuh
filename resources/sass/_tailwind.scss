@@ -45,6 +45,12 @@
 .nav-logins:hover::before, .nav-button:hover::before{
   transform: scaleX(1);
 }
+.font-display{
+  font-family: 'Major Mono Display', monospace;
+}
+.h-80{
+  height:22rem;
+}
 
 @responsive{
   .top-20{
