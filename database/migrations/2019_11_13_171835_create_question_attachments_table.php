@@ -19,8 +19,8 @@ class CreateQuestionAttachmentsTable extends Migration
             $table->string('path');
             $table->enum('type', ['image', 'audio', 'video']);
             $table->timestamps();
-            
-            $table->foreign('question_id')->references('id')->on('questions');
+
+            $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

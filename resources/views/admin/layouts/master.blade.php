@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Chakravyuh</title>
+
+    <!-- googlefont -->
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-fixed bg-center bg-no-repeat bg-cover h-screen overflow-y-hidden"
+<body class="bg-fixed bg-center bg-no-repeat bg-cover"
 style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased; ">
 
@@ -73,11 +77,11 @@ style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconso
     
     <div class="border-t border-yellow-400 my-2"></div>
     
-    <div class="flex h-screen">
+    <div class="flex">
         <div class="max-w-xs w-64 p-4">
             <nav class="flex flex-col">
                 <a href="{{ route('admin.participants') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Participants</a>
-                <a href="http://" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
+                <a href="{{ route('admin.question.index') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
             </nav>
         </div>
         <div class="px-6 py-4 flex-1 text-left">
@@ -86,10 +90,6 @@ style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconso
     </div>
 
   </div>
-
-<!-- googlefont -->
-  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
 
   <script src="{{asset('js/app.js')}}"></script>
 

@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 
 class Question extends Model
 {
+    protected $guarded = [];
+
     public function attachment()
     {
         return $this->hasOne(QuestionAttachment::class);
