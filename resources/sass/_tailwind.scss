@@ -49,9 +49,20 @@
   font-family: 'Major Mono Display', monospace;
 }
 .h-80{
-  height:22rem;
+  height:24rem;
 }
-
+.bg-black-op2{
+  background-color:rgba(0,0,0,0.2);
+}
+.text-shadow-1{
+  text-shadow:1px 1px 4px #000;
+}
+.text-shadow-2{
+  text-shadow: 2px 2px 8px #000;
+}
+.h-p50{
+  height: 50%;
+}
 @responsive{
   .top-20{
     top:20%;
