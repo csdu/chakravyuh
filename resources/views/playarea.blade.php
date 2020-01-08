@@ -3,6 +3,12 @@
     <h3>Playground</h3>
     <p><strong>level:</strong> {{ Auth::user()->level }}</p>
 
+    @if ($question->text)
+        <p class="py-2">
+            {{$question->text}}
+        </p>
+    @endif
+
     @if ($question->attachment->type == 'image')
         <img src="/question_attachments/{{ $question->attachment->id }}">
     @elseif($question->attachment->type == 'video')

@@ -19,10 +19,9 @@
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
                         <label class="block uppercase tracking-wide text-xs font-bold mb-2">
-                          Text
+                          Text (optional)
                         </label>
-                        <textarea name="text" class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700"></textarea>
-                        {{-- <input class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700" type="number" min="1" name="text" value="{{old('text')}}" required> --}}
+                        <textarea name="text" class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700">{{old('text')}}</textarea>
                     </div>
                 </div>
 
@@ -31,7 +30,7 @@
                         <label class="block uppercase tracking-wide text-xs font-bold mb-2">
                             file
                         </label>
-                        <input class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700" type="file" name="file" value="{{old('file')}}" required>
+                        <input class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700" type="file" name="file" value="{{old('file')}}">
                     </div>
                     <div class="w-1/2 px-3">
                         <label class="block uppercase tracking-wide text-xs font-bold mb-2">
@@ -63,6 +62,29 @@
                         <input class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700" type="text" name="answer" value="{{old('answer')}}" required>
                     </div>
                 </div>
+
+                <h1 class="text-xl border-b border-t py-2">Hints <small class="uppercase text-xs">(optional)</small></h1>
+                
+                <Hint class="mt-3" inline-template>
+                    <div class="flex">
+                        <div class="flex flex-wrap -mx-3 mb-6 flex-1">
+                            <div class="w-full px-3" v-for="hint in count">
+                                <label class="block uppercase tracking-wide text-xs font-bold mb-2">
+                                    Hint @{{ hint }}
+                                </label>
+                                <input class="appearance-none bg-transparent block w-full border border-yellow-500 rounded py-3 px-4 leading-tight focus:outline-none focus:border-yellow-700" type="text" name="hints[]">
+                            </div>
+                        </div>
+                        <div class="flex flex-col px-2">
+                            <button type="button" @click="count += 1" class="bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded my-2">
+                                +
+                            </button>
+                            <button type="button" @click="count -= 1" class="bg-red-500 hover:bg-red-700 text-white py-1 px-3 rounded" :disabled="count <= 1">
+                                -
+                            </button>
+                        </div>
+                    </div>
+                </Hint>
 
                 <div class="flex">
                     <button type="submit" class="bg-yellow-500 hover:bg-yellow-700 border border-yellow-700 text-white font-bold py-2 px-4 rounded mr-2">

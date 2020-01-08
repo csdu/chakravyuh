@@ -6,6 +6,12 @@
         </div>
         <div class="py-3 px-4">
 
+            @if ($question->text)
+                <p class="py-2">
+                    {{$question->text}}
+                </p>
+            @endif
+
             @if ($question->attachment->type == 'image')
                 <img src="/question_attachments/{{ $question->attachment->id }}">
             @elseif($question->attachment->type == 'video')

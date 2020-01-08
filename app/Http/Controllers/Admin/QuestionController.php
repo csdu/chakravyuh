@@ -31,7 +31,7 @@ class QuestionController extends Controller
 
         $question = Question::create([
             'level' => $request->level,
-            'text' => empty($request->text) ? null : $request->text,
+            'text' => $request->text,
             'answer' => sha1($request->answer),
         ]);
 
@@ -39,6 +39,14 @@ class QuestionController extends Controller
             'path' => $request->file->store('attachments'),
             'type' => $request->type,
         ]);
+
+        foreach ($request->hints as $hint) {
+            if (!!$hint) {
+                $question->hints()->create([
+                    'text' => $hint,
+                ]);
+            }
+        }
 
         return redirect()->route('admin.question.index');
     }

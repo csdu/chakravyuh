@@ -23,4 +23,9 @@ class Question extends Model
     {
         return $this->answer == strtolower($answer);
     }
+
+    public function hints()
+    {
+        return $this->hasMany(QuestionHint::class);
+    }
 }
