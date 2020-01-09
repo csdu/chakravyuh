@@ -8,7 +8,7 @@
     <title>Chakravyuh</title>
 </head>
 
-<body class="bg-fixed bg-center bg-no-repeat bg-cover h-screen overflow-y-hidden"
+<body class="bg-fixed bg-center bg-no-repeat bg-cover"
 style="background-color : black;   font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased; ">
 

@@ -1,19 +1,19 @@
 @extends('layouts.master')
 @section('main')
 
-<div class="w-full mx-auto rounded text-black max-h-screen lg:text-base text-sm text-primary" style="height:700px;">
+<div class="w-full mx-auto rounded text-black lg:text-base text-sm text-primary" style="height:700px;">
 
   <div class="flex md:p-2 h-full">
 
 
 <!-- playarea container -->
-    <div class="flex flex-col rounded md:m-2 lg:py-4 lg:px-6 p-2 lg:w-3/4 w-full"
+    <div class="flex flex-col rounded md:m-2 lg:py-4 lg:px-4 p-2 lg:w-3/4 w-full"
     style="
-    background:linear-gradient(rgba(255,152,0,0.7),#000),url('images/maze.svg'),url('images/8627.jpg');
-    background-repeat: no-repeat;
+    background:linear-gradient(#000,rgba(255,180,0,1),#000),url('images/maze.svg'),url('images/playground-bg.png');
+    background-repeat: no-repeat,no-repeat;
     background-position: center,center,bottom;
-    background-size:cover;
-    background-blend-mode : hue;">
+    background-size:cover,cover;
+    background-blend-mode : multiply;">
 
 <!-- heading -->
       <h1 class="text-4xl font-display text-shadow-2">PLAYGROUND</h1>
@@ -50,8 +50,8 @@
           <div class="answer lg:mb-4 my-2 text-black">
             <form class="" action="/playarea/{{ $question->id }}/submit" method="post">
               @csrf
-              <input class="md:w-1/2 w-3/4  h-12 py-2 px-4 rounded text-yellow-900 bg-yellow-100 shadow-md" type="text" name="answer" placeholder="Enter your answer here">
-              <button class="py-2 px-4 bg-primary rounded-full shadow-md hover:bg-yellow-500" type="submit">SUBMIT</button>
+              <input class="md:w-1/2 w-3/4 h-12 py-2 px-4 rounded-sm text-yellow-900 bg-yellow-100 shadow-md" type="text" name="answer" placeholder="Enter your answer here">
+              <button class=" p-2 bg-primary rounded-sm shadow-md hover:bg-yellow-500" type="submit">SUBMIT</button>
             </form>
           </div>
 
@@ -114,8 +114,15 @@
     </div>
 
 <!-- Leaderboard container -->
-    <div class=" rounded m-2 lg:w-1/4 lg:flex hidden justify-center p-4 bg-center bg-contain bg-no-repeat" style="background-image:url('images/leaderboardBG.svg')">
-      <h1 class="text-2xl font-display">LEADERBOARD</h1>
+    <div class=" rounded m-2 lg:w-1/4 lg:flex hidden justify-center p-4 bg-center"
+    style="
+    background:linear-gradient(#000,rgba(255,180,0,1),#000),url('images/leaderboardBG.svg'),url('images/leaderboardbg.png');
+    background-repeat: no-repeat,no-repeat;
+    background-position: center,center,bottom;
+    background-size:cover,contain,cover;
+    background-blend-mode : multiply;">
+
+      <h1 class="text-2xl font-display text-shadow-2">LEADERBOARD</h1>
     </div>
 
   </div>
