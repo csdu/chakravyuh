@@ -11490,12 +11490,20 @@ video {
   font-family: "Major Mono Display", monospace;
 }
 
-.h-80 {
+.h-24rem {
   height: 24rem;
 }
 
 .bg-black-op2 {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-yellow-op1 {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.bg-orange-op2 {
+  background-color: rgba(175, 70, 15, 0.2);
 }
 
 .text-shadow-1 {
@@ -11508,6 +11516,31 @@ video {
 
 .h-p50 {
   height: 50%;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 180, 0, 0.5);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
 }
 
 .top-20 {
@@ -11540,6 +11573,10 @@ video {
 
 .w-250 {
   width: 250%;
+}
+
+.max-h-20rem {
+  max-height: 22rem;
 }
 
 @media (min-width: 640px) {
@@ -22383,6 +22420,10 @@ video {
 
   .sm\:w-250 {
     width: 250%;
+  }
+
+  .sm\:max-h-20rem {
+    max-height: 22rem;
   }
 }
 
@@ -33228,6 +33269,10 @@ video {
   .md\:w-250 {
     width: 250%;
   }
+
+  .md\:max-h-20rem {
+    max-height: 22rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -44072,6 +44117,10 @@ video {
   .lg\:w-250 {
     width: 250%;
   }
+
+  .lg\:max-h-20rem {
+    max-height: 22rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -54915,5 +54964,9 @@ video {
 
   .xl\:w-250 {
     width: 250%;
+  }
+
+  .xl\:max-h-20rem {
+    max-height: 22rem;
   }
 }
