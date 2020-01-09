@@ -2007,17 +2007,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    links: {
-      type: Array,
-      required: true
-    }
-  },
   data: function data() {
     return {
       show: false
@@ -20824,22 +20814,10 @@ var render = function() {
           "div",
           {
             staticClass:
-              "toggle-content z-10 absolute top-10 right-0 bg-black-op2 rounded-sm my-1"
+              "z-10 absolute top-10 right-0 bg-black-op2 rounded-sm my-1"
           },
-          [
-            _c(
-              "ul",
-              { staticClass: "p-2" },
-              _vm._l(_vm.links, function(link) {
-                return _c("li", { staticClass: "p-1" }, [
-                  _c("a", { attrs: { href: link[1] } }, [
-                    _vm._v(_vm._s(link[0]))
-                  ])
-                ])
-              }),
-              0
-            )
-          ]
+          [_vm._t("content")],
+          2
         )
       : _vm._e()
   ])

@@ -23,8 +23,15 @@
 
         <div class="md:hidden absolute right-0 self-center mx-1 playground-toggle-menu">
 
-          <dropdown :links="[['Hints','#hints'],['Leaderboard','#'],['Scores','#scores'] ]">
-            <template v-slot:active>
+          <dropdown>
+            <template v-slot:content>
+                <div class="flex flex-col p-2">
+                  <a href="#hints" class="p-1">Hints</a>
+                  <a href="#" class="p-1">Leaderboard</a>
+                  <a href="#scores" class="p-1">Scores</a>
+                </div>
+            </template>
+          <template v-slot:active>
               <svg class="h-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 284.929 284.929" xml:space="preserve">
               <path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829
