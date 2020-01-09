@@ -21,9 +21,9 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
         <div class="flex items-center">
           <dropdown>
             <template v-slot:content>
-              <div class="flex flex-col p-2 ">
+              <div class="flex flex-col p-2 w-48 ">
                 @if(Auth::check())
-                <div class="flex flex-col mb-1 p-1 border-b border-gray-900">
+                <div class="flex flex-col mb-1 p-1 border-b border-black">
                   <img src="{{ Auth::user()->avatar_url }}" alt="{{ Auth::user()->name }}" class="h-6 self-center rounded-full">
                   <p class="m-1">{{ Auth::user()->name }}</p>
                 </div>

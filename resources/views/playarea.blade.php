@@ -25,7 +25,7 @@
 
           <dropdown>
             <template v-slot:content>
-                <div class="flex flex-col p-2">
+                <div class="flex flex-col p-2 text-xs">
                   <a href="#hints" class="p-1">Hints</a>
                   <a href="#" class="p-1">Leaderboard</a>
                   <a href="#scores" class="p-1">Scores</a>
