@@ -11464,7 +11464,6 @@ video {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid #ffdc34;
   transition: transform 0.4s;
   transform-timing-function: cubic-beizer(0, 0.7, 1, 0.5);
   transform: scaleX(0);
@@ -11472,12 +11471,14 @@ video {
 
 .nav-button::before {
   transform-origin: left;
+  border: 1px solid #ffdc34;
   border-left: none;
   border-right: none;
   border-top: none;
 }
 
 .nav-logins::before {
+  background-color: rgba(255, 220, 52, 0.1);
   border-radius: 2px;
   transform-origin: bottom;
 }
@@ -11499,11 +11500,15 @@ video {
 }
 
 .bg-yellow-op1 {
-  background-color: rgba(255, 255, 0, 0.1);
+  background-color: rgba(255, 240, 52, 0.1);
 }
 
 .bg-orange-op2 {
   background-color: rgba(175, 70, 15, 0.2);
+}
+
+.bg-orange-op1 {
+  background-color: rgba(175, 70, 15, 0.1);
 }
 
 .text-shadow-1 {
@@ -11573,6 +11578,10 @@ video {
 
 .max-h-20rem {
   max-height: 22rem;
+}
+
+.max-h-12rem {
+  max-height: 8rem;
 }
 
 @media (min-width: 640px) {
@@ -22420,6 +22429,10 @@ video {
 
   .sm\:max-h-20rem {
     max-height: 22rem;
+  }
+
+  .sm\:max-h-12rem {
+    max-height: 8rem;
   }
 }
 
@@ -33269,6 +33282,10 @@ video {
   .md\:max-h-20rem {
     max-height: 22rem;
   }
+
+  .md\:max-h-12rem {
+    max-height: 8rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -44117,6 +44134,10 @@ video {
   .lg\:max-h-20rem {
     max-height: 22rem;
   }
+
+  .lg\:max-h-12rem {
+    max-height: 8rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -54964,5 +54985,9 @@ video {
 
   .xl\:max-h-20rem {
     max-height: 22rem;
+  }
+
+  .xl\:max-h-12rem {
+    max-height: 8rem;
   }
 }

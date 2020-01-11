@@ -17,7 +17,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
     <nav class=" md:hidden flex flex-col py-2 px-3 text-xs justify-between text-primary z-10 relative">
 
       <div class="flex justify-between">
-        <a href="/home" class="text-sm font-display">CHAKRAVYUH</a>
+        <a href="/home" class="text-base font-display">CHAKRAVYUH</a>
         <div class="flex items-center">
           <dropdown>
             <template v-slot:content>
@@ -28,26 +28,33 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
                   <p class="m-1">{{ Auth::user()->name }}</p>
                 </div>
                 @endif
-                <a href="/home">Home</a>
+                <a href="/home" class="p-1">Home</a>
                 <a href="#" class="p-1">About</a>
                 <a href="#" class="p-1">Rules</a>
                 <a href="#" class="p-1">Leaderboard</a>
                 @if(Auth::check())
                 <form action="/logout" method="post" class="mt-1 border-t border-black">
                   @csrf
-                  <button type="submit" class="p-1 ">logout</button>
+                  <button type="submit" class="p-1 ">
+                    <svg class="inline w-4" fill="#ffdc34" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m13.076 97.083a1.75 1.75 0 0 0 1.75-1.75v-28.666a1.75 1.75 0 0 0 -3.5 0v28.666a1.75 1.75 0 0 0 1.75 1.75z"/>
+                      <path d="m122.38 64.97c.027-.041.046-.085.069-.128a1.037 1.037 0 0 0 .146-.348c.015-.051.035-.1.045-.152a1.755 1.755 0 0 0 0-.685c-.01-.053-.03-.1-.045-.152a1.733 1.733 0 0 0 -.054-.174 1.692 1.692 0 0 0 -.092-.174c-.023-.042-.042-.086-.069-.127a1.75 1.75 0 0 0 -.22-.269l-12.509-12.509a1.75 1.75 0 0 0 -2.475 2.475l9.524 9.523h-53.276a1.75 1.75 0 0 0 0 3.5h53.276l-9.523 9.523a1.75 1.75 0 1 0 2.475 2.475l12.508-12.509a1.75 1.75 0 0 0 .22-.269z"/>
+                      <path d="m95.424 72.25a1.75 1.75 0 0 0 -1.75 1.75v36.9h-45.041v-93.8h45.041v36.9a1.75 1.75 0 1 0 3.5 0v-38.65a1.75 1.75 0 0 0 -1.75-1.75h-46.791v-7.1a1.75 1.75 0 0 0 -2.461-1.6l-39.807 17.693a1.751 1.751 0 0 0 -1.039 1.6v79.615a1.751 1.751 0 0 0 1.039 1.6l39.807 17.692a1.75 1.75 0 0 0 2.461-1.6v-7.1h46.791a1.75 1.75 0 0 0 1.75-1.75v-38.65a1.75 1.75 0 0 0 -1.75-1.75zm-50.291 46.558-36.307-16.138v-77.34l36.307-16.138z"/>
+                    </svg>
+                    logout
+                  </button>
                 </form>
                 @endif
               </div>
             </template>
             <template v-slot:unactive>
-              <svg class="h-2 inline" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"	viewBox="0 0 612 612" xml:space="preserve">
+              <svg class="h-3 inline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"	viewBox="0 0 612 612" xml:space="preserve">
                 <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
                 306,341.411 576.521,611.397 612,575.997 341.459,306.011 "  fill="#ffdc34"/>
               </svg>
             </template>
             <template v-slot:active>
-              <svg class="h-4 inline" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384.97 384.97" xml:space="preserve">
+              <svg class="h-5 inline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384.97 384.97" xml:space="preserve">
                 <path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
                 c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z" fill="#ffdc34"/>
                 <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
@@ -111,7 +118,13 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <span href="#" class="md:inline hidden self-center lg:p-2 p-1 m-1">{{ Auth::user()->name }}</span>
           <form action="/logout" method="post" class="self-center py-1 m-1">
             @csrf
-            <button type="submit" class="px-2 p-1 bg-orange-op2 rounded ">logout</button>
+            <button type="submit" class="px-2 p-1 bg-orange-op2 rounded ">
+              <svg class="inline w-6" fill="white" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13.076 97.083a1.75 1.75 0 0 0 1.75-1.75v-28.666a1.75 1.75 0 0 0 -3.5 0v28.666a1.75 1.75 0 0 0 1.75 1.75z"/>
+                <path d="m122.38 64.97c.027-.041.046-.085.069-.128a1.037 1.037 0 0 0 .146-.348c.015-.051.035-.1.045-.152a1.755 1.755 0 0 0 0-.685c-.01-.053-.03-.1-.045-.152a1.733 1.733 0 0 0 -.054-.174 1.692 1.692 0 0 0 -.092-.174c-.023-.042-.042-.086-.069-.127a1.75 1.75 0 0 0 -.22-.269l-12.509-12.509a1.75 1.75 0 0 0 -2.475 2.475l9.524 9.523h-53.276a1.75 1.75 0 0 0 0 3.5h53.276l-9.523 9.523a1.75 1.75 0 1 0 2.475 2.475l12.508-12.509a1.75 1.75 0 0 0 .22-.269z"/>
+                <path d="m95.424 72.25a1.75 1.75 0 0 0 -1.75 1.75v36.9h-45.041v-93.8h45.041v36.9a1.75 1.75 0 1 0 3.5 0v-38.65a1.75 1.75 0 0 0 -1.75-1.75h-46.791v-7.1a1.75 1.75 0 0 0 -2.461-1.6l-39.807 17.693a1.751 1.751 0 0 0 -1.039 1.6v79.615a1.751 1.751 0 0 0 1.039 1.6l39.807 17.692a1.75 1.75 0 0 0 2.461-1.6v-7.1h46.791a1.75 1.75 0 0 0 1.75-1.75v-38.65a1.75 1.75 0 0 0 -1.75-1.75zm-50.291 46.558-36.307-16.138v-77.34l36.307-16.138z"/>
+              </svg>
+            </button>
           </form>
         </div>
         @endif

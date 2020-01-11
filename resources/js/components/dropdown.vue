@@ -5,10 +5,10 @@
     <slot v-if="!show" name="active"></slot>
     <slot v-if="show" name="unactive"></slot>
   </a>
-
-  <div v-if="show" class="z-10 absolute top-10 right-0 bg-black-op2 rounded-sm my-1">
+  <div v-if="show" class="z-10 absolute top-10 right-0 bg-black-op2 rounded-sm my-1" >
     <slot name="content"></slot>
   </div>
+
 
 </div>
 
