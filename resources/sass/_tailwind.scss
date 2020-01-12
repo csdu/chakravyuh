@@ -88,6 +88,18 @@
 ::-webkit-scrollbar-thumb:hover {
   background: black;
 }
+.blur-enter-active{
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+.blur-enter {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.blur-enter-to{
+  transform: translate(0);
+  opacity:1;
+}
 
 @responsive{
   .top-20{
@@ -119,6 +131,9 @@
   }
   .max-h-12rem{
     max-height:8rem;
+  }
+  .h-fit-content{
+    height:fit-content;
   }
 
 }

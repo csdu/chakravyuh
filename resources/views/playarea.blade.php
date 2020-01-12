@@ -21,6 +21,7 @@
 
         <h1 class="lg:text-4xl md:text-3xl text-2xl font-display text-shadow-2">PLAYGROUND</h1>
 
+<!-- for mobile screens -->
         <div class="md:hidden absolute right-0 self-center mx-1 playground-toggle-menu">
 
           <dropdown>
@@ -65,7 +66,8 @@
                   			C347.349,290.415,290.415,347.349,219.367,350.247z M302.247,209.127c-2.532-44.682-38.198-80.348-82.88-82.88v-48
                   			c71.048,2.898,127.982,59.832,130.88,130.88H302.247z"/>
                   </svg>
-                  <span class="inline">Lskdf khakdf  sldhf a hkdfh ahdf akhd fakn ayiureh afdhf hdf</span></li>
+                  <span class="inline">Lskdf khakdf  sldhf a hkdfh ahdf akhd fakn ayiureh afdhf hdf</span>
+                </li>
                 <li class="mb-1 p-1 shadow-md bg-yellow-op1">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
                 <li class="mb-1 p-1 shadow-md bg-yellow-op1">Lskdf khakdf  sldhf a hkdfh ahdf akhd fakn ayiu reh afdhf hdf</li>
                 <li class="mb-1 p-1 shadow-md bg-yellow-op1">Lskdf khakdf  sldhf a hkdfh ahdf a khdfakn ayiureh afdhf hdf</li>
@@ -137,11 +139,11 @@
 
           <!-- Question -->
           <div class="question-container w-full h-24rem flex my-2 pb-4 justify-center lg:shadow-lg shadow-md bg-center bg-cover bg-no-repeat" style="">
-
+            <transition appear name="blur">
             @if ($question->attachment->type == 'image')
-                <img class="md:h-full md:w-auto h-auto w-full" src="/question_attachments/{{ $question->attachment->id }}">
+                <img class="md:h-full md:w-auto h-fit-content w-full max-h-full" src="/question_attachments/{{ $question->attachment->id }}">
             @elseif($question->attachment->type == 'video')
-                <video class="md:h-full md:w-auto h-auto w-full" controls>
+                <video class="md:h-full md:w-auto h-fit-content w-full max-h-full" controls>
                   <source src = "/question_attachments/{{ $question->attachment->id }}" type="video/mp4">
                 </video>
             @elseif($question->attachment->type == 'audio')
@@ -153,6 +155,7 @@
                     <p>Question will appear here</p>
                 </div>
             @endif
+            </transition>
 
           </div>
 
