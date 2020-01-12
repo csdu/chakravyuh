@@ -17,6 +17,7 @@ class CreateQuestionHintsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('question_id');
             $table->string('text');
+            $table->boolean('is_visible')->default(false);
 
             $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade')->onUpdate('cascade');
         });

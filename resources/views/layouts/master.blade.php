@@ -21,6 +21,9 @@ style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconso
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> About </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
+          @if (Auth::user() ? Auth::user()->is_admin : false)  
+            <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
+          @endif
         </div>
 
         @if(Auth::check())

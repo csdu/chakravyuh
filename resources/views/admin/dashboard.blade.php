@@ -1,11 +1,13 @@
 @extends('admin.layouts.master')
 @section('main')
     <div class="bg-yellow-100 text-black rounded">
-        <div class="py-3 px-4">
-            <h1 class="text-xl">Participants</h1>
+        <div class="py-3 px-4 border-b">
+            <h1 class="text-xl">Dashboard</h1>
         </div>
         <div class="pb-3">
-            <users />
+
+            <admin-dashboard></admin-dashboard>
+            
         </div>
     </div>
 @endsection

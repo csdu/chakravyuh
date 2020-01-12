@@ -25,6 +25,7 @@ style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconso
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> About </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
+          <a href="{{route('admin.dashboard')}}" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin*') ? 'active' : '' }} "> Admin </a>
         </div>
 
         @if(Auth::check())
@@ -80,6 +81,7 @@ style="background-image : radial-gradient(#272703,#000);   font-family: 'Inconso
     <div class="flex">
         <div class="max-w-xs w-64 p-4">
             <nav class="flex flex-col">
+                <a href="{{ route('admin.dashboard') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Dashboard</a>
                 <a href="{{ route('admin.participants') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Participants</a>
                 <a href="{{ route('admin.question.index') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
             </nav>

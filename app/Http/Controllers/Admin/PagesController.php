@@ -3,14 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\User;
 
 class PagesController extends Controller
 {
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
+
     public function participants()
     {
-        $users = User::all();
-
-        return view('admin.participants')->withUsers($users);
+        return view('admin.participants');
     }
 }
