@@ -40,4 +40,9 @@ class User extends Authenticatable
     {
         return $this->increment('level');
     }
+
+    public function getIsAdminAttribute($value)
+    {
+        return $this->email == config('app.admin_email');
+    }
 }

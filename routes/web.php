@@ -26,3 +26,17 @@ Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->mid
 Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
+
+Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
+    Route::get('/', 'Admin\PagesController@dashboard')->name('admin.dashboard');
+    Route::get('participants', 'Admin\PagesController@participants')->name('admin.participants');
+    Route::get('questions', 'Admin\QuestionController@index')->name('admin.question.index');
+    Route::get('question/create', 'Admin\QuestionController@create')->name('admin.question.create');
+    Route::post('questions', 'Admin\QuestionController@store')->name('admin.question.store');
+    Route::get('question/{question}/show', 'Admin\QuestionController@show')->name('admin.question.show');
+    Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.question.delete');
+    Route::get('question/{question}/hint/{hint}/set', 'Admin\QuestionHintController@setVisible')
+        ->name('admin.question.hint.set');
+    Route::get('question/{question}/hint/{hint}/unset', 'Admin\QuestionHintController@unsetVisible')
+        ->name('admin.question.hint.unset');
+});

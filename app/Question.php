@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 
 class Question extends Model
 {
+    protected $guarded = [];
+
     public function attachment()
     {
         return $this->hasOne(QuestionAttachment::class);
@@ -20,5 +22,10 @@ class Question extends Model
     public function isCorrectAnswer($answer)
     {
         return $this->answer == strtolower($answer);
+    }
+
+    public function hints()
+    {
+        return $this->hasMany(QuestionHint::class);
     }
 }

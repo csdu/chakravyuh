@@ -1,5 +1,7 @@
 <?php
 
+use App\Question;
+use App\User;
 use Illuminate\Http\Request;
 
 /*
@@ -15,4 +17,38 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/users', function () {
+    return User::get(['id', 'name', 'email', 'level'])->reject(function ($user) {
+        return $user->is_admin;
+    });
+});
+
+Route::get('dashboard', function () {
+    // get all users expect admin user
+    $users = User::all()->reject(function ($user) {
+        return $user->is_admin;
+    });
+
+    // return participants count
+    $totalParticipants = $users->count();
+
+    // return hightest level
+    $highestLevel = Question::where('level', $users->max('level'))->get(['id', 'level'])->first();
+
+    // return level on which most paricipants stucks on
+    $stuckLevel = Question::where('level', $users->avg('level'))->get(['id', 'level'])->first();
+
+    return [
+        'totalParticipants' => $totalParticipants,
+        'highestLevel' => [
+            'id' => $highestLevel->id ?? null,
+            'level' => $highestLevel->level ?? null,
+        ],
+        'stuckLevel' => [
+            'id' => $stuckLevel->id ?? null,
+            'level' => $stuckLevel->level ?? null,
+        ],
+    ];
 });
