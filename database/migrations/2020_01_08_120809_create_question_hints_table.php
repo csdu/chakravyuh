@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateQuestionAttachmentsTable extends Migration
+class CreateQuestionHintsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateQuestionAttachmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('question_attachments', function (Blueprint $table) {
+        Schema::create('question_hints', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unSignedBigInteger('question_id');
-            $table->string('path');
-            $table->enum('type', ['image', 'audio', 'video']);
-            $table->timestamps();
+            $table->unsignedBigInteger('question_id');
+            $table->string('text');
+            $table->boolean('is_visible')->default(false);
 
             $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade')->onUpdate('cascade');
         });
@@ -31,6 +30,6 @@ class CreateQuestionAttachmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('question_attachments');
+        Schema::dropIfExists('question_hints');
     }
 }
