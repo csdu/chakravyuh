@@ -276,7 +276,7 @@
     </div>
 
 <!-- Leaderboard container -->
-    <div class=" rounded m-2 lg:w-1/4 lg:flex hidden justify-center p-4 bg-center"
+    <div class="rounded m-2 lg:w-1/4 lg:flex flex-col hidden p-2 xl:p-4 bg-center"
     style="
     background:linear-gradient(#000,rgba(255,180,0,1),#000),url('images/leaderboardBG.svg'),url('images/leaderboardbg.png');
     background-repeat: no-repeat,no-repeat;
@@ -284,7 +284,7 @@
     background-size:cover,contain,cover;
     background-blend-mode : multiply;">
 
-      <h1 class="text-2xl font-display text-shadow-2">LEADERBOARD</h1>
+      @include('partials.leaderboard')
     </div>
 
   </div>
