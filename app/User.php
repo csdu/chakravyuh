@@ -45,4 +45,9 @@ class User extends Authenticatable
     {
         return $this->email == config('app.admin_email');
     }
+
+    public function getScoreAttribute()
+    {
+        return QuestionResponse::where('user_id', $this->id)->sum('score');
+    }
 }

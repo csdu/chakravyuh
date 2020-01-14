@@ -200,7 +200,7 @@
                 </svg>
                 Score
               </p>
-              <span class="md:text-2xl text-xl text-shadow-1">1233</span>
+              <span class="md:text-2xl text-xl text-shadow-1">{{ Auth::user()->score }}</span>
             </div>
             <div class="w-1/2 p-2">
               <p class="mb-1">
