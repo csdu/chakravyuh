@@ -279,7 +279,7 @@
     background-size:cover,contain,cover;
     background-blend-mode : multiply;">
 
-      @include('partials.leaderboard')
+      <leader-board />
     </div>
 
   </div>

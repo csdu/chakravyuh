@@ -4,6 +4,7 @@ use App\Question;
 use App\QuestionHint;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,4 +60,12 @@ Route::get('/question/{question}/hints/', function ($questionId) {
         ['question_id', $questionId],
         ['is_visible', true],
     ])->get(['id', 'text']);
+});
+
+Route::get('/leaderboard', function () {
+    return User::all()->filter(function ($user) {
+        $user['score'] = $user->score;
+
+        return !$user->is_admin;
+    });
 });
