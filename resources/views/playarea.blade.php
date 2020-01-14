@@ -244,13 +244,8 @@
                 M222.96,375.72l-10.4-73.2c48.374-2.978,86.942-41.546,89.92-89.92l73.2,10.4C367.895,303.902,303.862,367.936,222.96,375.72z" fill="#ffdc34"/>
               </svg><span class="inline p-1">HINTS</span>
             </p>
-            <ul class="px-2">
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">Lskdf khakdf  sldhf a hkdfh ahdf akhdfakn ayiureh afdhf hdf</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">Lskdf khakdf  sldhf a hkdfh ahdf akhdfakn ayiureh afdhf hdf</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">Lskdf khakdf  sldhf a hkdfh ahdf akhdfakn ayiureh afdhf hdf</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
-            </ul>
+
+            <Hints question_id="{{ $question->id }}" />
 
           </div>
 

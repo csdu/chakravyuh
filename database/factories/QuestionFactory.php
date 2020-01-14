@@ -10,5 +10,6 @@ $factory->define(Question::class, function (Faker $faker) {
     return [
         'level' => $level++,
         'answer' => $faker->safeColorName(),
+        'group' => $faker->randomElement([25, 50, 75, 90, 100]),
     ];
 });

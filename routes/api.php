@@ -1,6 +1,7 @@
 <?php
 
 use App\Question;
+use App\QuestionHint;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -51,4 +52,11 @@ Route::get('dashboard', function () {
             'level' => $stuckLevel->level ?? null,
         ],
     ];
+});
+
+Route::get('/question/{question}/hints/', function ($questionId) {
+    return QuestionHint::where([
+        ['question_id', $questionId],
+        ['is_visible', true],
+    ])->get(['id', 'text']);
 });
