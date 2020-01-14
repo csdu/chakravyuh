@@ -18,6 +18,7 @@ class CreateQuestionsTable extends Migration
             $table->unsignedBigInteger('level')->unique();
             $table->string('answer');
             $table->text('text')->nullable();
+            $table->integer('group');
             $table->timestamps();
         });
     }

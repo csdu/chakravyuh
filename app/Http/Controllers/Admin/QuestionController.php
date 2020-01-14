@@ -27,12 +27,14 @@ class QuestionController extends Controller
             'answer' => 'required',
             'file' => 'required|file',
             'type' => 'required|in:audio,video,image',
+            'qroup' => 'required|in:25,50,75,90,100',
         ]);
 
         $question = Question::create([
             'level' => $request->level,
             'text' => $request->text,
             'answer' => sha1($request->answer),
+            'group' => $request->group,
         ]);
 
         $question->attachment()->create([
