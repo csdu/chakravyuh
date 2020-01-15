@@ -40,7 +40,7 @@ Route::get('dashboard', function () {
     $highestLevel = Question::where('level', $users->max('level'))->get(['id', 'level'])->first();
 
     // return level on which most paricipants stucks on
-    $stuckLevel = Question::where('level', $users->avg('level'))->get(['id', 'level'])->first();
+    $stuckLevel = Question::where('level', (int)round($users->avg('level')))->get(['id', 'level'])->first();
 
     return [
         'totalParticipants' => $totalParticipants,

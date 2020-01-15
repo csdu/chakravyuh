@@ -21085,7 +21085,7 @@ var render = function() {
       _c(
         "tbody",
         [
-          !_vm.users.length
+          _vm.users.length <= 0
             ? _c("tr", { staticClass: "border-t hover:bg-yellow-200" }, [
                 _c(
                   "td",

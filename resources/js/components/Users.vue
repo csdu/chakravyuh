@@ -11,7 +11,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr v-if="!users.length" class="border-t hover:bg-yellow-200">
+				<tr v-if="users.length <= 0" class="border-t hover:bg-yellow-200">
 					<td class="table-fit text-left pl-6 py-2 text-sm">No Participants yet.</td>
 				</tr>
 
