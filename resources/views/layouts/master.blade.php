@@ -29,9 +29,10 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
                 </div>
                 @endif
                 <a href="/home" class="p-1">Home</a>
-                <a href="#" class="p-1">About</a>
+                <a href="#" class="p-1">ContactUs</a>
                 <a href="#" class="p-1">Rules</a>
                 <a href="#" class="p-1">Leaderboard</a>
+                <a href="/team" class="p-1">DeveloperTeam</a>
                 @if(Auth::check())
                 <form action="/logout" method="post" class="mt-1 border-t border-black">
                   @csrf
@@ -107,10 +108,11 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
       <div class="flex justify-between lg:px-10 md:px-5 lg:text-base md:text-sm text-xs flex-col md:flex-row">
         <div class="flex justify-around">
           <a href="/home" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('home') || request()->is('/') ? 'active' : '' }} "> Home </a>
-          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> About </a>
+          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> ContactUs </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
-          @if (Auth::user() ? Auth::user()->is_admin : false)  
+          <a href="/team" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('team') ? 'active' : '' }} "> DeveloperTeam </a>
+          @if (Auth::user() ? Auth::user()->is_admin : false)
             <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
           @endif
         </div>
@@ -178,6 +180,15 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
 
   <script src="{{asset('js/app.js')}}"></script>
+  <script>
+    window.addEventListener('scroll', function(e) {
+      var target = document.querySelectorAll('.scroll');
+      var offsety = window.pageYOffset * 0.3;
+      for (var i = 0; i < target.length; i++) {
+        target[i].style.transform = 'translateY(-'+offsety+'px)';
+        }
+    });
+  </script>
 </body>
 
 </html>
