@@ -109,7 +109,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <a href="/home" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('home') || request()->is('/') ? 'active' : '' }} "> Home </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> About </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
-          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
+          <a href="/leaderboard" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
           @if (Auth::user() ? Auth::user()->is_admin : false)  
             <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
           @endif
@@ -186,7 +186,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
         </div>
     </div>
     @else  
-    @yield('main')
+      @yield('main')
     @endif
 
   </div>
