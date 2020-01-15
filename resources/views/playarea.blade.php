@@ -284,7 +284,28 @@
     background-size:cover,contain,cover;
     background-blend-mode : multiply;">
 
-      @include('partials.leaderboard')
+      <h1 class="text-2xl mb-4 xl:mb-6 font-display text-shadow-2">LEADERBOARD</h1>
+
+      <div>
+        {{-- winner svg --}}
+        <div class="w-full flex items-center justify-between">
+          @include('partials.winner-svg')
+        </div>
+
+        {{-- winner details --}}
+        <div class="text-shadow-1 font-extrabold uppercase">
+            @include('partials.winner-details')
+        </div>    
+      </div>
+
+      {{-- divider --}}
+      <div class="w-full my-3">
+          @include('svg.divider')
+      </div>
+
+      {{-- table entries --}}
+      @include('partials.leaderboard-table')
+
     </div>
 
   </div>
