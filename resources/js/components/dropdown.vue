@@ -29,16 +29,22 @@ export default {
 <style lang="css" scoped>
 
 .blur-enter-active{
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -moz-transition-timing-function:ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
 .blur-enter-to , .blur-leave{
   opacity: 1;
-  transformX:0;
+  transform: translateX(0);
 }
 .blur-enter, .blur-leave-to{
   opacity:0;
-  transformX: 10px;
+  transform: translateX(10px);
 }
 
 .slide-enter-active {
