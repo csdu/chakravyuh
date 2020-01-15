@@ -63,9 +63,15 @@ Route::get('/question/{question}/hints/', function ($questionId) {
 });
 
 Route::get('/leaderboard', function () {
-    return User::all()->filter(function ($user) {
-        $user['score'] = $user->score;
+    return User::with(['responses'])->get()
+        ->filter(function ($user) {
+            $user['split_time'] = $user->responses->sum->split_time;
 
-        return !$user->is_admin;
-    });
+            return !$user->is_admin;
+        })->sortBy(function ($user) {
+            return [
+                $user->responses->sum('score'),
+                $user->responses->sum('split_time'),
+            ];
+        })->take(10);
 });

@@ -34,7 +34,7 @@
 					<span class="w-5 mr-1">
 						<img src="/images/coin.svg" alt />
 					</span>
-					<span class="text-yellow-100">{{ topUser.score }}</span>
+					<span class="text-yellow-100">{{ topUser.responses[0].score }}</span>
 				</span>
 				<span>|</span>
 				<span class="w-1/3">
@@ -78,7 +78,7 @@
 							<span class="w-4 h-4 mr-1">
 								<img src="/images/coin.svg" />
 							</span>
-							<span class="text-orange-400 group-hover:text-yellow-100">{{ user.score }}</span>
+							<span class="text-orange-400 group-hover:text-yellow-100">{{ user.responses[0].score }}</span>
 						</span>
 					</div>
 					<div class="uppercase font-extrabold group-hover:text-orange-400">
@@ -103,8 +103,8 @@ export default {
 			window.axios
 				.get("api/leaderboard")
 				.then(res => {
-					if (res.data.length > 0) {
-						this.users = res.data;
+					if (Object.keys(res.data).length > 0) {
+						this.users = Object.values(res.data);
 						this.topUser = this.users[0];
 						this.users.shift();
 					}

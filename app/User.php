@@ -50,4 +50,10 @@ class User extends Authenticatable
     {
         return QuestionResponse::where('user_id', $this->id)->sum('score');
     }
+
+    public function responses()
+    {
+        return $this->hasMany(QuestionResponse::class);
+    }
+
 }
