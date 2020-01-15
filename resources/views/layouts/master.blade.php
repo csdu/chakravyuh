@@ -170,7 +170,25 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
 
     </nav>
 
+    @if (request()->is('admin*'))
+    <div class="border-t border-yellow-400 my-2"></div>
+    
+    <div class="flex">
+        <div class="max-w-xs w-64 p-4">
+            <nav class="flex flex-col">
+                <a href="{{ route('admin.dashboard') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Dashboard</a>
+                <a href="{{ route('admin.participants') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Participants</a>
+                <a href="{{ route('admin.question.index') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
+            </nav>
+        </div>
+        <div class="px-6 py-4 flex-1 text-left">
+            @yield('main')
+        </div>
+    </div>
+    @else  
     @yield('main')
+    @endif
+
   </div>
 
 <!-- googlefont -->

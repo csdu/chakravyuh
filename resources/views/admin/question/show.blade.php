@@ -1,4 +1,4 @@
-@extends('admin.layouts.master')
+@extends('layouts.master')
 @section('main')
     <div class="bg-yellow-100 text-black rounded">
         <div class="py-3 px-4 flex justify-between border-b">
