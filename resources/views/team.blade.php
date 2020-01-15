@@ -111,7 +111,8 @@
         <div class="flex flex-col md:ml-16 ml-4">
           <span class="md:text-lg text-sm">Vikas</span>
           <div class="flex">
-            @include('svg.github-icon')
+            <a href="#" class="my-2 mr-4">
+              @include('svg.github-icon')
             </a>
             <a href="#" class="my-2">
               @include('svg.linkedin-icon')

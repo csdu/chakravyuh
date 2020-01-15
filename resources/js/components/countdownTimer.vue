@@ -1,7 +1,7 @@
 <template>
 
 
-      <div class="timer p-2 absolute lg:w-1/5 md:w-1/4 w-1/2" style="perspective-origin: bottom;perspective: 5px; ">
+      <div class="timer p-2 lg:w-1/5 md:w-1/4 w-1/2" style="perspective-origin: bottom;perspective: 5px; ">
 
         <div style="transform-style: preserve-3d; transform-origin: bottom; transform: rotateX(1deg);">
 
@@ -161,7 +161,7 @@ export default{
 
   .timer{
     position: absolute;
-    top:87%;
+    top:85%;
     left:50%;
     transform: translateX(-50%);
     font-weight : 400;

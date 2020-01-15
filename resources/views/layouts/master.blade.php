@@ -143,10 +143,14 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
   <script>
   window.addEventListener('scroll', function(e) {
     var target = document.querySelectorAll('.scroll');
+    var target2 = document.querySelectorAll('.scroll-down');
     var offsety = window.pageYOffset * 0.3;
     for (var i = 0; i < target.length; i++) {
       target[i].style.transform = 'translateY(-'+offsety+'px)';
       }
+    for (var i = 0; i < target2.length; i++) {
+      target2[i].style.transform = 'translateY('+offsety+'px)';
+    }
   });
   </script>
 </body>

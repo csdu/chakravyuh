@@ -44,6 +44,8 @@
     </line>
     @endforeach
 
+
+    </rect>
       <path id="r1" fill="#D2D201" fill-opacity="0.15">
         <animate attributeName="d" values="
         M1329 161H1407.36L1457 185H1374.79L1329 161Z;

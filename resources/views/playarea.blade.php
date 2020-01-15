@@ -35,15 +35,10 @@
             </template>
             <template v-slot:content>
               <ul class="p-2 pb-1 list-decimal w-64 max-h-12rem overflow-y-scroll bg-black text-xs text-left">
-                <li class="mb-1 p-1 shadow-md bg-yellow-op1 flex ">
-                  @include('svg.hint-point')
-                  <span class="inline">Lskdf khakdf  sldhf a hkdfh ahdf akhd fakn ayiureh afdhf hdf</span>
+                <li>
+                  <Hints question_id="{{ $question->id }}" />
                 </li>
-                <li class="mb-1 p-1 shadow-md bg-yellow-op1">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
-                <li class="mb-1 p-1 shadow-md bg-yellow-op1">Lskdf khakdf  sldhf a hkdfh ahdf akhd fakn ayiu reh afdhf hdf</li>
-                <li class="mb-1 p-1 shadow-md bg-yellow-op1">Lskdf khakdf  sldhf a hkdfh ahdf a khdfakn ayiureh afdhf hdf</li>
-                <li class="mb-1 p-1 shadow-md bg-yellow-op1">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
-                <li class="flex flex-col bg-black-op2 rounded-sm text-xs text-center p-1 text-shadow-1">
+                <li class="flex flex-col bg-black-op2 rounded-sm text-xs text-center p-2 text-shadow-1">
                   <p>for bonus hints keep track of <a href="#" class=" hover:text-white font-bold">SANKALAN facebook page</a> </p>
                 </li>
               </ul>
@@ -62,12 +57,12 @@
             <div class="p-1">
               @include('svg.score')
               </svg>
-              <span class="text-shadow-1">1233</span>
+              <span class="text-shadow-1">{{ Auth::user()->score }}</span>
             </div>
             <div class="p-1">
               @include('svg.split-time')
             </svg>
-            <span class="text-shadow-1">+0.12s</span>
+            <span class="text-shadow-1">{{ Auth::user()->split_time }}</span>
             </div>
           </div>
 
