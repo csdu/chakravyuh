@@ -56,4 +56,8 @@ class User extends Authenticatable
         return $this->hasMany(QuestionResponse::class);
     }
 
+    public function getSplitTimeAttribute($value)
+    {
+        return gmdate('i:s', $this->responses->sum->split_time);
+    }
 }

@@ -223,7 +223,7 @@
                 </svg>
                 SplitTime
               </p>
-              <span class="md:text-2xl text-xl text-shadow-1">+0.12s</span>
+              <span class="md:text-2xl text-xl text-shadow-1">{{ Auth::user()->split_time }}s</span>
             </div>
           </div>
 

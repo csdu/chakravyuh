@@ -16,6 +16,6 @@ class QuestionResponse extends Model
 
     public function getSplitTimeAttribute($value)
     {
-        return Carbon::parse(QuestionResponse::min('created_at'))->diffInMinutes($this->created_at);
+        return Carbon::parse(QuestionResponse::min('created_at'))->diffInSeconds($this->created_at);
     }
 }

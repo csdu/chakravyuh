@@ -2105,8 +2105,8 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       window.axios.get("api/leaderboard").then(function (res) {
-        if (res.data.length > 0) {
-          _this.users = res.data;
+        if (Object.keys(res.data).length > 0) {
+          _this.users = Object.values(res.data);
           _this.topUser = _this.users[0];
 
           _this.users.shift();
@@ -20876,7 +20876,7 @@ var render = function() {
               _vm._m(4),
               _vm._v(" "),
               _c("span", { staticClass: "text-yellow-100" }, [
-                _vm._v(_vm._s(_vm.topUser.score))
+                _vm._v(_vm._s(_vm.topUser.responses[0].score))
               ])
             ]
           ),
@@ -20972,7 +20972,7 @@ var render = function() {
                         staticClass:
                           "text-orange-400 group-hover:text-yellow-100"
                       },
-                      [_vm._v(_vm._s(user.score))]
+                      [_vm._v(_vm._s(user.responses[0].score))]
                     )
                   ])
                 ]),
