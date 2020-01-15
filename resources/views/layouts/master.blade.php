@@ -29,10 +29,9 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
                 </div>
                 @endif
                 <a href="/home" class="p-1">Home</a>
-                <a href="#" class="p-1">ContactUs</a>
+                <a href="#" class="p-1">About</a>
                 <a href="#" class="p-1">Rules</a>
                 <a href="#" class="p-1">Leaderboard</a>
-                <a href="/team" class="p-1">DeveloperTeam</a>
                 @if(Auth::check())
                 <form action="/logout" method="post" class="mt-1 border-t border-black">
                   @csrf
@@ -108,11 +107,10 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
       <div class="flex justify-between lg:px-10 md:px-5 lg:text-base md:text-sm text-xs flex-col md:flex-row">
         <div class="flex justify-around">
           <a href="/home" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('home') || request()->is('/') ? 'active' : '' }} "> Home </a>
-          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> ContactUs </a>
+          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> About </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
-          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
-          <a href="/team" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('team') ? 'active' : '' }} "> DeveloperTeam </a>
-          @if (Auth::user() ? Auth::user()->is_admin : false)
+          <a href="/leaderboard" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
+          @if (Auth::user() ? Auth::user()->is_admin : false)  
             <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
           @endif
         </div>
@@ -123,8 +121,8 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <span href="#" class="md:inline hidden self-center lg:p-2 p-1 m-1">{{ Auth::user()->name }}</span>
           <form action="/logout" method="post" class="self-center py-1 m-1">
             @csrf
-            <button type="submit" class="p-1 text-white hover:text-primary">
-              <svg class="inline w-6" fill="currentColor" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <button type="submit" class="px-2 p-1 bg-orange-op2 rounded ">
+              <svg class="inline w-6" fill="white" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                 <path d="m13.076 97.083a1.75 1.75 0 0 0 1.75-1.75v-28.666a1.75 1.75 0 0 0 -3.5 0v28.666a1.75 1.75 0 0 0 1.75 1.75z"/>
                 <path d="m122.38 64.97c.027-.041.046-.085.069-.128a1.037 1.037 0 0 0 .146-.348c.015-.051.035-.1.045-.152a1.755 1.755 0 0 0 0-.685c-.01-.053-.03-.1-.045-.152a1.733 1.733 0 0 0 -.054-.174 1.692 1.692 0 0 0 -.092-.174c-.023-.042-.042-.086-.069-.127a1.75 1.75 0 0 0 -.22-.269l-12.509-12.509a1.75 1.75 0 0 0 -2.475 2.475l9.524 9.523h-53.276a1.75 1.75 0 0 0 0 3.5h53.276l-9.523 9.523a1.75 1.75 0 1 0 2.475 2.475l12.508-12.509a1.75 1.75 0 0 0 .22-.269z"/>
                 <path d="m95.424 72.25a1.75 1.75 0 0 0 -1.75 1.75v36.9h-45.041v-93.8h45.041v36.9a1.75 1.75 0 1 0 3.5 0v-38.65a1.75 1.75 0 0 0 -1.75-1.75h-46.791v-7.1a1.75 1.75 0 0 0 -2.461-1.6l-39.807 17.693a1.751 1.751 0 0 0 -1.039 1.6v79.615a1.751 1.751 0 0 0 1.039 1.6l39.807 17.692a1.75 1.75 0 0 0 2.461-1.6v-7.1h46.791a1.75 1.75 0 0 0 1.75-1.75v-38.65a1.75 1.75 0 0 0 -1.75-1.75zm-50.291 46.558-36.307-16.138v-77.34l36.307-16.138z"/>
@@ -172,7 +170,25 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
 
     </nav>
 
-    @yield('main')
+    @if (request()->is('admin*'))
+    <div class="border-t border-yellow-400 my-2"></div>
+    
+    <div class="flex">
+        <div class="max-w-xs w-64 p-4">
+            <nav class="flex flex-col">
+                <a href="{{ route('admin.dashboard') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Dashboard</a>
+                <a href="{{ route('admin.participants') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Participants</a>
+                <a href="{{ route('admin.question.index') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
+            </nav>
+        </div>
+        <div class="px-6 py-4 flex-1 text-left">
+            @yield('main')
+        </div>
+    </div>
+    @else  
+      @yield('main')
+    @endif
+
   </div>
 
 <!-- googlefont -->
@@ -180,15 +196,6 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
 
   <script src="{{asset('js/app.js')}}"></script>
-  <script>
-    window.addEventListener('scroll', function(e) {
-      var target = document.querySelectorAll('.scroll');
-      var offsety = window.pageYOffset * 0.3;
-      for (var i = 0; i < target.length; i++) {
-        target[i].style.transform = 'translateY(-'+offsety+'px)';
-        }
-    });
-  </script>
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 <?php
 
 use App\Question;
+use App\QuestionHint;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,7 +40,7 @@ Route::get('dashboard', function () {
     $highestLevel = Question::where('level', $users->max('level'))->get(['id', 'level'])->first();
 
     // return level on which most paricipants stucks on
-    $stuckLevel = Question::where('level', $users->avg('level'))->get(['id', 'level'])->first();
+    $stuckLevel = Question::where('level', (int)round($users->avg('level')))->get(['id', 'level'])->first();
 
     return [
         'totalParticipants' => $totalParticipants,
@@ -51,4 +53,25 @@ Route::get('dashboard', function () {
             'level' => $stuckLevel->level ?? null,
         ],
     ];
+});
+
+Route::get('/question/{question}/hints/', function ($questionId) {
+    return QuestionHint::where([
+        ['question_id', $questionId],
+        ['is_visible', true],
+    ])->get(['id', 'text']);
+});
+
+Route::get('/leaderboard', function () {
+    return User::with(['responses'])->get()
+        ->filter(function ($user) {
+            $user['split_time'] = $user->responses->sum->split_time;
+
+            return !$user->is_admin;
+        })->sortBy(function ($user) {
+            return [
+                $user->responses->sum('score'),
+                $user->responses->sum('split_time'),
+            ];
+        })->take(10);
 });

@@ -45,4 +45,19 @@ class User extends Authenticatable
     {
         return $this->email == config('app.admin_email');
     }
+
+    public function getScoreAttribute()
+    {
+        return QuestionResponse::where('user_id', $this->id)->sum('score');
+    }
+
+    public function responses()
+    {
+        return $this->hasMany(QuestionResponse::class);
+    }
+
+    public function getSplitTimeAttribute($value)
+    {
+        return gmdate('i:s', $this->responses->sum->split_time);
+    }
 }

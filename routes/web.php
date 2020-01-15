@@ -31,6 +31,8 @@ Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@s
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
 
+Route::get('leaderboard', 'PagesController@leaderboard')->middleware('auth');
+
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/', 'Admin\PagesController@dashboard')->name('admin.dashboard');
     Route::get('participants', 'Admin\PagesController@participants')->name('admin.participants');

@@ -239,7 +239,7 @@
                 </svg>
                 Score
               </p>
-              <span class="md:text-2xl text-xl text-shadow-1">1233</span>
+              <span class="md:text-2xl text-xl text-shadow-1">{{ Auth::user()->score }}</span>
             </div>
             <div class="w-1/2 p-2">
               <p class="mb-1">
@@ -263,7 +263,7 @@
                 </svg>
                 SplitTime
               </p>
-              <span class="md:text-2xl text-xl text-shadow-1">+0.12s</span>
+              <span class="md:text-2xl text-xl text-shadow-1">{{ Auth::user()->split_time }}s</span>
             </div>
           </div>
 
@@ -285,13 +285,8 @@
                 <animateTransform attributeName="transform" type="rotate" values="0;90;0;45;0;180;0" dur="1s" repeatCount="indefinite" />
               </svg><span class="inline p-1">HINTS</span>
             </p>
-            <ul class="px-2">
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">Lskdf khakdf  sldhf a hkdfh ahdf akhdfakn ayiureh afdhf hdf</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">Lskdf khakdf  sldhf a hkdfh ahdf akhdfakn ayiureh afdhf hdf</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">Lskdf khakdf  sldhf a hkdfh ahdf akhdfakn ayiureh afdhf hdf</li>
-              <li class="md:mb-2 mb-1 p-2 shadow-md bg-black-op2">jkusd f iu osidu kehbyf sduf e iydf eio hdfjyh</li>
-            </ul>
+
+            <Hints question_id="{{ $question->id }}" />
 
           </div>
 
@@ -317,7 +312,7 @@
     </div>
 
 <!-- Leaderboard container -->
-    <div class=" rounded m-2 lg:w-1/4 lg:flex hidden justify-center p-4 bg-center"
+    <div class="rounded m-2 lg:w-1/4 lg:flex flex-col hidden p-2 xl:p-4 bg-center"
     style="
     background:linear-gradient(#000,rgba(255,180,0,1),#000),url('images/leaderboardBG.svg'),url('images/leaderboardbg.png');
     background-repeat: no-repeat,no-repeat;
@@ -325,7 +320,7 @@
     background-size:cover,contain,cover;
     background-blend-mode : multiply;">
 
-      <h1 class="text-2xl font-display text-shadow-2">LEADERBOARD</h1>
+      <leader-board />
     </div>
 
   </div>

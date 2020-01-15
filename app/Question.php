@@ -28,4 +28,9 @@ class Question extends Model
     {
         return $this->hasMany(QuestionHint::class);
     }
+
+    public function responses()
+    {
+        return $this->hasMany(QuestionResponse::class);
+    }
 }
