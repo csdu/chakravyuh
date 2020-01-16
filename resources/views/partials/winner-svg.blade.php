@@ -9,7 +9,7 @@
     </div>
     
     {{-- winner circle --}}
-    @include('svg.winner-circle')
+    @include('svg.winner-circle', ['avatar' => $avatar])
 </div>
 
 {{-- right person --}}

@@ -9,5 +9,5 @@
     </clipPath>
 
     {{-- winner image --}}
-    <image href="https://i1.sndcdn.com/avatars-000343928089-mj2j87-t500x500.jpg" width="1280" height="1280" clip-path="url(#myCircle)" />
+    <image href="{{ $avatar }}" width="1280" height="1280" clip-path="url(#myCircle)" />
 </svg>
