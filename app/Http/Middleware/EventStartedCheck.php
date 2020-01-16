@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\QuestionResponse;
 use Closure;
 
 class EventStartedCheck
@@ -19,6 +20,10 @@ class EventStartedCheck
             return $next($request);
         }
 
-        return abort('403', "Event hasn't started yet");
+        if (QuestionResponse::count()) {
+            return abort('403', 'Event has ended');
+        } else {
+            return abort('403', "Event hasn't started yet");
+        }
     }
 }

@@ -74,6 +74,13 @@
 
           <!-- Question -->
           <div class="question-container w-full h-24rem flex my-2 pb-4 justify-center lg:shadow-lg shadow-md bg-center bg-cover bg-no-repeat" style="">
+            
+            @if ($question->text)
+                <p class="py-2">
+                  {{$question->text}}
+                </p>
+            @endif
+
             <transition appear name="blur">
             @if ($question->attachment->type == 'image')
                 <img class="md:h-full md:w-auto h-fit-content w-full max-h-full" src="/question_attachments/{{ $question->attachment->id }}">

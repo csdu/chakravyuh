@@ -10,9 +10,7 @@ class PlayAreaController extends Controller
 {
     public function show()
     {
-        if (Auth::user()->is_admin) {
-            return abort('413', 'Admin can not play game');
-        }
+        abort_if(Auth::user()->is_admin, '403', 'Admin can not play game');
 
         $question = Question::where('level', Auth::user()->level)->first();
         abort_unless($question, 404, 'Question has not been uploaded yet');
