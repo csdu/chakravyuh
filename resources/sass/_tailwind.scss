@@ -91,16 +91,48 @@
 ::-webkit-scrollbar-thumb:hover {
   background: black;
 }
+.blur-enter-active{
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+.blur-enter {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.blur-enter-to{
+  transform: translate(0);
+  opacity:1;
+}
+.z-n{
+  z-index:-10;
+}
+
+.scale-up-transition{
+  transition : transform 0.4s ;
+  transform : scale(1);
+}
+.scale-up-transition:hover{
+  transform : scale(1.1);
+}
 
 @responsive{
   .top-20{
     top:20%;
+  }
+  .top-30{
+    top:30%;
   }
   .top-40{
     top:40%;
   }
   .top-50{
     top:50%;
+  }
+  .top-60{
+    top:60%;
+  }
+  .left-30{
+    left:30%;
   }
   .left-50{
     left:50%;
@@ -117,11 +149,17 @@
   .w-250{
     width:250%;
   }
+  .w-80{
+    width:20rem;
+  }
   .max-h-20rem{
     max-height:22rem;
   }
   .max-h-12rem{
     max-height:8rem;
+  }
+  .h-fit-content{
+    height:fit-content;
   }
 
 }

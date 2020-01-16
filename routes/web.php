@@ -21,9 +21,13 @@ Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallbac
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 
 Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
+Route::get('/team', function(){
+  return view('team');
+});
 Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
 
 Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
+
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
 
