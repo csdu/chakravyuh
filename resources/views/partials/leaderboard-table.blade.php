@@ -14,7 +14,7 @@
                 <span class="flex items-center">
                     <span class="w-3 h-3 mr-1">
                         <img src="/images/coin.svg">
-                    </span><span class="text-orange-400 group-hover:text-yellow-100">{{ $user->score }}</span>
+                    </span><span class="text-orange-400 group-hover:text-yellow-100">{{ $user->total_score }}</span>
                 </span>
             </div>
             <div class="uppercase font-extrabold group-hover:text-orange-400">

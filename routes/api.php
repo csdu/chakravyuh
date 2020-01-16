@@ -66,6 +66,7 @@ Route::get('/leaderboard', function () {
     return User::with(['responses'])->get()
         ->filter(function ($user) {
             $user['split_time'] = $user->responses->sum->split_time;
+            $user['total_score'] = $user->responses->sum('score');
 
             return !$user->is_admin;
         })->sortBy(function ($user) {

@@ -20876,7 +20876,7 @@ var render = function() {
               _vm._m(4),
               _vm._v(" "),
               _c("span", { staticClass: "text-yellow-100" }, [
-                _vm._v(_vm._s(_vm.topUser.responses[0].score))
+                _vm._v(_vm._s(_vm.topUser.total_score))
               ])
             ]
           ),
@@ -20972,7 +20972,7 @@ var render = function() {
                         staticClass:
                           "text-orange-400 group-hover:text-yellow-100"
                       },
-                      [_vm._v(_vm._s(user.responses[0].score))]
+                      [_vm._v(_vm._s(user.total_score))]
                     )
                   ])
                 ]),
