@@ -20,18 +20,18 @@ Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider')->mi
 Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback')->middleware('guest');
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 
-Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
-Route::get('/team', function(){
-  return view('team');
+Route::get('/team', function () {
+    return view('team');
 });
-Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
-
-Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
-
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
 
-Route::get('leaderboard', 'PagesController@leaderboard')->middleware('auth');
+Route::middleware('event_start_check')->group(function () {
+    Route::get('/playarea', 'PlayAreaController@show')->middleware('auth', 'event_start_check');
+    Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
+    Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
+    Route::get('leaderboard', 'PagesController@leaderboard')->middleware('auth');
+});
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/', 'Admin\PagesController@dashboard')->name('admin.dashboard');
