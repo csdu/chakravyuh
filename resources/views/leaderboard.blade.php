@@ -14,12 +14,12 @@
             <div>
                 {{-- winner svg --}}
                 <div class="w-9/12 lg:w-10/12 mx-auto mb-4 lg:mb-6 flex items-center justify-between">
-                    @include('partials.winner-svg', ['avatar' => $users[1]->avatar_url])
+                    @include('partials.winner-svg', ['avatar' => $users[1]->avatar_url ?? null])
                 </div>
 
                 {{-- winner details --}}
                 <div class="mt-4 text-shadow-1 font-extrabold uppercase">
-                    @include('partials.winner-details', ['topUser' => $users[1]])
+                    @include('partials.winner-details', ['topUser' => $users[1] ?? null])
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
             @php
                 unset($users[1]);
             @endphp
-            @include('partials.leaderboard-table', ['users' => $users])
+            @include('partials.leaderboard-table', ['users' => $users ?? null])
         </div>
     </div>
 

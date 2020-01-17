@@ -45,6 +45,9 @@
 
 <script>
 export default {
+	props: {
+		token: { required: true }
+	},
 	data() {
 		return {
 			totalParticipants: "",
@@ -55,7 +58,11 @@ export default {
 	methods: {
 		getDashboardData() {
 			window.axios
-				.get("/api/dashboard")
+				.get("/api/dashboard", {
+					params: {
+						api_token: this.token
+					}
+				})
 				.then(res => {
 					console.log(res);
 					this.totalParticipants = res.data.totalParticipants;

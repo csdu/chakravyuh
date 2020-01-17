@@ -1,4 +1,4 @@
-@foreach($users as $i => $user)
+@forelse($users as $i => $user)
     <div class="w-11/12 mx-auto mb-1 px-4 py-2 rounded-lg text-shadow-md flex items-center justify-center font-extrabold text-left group hover:shadow-md hover:bg-light-brown">
         <div class="w-5 group-hover:text-orange-400">{{ $i }}</div>
 
@@ -22,4 +22,8 @@
             </div>
         </div>
     </div>
-@endforeach
+@empty
+    <div class="w-11/12 mx-auto mb-1 px-4 py-2 rounded-lg text-shadow-md flex items-center justify-center font-extrabold text-left group hover:shadow-md bg-light-brown">
+        No records Availabel
+    </div>
+@endforelse

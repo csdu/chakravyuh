@@ -12,6 +12,7 @@
 <script>
 export default {
 	props: {
+		token: { required: true },
 		question_id: { required: true }
 	},
 	data() {
@@ -22,7 +23,11 @@ export default {
 	methods: {
 		getQuestionHints() {
 			window.axios
-				.get("api/question/" + this.question_id + "/hints/")
+				.get("api/question/" + this.question_id + "/hints/", {
+					params: {
+						api_token: this.token
+					}
+				})
 				.then(res => {
 					this.hints = res.data;
 				})

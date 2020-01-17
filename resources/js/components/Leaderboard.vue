@@ -92,6 +92,9 @@
 
 <script>
 export default {
+	props: {
+		token: { required: true }
+	},
 	data() {
 		return {
 			users: [],
@@ -101,7 +104,11 @@ export default {
 	methods: {
 		getLeaderBoard() {
 			window.axios
-				.get("api/leaderboard")
+				.get("api/leaderboard", {
+					params: {
+						api_token: this.token
+					}
+				})
 				.then(res => {
 					if (Object.keys(res.data).length > 0) {
 						this.users = Object.values(res.data);

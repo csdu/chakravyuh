@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use \Auth;
+use Auth;
 use Socialite;
-use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 
 class GoogleLoginController extends Controller
@@ -33,11 +33,12 @@ class GoogleLoginController extends Controller
             ['email' => $google_user->getEmail()],
             [
                 'token' => $google_user->token,
-                'name'  =>  $google_user->getName(),
-                'avatar_url' => $avatar = $google_user->getAvatar()
+                'name' => $google_user->getName(),
+                'avatar_url' => $avatar = $google_user->getAvatar(),
+                'api_token' => Str::random(60),
             ]
         );
-        
+
         Auth::login($user, true);
 
         return redirect()->to('/home');

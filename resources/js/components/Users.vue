@@ -37,6 +37,9 @@
 
 <script>
 export default {
+	props: {
+		token: { required: true }
+	},
 	data() {
 		return {
 			users: []
@@ -45,7 +48,11 @@ export default {
 	methods: {
 		getUsers() {
 			window.axios
-				.get("/api/users")
+				.get("/api/users", {
+					params: {
+						api_token: this.token
+					}
+				})
 				.then(res => {
 					this.users = res.data;
 				})

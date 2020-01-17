@@ -5,7 +5,7 @@
             <h1 class="text-xl">Participants</h1>
         </div>
         <div class="pb-3">
-            <users />
+            <users token="{{ Auth::user()->api_token }}" />
         </div>
     </div>
 @endsection

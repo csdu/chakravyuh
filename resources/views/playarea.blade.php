@@ -145,7 +145,7 @@
               @include('svg.hint')HINTS
             </p>
 
-            <Hints question_id="{{ $question->id }}" />
+            <Hints question_id="{{ $question->id }}" token="{{ Auth::user()->api_token }}" />
 
           </div>
 
@@ -179,7 +179,7 @@
     background-size:cover,cover;
     background-blend-mode : multiply;">
 
-      <leader-board />
+      <leader-board token="{{ Auth::user()->api_token }}" />
     </div>
 
   </div>

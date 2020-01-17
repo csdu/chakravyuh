@@ -25,7 +25,7 @@ Route::get('/users', function () {
     return User::get(['id', 'name', 'email', 'level'])->reject(function ($user) {
         return $user->is_admin;
     });
-});
+})->middleware('auth:api');
 
 Route::get('dashboard', function () {
     // get all users expect admin user
@@ -53,14 +53,14 @@ Route::get('dashboard', function () {
             'level' => $stuckLevel->level ?? null,
         ],
     ];
-});
+})->middleware('auth:api');
 
 Route::get('/question/{question}/hints/', function ($questionId) {
     return QuestionHint::where([
         ['question_id', $questionId],
         ['is_visible', true],
     ])->get(['id', 'text']);
-});
+})->middleware('auth:api');
 
 Route::get('/leaderboard', function () {
     return User::with(['responses'])->get()
@@ -75,4 +75,4 @@ Route::get('/leaderboard', function () {
                 $user->responses->sum('split_time'),
             ];
         })->take(10);
-});
+})->middleware('auth:api');

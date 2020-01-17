@@ -6,7 +6,7 @@
         </div>
         <div class="pb-3">
 
-            <admin-dashboard></admin-dashboard>
+            <admin-dashboard token="{{ Auth::user()->api_token }}" />
             
         </div>
     </div>
