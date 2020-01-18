@@ -13,6 +13,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
   -webkit-font-smoothing: antialiased; ">
 
   <div class="text-white text-center" id="app">
+    @include('flash::message')
 
     <nav class=" md:hidden flex flex-col py-2 px-3 text-xs justify-between text-primary z-10 relative">
 

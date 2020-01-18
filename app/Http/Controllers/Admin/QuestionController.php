@@ -50,12 +50,16 @@ class QuestionController extends Controller
             }
         }
 
+        flash('Question saved!')->success();
+
         return redirect()->route('admin.question.index');
     }
 
     public function delete(Question $question)
     {
         $question->delete();
+
+        flash('Question deleted!')->info();
 
         return redirect()->route('admin.question.index');
     }

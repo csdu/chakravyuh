@@ -28,9 +28,9 @@ class PlayAreaController extends Controller
                 'score' => $this->calculateScore($question),
             ]);
 
-            $request->session()->flash('status', 'correct answer');
+            flash('Wooh! Correct answer, keep going...')->success();
         } else {
-            $request->session()->flash('status', 'Incorrect answer');
+            flash("Incorrect answer but don't lose hope, try again...")->error();
         }
 
         return redirect('playarea');

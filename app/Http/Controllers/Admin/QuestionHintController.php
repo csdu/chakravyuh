@@ -14,6 +14,8 @@ class QuestionHintController extends Controller
             'is_visible' => true,
         ]);
 
+        flash('Hint released!')->info();
+
         return redirect()->route('admin.question.show', $question);
     }
 
@@ -22,6 +24,8 @@ class QuestionHintController extends Controller
         $hint->update([
             'is_visible' => false,
         ]);
+
+        flash('Hint unreleased!')->info();
 
         return redirect()->route('admin.question.show', $question);
     }
