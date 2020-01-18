@@ -79,11 +79,13 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <a href="/home" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('home') || request()->is('/') ? 'active' : '' }} "> Home </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('ContactUS') ? 'active' : '' }} "> Contact Us </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
-          <a href="/leaderboard" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
+          @auth
+            <a href="/leaderboard" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
+            @if (Auth::user()->is_admin)
+                <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
+            @endif
+          @endauth
           {{-- <a href="/team" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('team') ? 'active' : '' }} "> Developer Team </a> --}}
-          @if (Auth::user() ? Auth::user()->is_admin : false)
-            <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
-          @endif
         </div>
 
         @auth

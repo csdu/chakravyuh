@@ -108,10 +108,12 @@
 <script>
 
 export default{
-
+  props: {
+    startTime: {required: true}
+  },
   data: function(){
     return{
-      eventDate : new Date('2020','01','24'),
+      eventDate : new Date(this.startTime),
       currentDate : new Date(),
       seconds : 0,
       minutes : 0,
