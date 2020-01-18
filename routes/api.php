@@ -69,10 +69,11 @@ Route::get('/leaderboard', function () {
             $user['total_score'] = $user->responses->sum('score');
 
             return !$user->is_admin;
-        })->sortBy(function ($user) {
-            return [
-                $user->responses->sum('score'),
-                $user->responses->sum('split_time'),
-            ];
-        })->take(10);
+        })->sort(function ($userA, $userB) {
+            if($userA->total_score == $userB->total_score) {
+                return $userA->split_time - $userB->split_time;
+            }
+
+            return $userB->total_score - $userA->total_score;
+        })->values()->take(10);
 })->middleware('auth:api');

@@ -58,6 +58,6 @@ class User extends Authenticatable
 
     public function getSplitTimeAttribute($value)
     {
-        return gmdate('i:s', $this->responses->sum->split_time);
+        return $this->responses->sum->split_time;
     }
 }
