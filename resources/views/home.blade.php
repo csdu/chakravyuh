@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('main')
-    @if (config('app.event_started'))
+    @if (App\EventStatus::isLive())
         <a href="/playarea" class="p-4 rounded font-bold hover:bg-yellow-600 bg-yellow-500">Enter Game</a>
-    @elseif(App\QuestionResponse::count())
-        Chakravyuh has ended.
+    @elseif(App\EventStatus::hasStarted())
+        Chakravyuh will start at {{ App\EventStatus::startTime() }}...
     @else
-        Chakravyuh will start soon...
+        Chakravyuh has ended.
     @endif
 @endsection
