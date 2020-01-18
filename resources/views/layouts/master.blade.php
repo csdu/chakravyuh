@@ -57,7 +57,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
         </div>
       </div>
 
-      @if(!Auth::check())
+      @guest
       <div class="flex items-center justify-center">
         <a href="/google/login" class="nav-logins self-center p-2 lg:px-4 m-1 md:mt-1 mt-10 md:border-0 border border-primary rounded">
           @include('svg.google-icon')
@@ -68,7 +68,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <span>Login</span>
         </a>
       </div>
-      @endif
+      @endguest
 
 
     </nav>
@@ -80,13 +80,13 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('ContactUS') ? 'active' : '' }} "> Contact Us </a>
           <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
           <a href="/leaderboard" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
-          <a href="/team" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('team') ? 'active' : '' }} "> Developer Team </a>
+          {{-- <a href="/team" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('team') ? 'active' : '' }} "> Developer Team </a> --}}
           @if (Auth::user() ? Auth::user()->is_admin : false)
             <a href="/admin" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('admin') ? 'active' : '' }} "> Admin </a>
           @endif
         </div>
 
-        @if(Auth::check())
+        @auth
         <div class="flex justify-around">
           <img src="{{ Auth::user()->avatar_url }}" alt="{{ Auth::user()->name }}" class="md:h-8 h-6 self-center m-1 rounded-full">
           <span href="#" class="md:inline hidden self-center lg:p-2 p-1 m-1">{{ Auth::user()->name }}</span>
@@ -97,9 +97,9 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
             </button>
           </form>
         </div>
-        @endif
+        @endauth
 
-        @if(!Auth::check())
+        @guest
         <div class="flex items-center justify-center">
           <a href="/google/login" class="nav-logins self-center p-2 lg:px-4 m-1 md:mt-1 mt-10 md:border-0 border border-primary rounded">
             @include('svg.google-icon')
@@ -110,7 +110,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
             <span>Login</span>
           </a>
         </div>
-        @endif
+        @endguest
 
       </div>
 
