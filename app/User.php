@@ -43,7 +43,7 @@ class User extends Authenticatable
 
     public function getIsAdminAttribute($value)
     {
-        return $this->email == config('app.admin_email');
+        return in_array($this->email, config('app.admin_emails'));
     }
 
     public function getScoreAttribute()
