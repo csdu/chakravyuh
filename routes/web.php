@@ -20,9 +20,9 @@ Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider')->mi
 Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback')->middleware('guest');
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 
-Route::get('/team', function () {
-    return view('team');
-});
+// Route::get('/team', function () {
+//     return view('team');
+// });
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
 

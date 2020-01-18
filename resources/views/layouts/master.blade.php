@@ -23,17 +23,19 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <dropdown>
             <template v-slot:content>
               <div class="flex flex-col p-2 w-48 ">
-                @if(Auth::check())
+                @auth
                 <div class="flex flex-col mb-1 p-1 border-b border-black">
                   <img src="{{ Auth::user()->avatar_url }}" alt="{{ Auth::user()->name }}" class="h-6 self-center rounded-full">
                   <p class="m-1">{{ Auth::user()->name }}</p>
                 </div>
-                @endif
+                @endauth
                 <a href="/home" class="p-1">Home</a>
                 <a href="#" class="p-1">Contact Us</a>
                 <a href="#" class="p-1">Rules</a>
+                @auth
                 <a href="/leaderboard" class="p-1">Leaderboard</a>
-                <a href="/team" class="p-1">Developer Team</a>
+                @endauth
+                {{-- <a href="/team" class="p-1">Developer Team</a> --}}
                 @if(Auth::check())
                 <form action="/logout" method="post" class="mt-1 border-t border-black">
                   @csrf

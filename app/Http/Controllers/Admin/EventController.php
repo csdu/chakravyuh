@@ -2,40 +2,38 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\EventStatus;
 use App\Http\Controllers\Controller;
+use Illuminate\Console\Scheduling\Event;
+use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Cache;
 
 class EventController extends Controller
 {
-    public function start()
+    public function start(Request $request, EventStatus $event)
     {
-        $this->changeEventStatus(true);
+        $request->validate([
+            'started_at' => ['nullable', 'date', 'date_format:Y-m-d H:i',  'after:now']
+        ]);
 
-        flash('Event is now live!')->success();
+        $time = $request->started_at ? Carbon::parse($request->started_at) : null;
+
+        $event->startAt($time);
+
+        flash('Event is scheduled to be live on ' . $request->started_at . '!')->success();
 
         return redirect()->route('admin.dashboard');
     }
 
-    public function end()
+    public function end(EventStatus $event)
     {
-        $this->changeEventStatus(false);
+        $event->endAt(now());
 
         flash('Event is now ended!')->info();
 
         return redirect()->route('admin.dashboard');
     }
 
-    protected function changeEventStatus(bool $status)
-    {
-        $old = config('app.event_started') ? 'true' : 'false';
-        $new = $status ? 'true' : 'false';
 
-        $path = base_path('.env');
-        if (file_exists($path)) {
-            return !!file_put_contents($path, str_replace(
-                'EVENT_STARTED=' . $old,
-                'EVENT_STARTED=' . $new,
-                file_get_contents($path)
-            ));
-        }
-    }
 }

@@ -81,7 +81,7 @@
       <div class="w-full flex w-full p-2 my-6">
         <img class="lg:w-48 md:w-32 lg:h-48 md:h-32 w-24 h-24 rounded-sm bg-gray-900" src="https://avatars2.githubusercontent.com/u/27115069?s=460&v=4" alt="">
         <div class="flex flex-col md:ml-16 ml-4">
-          <span class="md:text-lg text-sm">Yuvraj</span>
+          <span class="md:text-lg text-sm">Yuvraj Sablania</span>
           <div class="flex">
             <a href="https://github.com/yuvrajsab" class="my-2 mr-4">
               @include('svg.github-icon')
@@ -106,23 +106,38 @@
         </div>
         <img class="lg:w-48 md:w-32 lg:h-48 md:h-32 w-24 h-24 rounded-sm bg-gray-900" src="https://avatars2.githubusercontent.com/u/55023076?s=460&v=4" alt="">
       </div>
-      <div class="w-full flex w-full p-2 my-6">
-        <img class="lg:w-48 md:w-32 lg:h-48 md:h-32 w-24 h-24 rounded-sm bg-gray-900" src="https://avatars0.githubusercontent.com/u/29013078?s=460&v=4" alt="">
-        <div class="flex flex-col md:ml-16 ml-4">
-          <span class="md:text-lg text-sm">Vikas</span>
-          <div class="flex">
-            <a href="https://github.com/vikashprajapati" class="my-2 mr-4">
-              @include('svg.github-icon')
-            </a>
-            <a href="#" class="my-2">
-              @include('svg.linkedin-icon')
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
-  </div>
+
+    <div class="flex flex-col relative my-10 z-10 w-full">
+        <svg class="font-display absolute top-20 right-0 z-n md:w-2/3 w-11/12 md:opacity-75" version="1.1"
+            viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="3.5rem"
+                fill="rgba(255,255,255,0.07)">
+                Contributors
+            </text>
+        </svg>
+        <div class="flex flex-col scroll">
+            <h2 class="border-b lg:w-80 md:w-64 w-48 md:text-xl text-base my-4">Contributors</h2>
+            <div class="w-full flex w-full p-2 my-6">
+                <img class="lg:w-48 md:w-32 lg:h-48 md:h-32 w-24 h-24 rounded-sm bg-gray-900"
+                    src="https://avatars0.githubusercontent.com/u/29013078?s=460&v=4" alt="">
+                <div class="flex flex-col md:ml-16 ml-4">
+                    <span class="md:text-lg text-sm">Vikas Prajapati</span>
+                    <div class="flex">
+                        <a href="https://github.com/vikashprajapati" class="my-2 mr-4">
+                            @include('svg.github-icon')
+                        </a>
+                        <a href="#" class="my-2">
+                            @include('svg.linkedin-icon')
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 </div>
