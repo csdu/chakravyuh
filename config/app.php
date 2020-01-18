@@ -2,7 +2,7 @@
 
 return [
     'admin_email' => env('ADMIN_EMAIL', 'admin@admin.com'),
-    'event_started' => env('EVENT_STARTED', true),
+    'event_started' => env('EVENT_STARTED', false),
     /*
     |--------------------------------------------------------------------------
     | Application Name

@@ -41,8 +41,14 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::post('questions', 'Admin\QuestionController@store')->name('admin.question.store');
     Route::get('question/{question}/show', 'Admin\QuestionController@show')->name('admin.question.show');
     Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.question.delete');
+
     Route::get('question/{question}/hint/{hint}/set', 'Admin\QuestionHintController@setVisible')
         ->name('admin.question.hint.set');
+
     Route::get('question/{question}/hint/{hint}/unset', 'Admin\QuestionHintController@unsetVisible')
         ->name('admin.question.hint.unset');
+
+    Route::post('event-start', 'Admin\EventController@start')->name('admin.event.start');
+
+    Route::post('event-end', 'Admin\EventController@end')->name('admin.event.end');
 });
