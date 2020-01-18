@@ -21,7 +21,7 @@ class Question extends Model
 
     public function isCorrectAnswer($answer)
     {
-        return $this->answer == strtolower($answer);
+        return strtolower(preg_replace('/[^A-Za-z0-9]/', '', $this->answer)) === strtolower(preg_replace('/[^A-Za-z0-9]/', '', $answer));
     }
 
     public function hints()
