@@ -64,7 +64,6 @@ export default {
 					}
 				})
 				.then(res => {
-					console.log(res);
 					this.totalParticipants = res.data.totalParticipants;
 					this.highestLevel = res.data.highestLevel;
 					this.stuckLevel = res.data.stuckLevel;

@@ -151,7 +151,7 @@
 
           <!-- bonus hints container-->
           <div class="flex flex-col bg-black-op2 rounded-sm text-xs p-4 text-shadow-1">
-            <p>for bonus hints keep track of <a href="#" class="text-sm hover:text-white font-bold">SANKALAN facebook page</a> </p>
+            <p>for bonus hints keep track of <a href="https://www.facebook.com/ducs.chakravyuh" target="_blank" class="text-sm hover:text-white font-bold">SANKALAN facebook page</a> </p>
           </div>
           <div class="md:hidden">
             <a href="#" class=" text-center">
