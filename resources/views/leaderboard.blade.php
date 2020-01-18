@@ -11,15 +11,16 @@
 
     <div class="sm:w-11/12 max-w-6xl h-screen sm:m-4 m-auto p-2 xl:p-4 rounded sm:overflow-y-hidden text-primary flex flex-col sm:flex-row sm:justify-center sm:items-center scroll">
         <div class="sm:w-5/12 sm:h-screen lg:w-6/12 max-w-lg mt-8 sm:m-4 flex flex-col sm:justify-center">
+            @php($winner = $users->shift())
             <div>
                 {{-- winner svg --}}
                 <div class="w-9/12 lg:w-10/12 mx-auto mb-4 lg:mb-6 flex items-center justify-between">
-                    @include('partials.winner-svg', ['avatar' => $users[1]->avatar_url ?? null])
+                    @include('partials.winner-svg', ['avatar' => $winner->avatar_url ?? null])
                 </div>
 
                 {{-- winner details --}}
                 <div class="mt-4 text-shadow-1 font-extrabold uppercase">
-                    @include('partials.winner-details', ['topUser' => $users[1] ?? null])
+                    @include('partials.winner-details', ['topUser' => $winner ?? null])
                 </div>
             </div>
         </div>
@@ -31,10 +32,6 @@
         </div>
 
         <div class="sm:w-1/2 lg:w-5/12 h-screen overflow-y-scroll sm:m-4 lg:mx-auto flex flex-col justify-center">
-            {{-- table entries --}}
-            @php
-                unset($users[1]);
-            @endphp
             @include('partials.leaderboard-table', ['users' => $users ?? null])
         </div>
     </div>
