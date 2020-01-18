@@ -2,9 +2,8 @@
 
 namespace App\Http\Middleware;
 
-use App\QuestionResponse;
+use App\EventStatus;
 use Closure;
-use Illuminate\Support\Facades\Cache;
 
 class EventStartedCheck
 {
@@ -17,16 +16,14 @@ class EventStartedCheck
      */
     public function handle($request, Closure $next)
     {
-        $now = now();
-        $startTime = Cache::get('app.event_started_at', null);
-        $endTime = Cache::get('app.event_ended_at', null);
-
-        abort_if($startTime == null, 403, 'Event has not started yet.');
-
-        abort_if($endTime != null && $now > $endTime, 403, 'Event has ended!');
-
-        if( $now > $startTime && $now < $endTime) {
-            return $next($request);
+        if(! EventStatus::hasStarted()) {
+            abort(403, 'Event has not started yet.');
         }
+
+        if (EventStatus::hasEnded()) {
+            abort(403, 'Event has ended.');
+        }
+
+        return $next($request);
     }
 }

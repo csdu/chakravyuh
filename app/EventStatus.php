@@ -35,6 +35,11 @@ class EventStatus
         return static::endTime() != null && static::endTime() < now();
     }
 
+    public static function restart($time = null) {
+        Cache::pull(static::$END_KEY, null);
+        return static::startAt($time);
+    }
+
     public static function startAt($time = null)
     {
         $time = $time != null ? $time : now();

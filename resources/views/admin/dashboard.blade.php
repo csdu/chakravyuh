@@ -33,7 +33,7 @@
                     </div>
                     <button
                         class="px-3 py-2 border border-blue-500 rounded font-bold text-white hover:bg-blue-600 bg-blue-500">
-                        Start Event
+                        {{ App\EventStatus::hasEnded() ? 'Restart' : 'Start'}} Event
                     </button>
                 </form>
                 @endif

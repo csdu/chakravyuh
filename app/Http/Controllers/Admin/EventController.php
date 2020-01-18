@@ -19,7 +19,7 @@ class EventController extends Controller
 
         $time = $request->started_at ? Carbon::parse($request->started_at) : null;
 
-        $event->startAt($time);
+        $event->restart($time);
 
         flash('Event is scheduled to be live on ' . $request->started_at . '!')->success();
 
