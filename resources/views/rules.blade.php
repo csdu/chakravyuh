@@ -1,4 +1,4 @@
-<div class="w-full lg:px-32 flex relative flex-col py-16 md:text-base text-sm" >
+<div class="w-full lg:px-32 flex relative flex-col md:py-16 py-4 md:text-base text-sm" >
 
   <svg class="font-display absolute top-0 right-0 z-n md:w-2/3 w-11/12 scroll-down" version="1.1" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text x="70%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="3.5rem" fill="rgba(255,255,255,0.07)">RULES</text>
