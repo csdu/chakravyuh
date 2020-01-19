@@ -26,7 +26,7 @@ class QuestionController extends Controller
         $data = $request->validate([
             'level' => 'required|numeric|gt:0|unique:questions,level',
             'answer' => 'required',
-            'file' => 'required|file',
+            'file' => 'required|file|max:10000',
             'type' => 'required|in:audio,video,image',
             'group' => 'required|numeric|gt:0',
             'max_score' => 'required|numeric|gt:0',
