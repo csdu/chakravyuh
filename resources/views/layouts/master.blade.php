@@ -29,8 +29,8 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
                 </div>
                 @endif
                 <a href="/home" class="p-1">Home</a>
-                <a href="#" class="p-1">ContactUS</a>
-                <a href="#" class="p-1">Rules</a>
+                <a href="/about" class="p-1">About</a>
+                <a href="/rules" class="p-1">Rules</a>
                 <a href="/leaderboard" class="p-1">Leaderboard</a>
                 <a href="/team" class="p-1">DeveloperTeam</a>
                 @if(Auth::check())
@@ -74,8 +74,8 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
       <div class="flex justify-between lg:px-10 md:px-5 lg:text-base md:text-sm text-xs flex-col md:flex-row">
         <div class="flex justify-around">
           <a href="/home" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('home') || request()->is('/') ? 'active' : '' }} "> Home </a>
-          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('ContactUS') ? 'active' : '' }} "> ContactUS </a>
-          <a href="#" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
+          <a href="/about" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('about') ? 'active' : '' }} "> About </a>
+          <a href="/rules" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('rules') ? 'active' : '' }} "> Rules </a>
           <a href="/leaderboard" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('leaderboard') ? 'active' : '' }} "> Leaderboard </a>
           <a href="/team" class="nav-button self-center p-2 px-4 m-1 {{ request()->is('team') ? 'active' : '' }} "> DeveloperTeam </a>
           @if (Auth::user() ? Auth::user()->is_admin : false)

@@ -19,8 +19,4 @@
 
 </div>
 </div>
-<div class="bg-black-op2">
-  @include('about')
-  @include('rules')
-</div>
 @endsection

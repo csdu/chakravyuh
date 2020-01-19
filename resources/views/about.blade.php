@@ -1,10 +1,12 @@
-<div class="w-full lg:px-32 flex relative flex-col md:py-16 py-4" >
-  <svg class="font-display absolute top-0 right-0 z-n md:w-2/3 w-11/12 scroll-down" version="1.1" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+@extends('layouts.master')
+@section('main')
+<div class="w-full lg:px-32 flex relative flex-col md:py-12 py-4" >
+  <svg class="font-display absolute top-30 right-0 z-n md:w-2/3 w-11/12" version="1.1" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text x="70%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="3.5rem" fill="rgba(255,255,255,0.07)">ABOUT</text>
   </svg>
-  <div class="lg:w-2/3 md:w-3/4 w-11/12 flex flex-col self-center my-4">
+  <div class="lg:w-2/3 md:w-3/4 w-11/12 flex flex-col self-center scroll">
     <h2 class="md:text-3xl text-2xl border-b border-white font-display self-center my-4 w-64">About</h2>
-    <div class="flex flex-col my-4 text-left md:text-base text-sm">
+    <div class="flex flex-col my-4 md:text-base text-sm">
       <p>
         <q cite="">The secret impresses no one. The trick you use it for is everything</q>
         <span class="italic">-The prestige</span>
@@ -32,34 +34,11 @@
         - Maximum Team Members:  1 <br>
        </p>
        <br><br>
-       <hr>
-       <div class= "my-8 flex flex-col">
-         <p>Contact : </p>
-         <div class="flex md:flex-row flex-col justify-around">
-           <div class="my-4 flex">
-             <div class="w-12 h-12 flex justify-center bg-yellow-900 rounded-sm self-center">
-               <p class="self-center">1</p>
-             </div>
-             <div class="md:ml-6 ml-4">
-               <p>Abhishek kansal</p>
-               <p>abhishek.mcs18.du@gmail.com</p>
-               <p>+91-9650744474</p>
-             </div>
-           </div>
-           <div class="my-4 flex">
-             <div class="w-12 h-12 flex justify-center bg-yellow-900 rounded-sm self-center">
-               <p class="self-center">2</p>
-             </div>
-             <div class="md:ml-6 ml-4">
-               <p>Krishna Agarwal</p>
-               <p>krishna.mcs18.du@gmail.com</p>
-               <p>+91-9935590973</p>
-             </div>
-           </div>
-
-         </div>
-       </div>
     </div>
-
+    <hr>
+    @include('contact')
   </div>
+
 </div>
+@include('footer')
+@endsection

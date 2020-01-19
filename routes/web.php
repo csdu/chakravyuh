@@ -24,6 +24,12 @@ Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
 Route::get('/team', function(){
   return view('team');
 });
+Route::get('/about', function(){
+  return view('about');
+});
+Route::get('/rules', function(){
+  return view('rules');
+});
 Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
 
 Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
