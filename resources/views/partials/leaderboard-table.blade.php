@@ -24,6 +24,6 @@
     </div>
 @empty
     <div class="w-11/12 mx-auto mb-1 px-4 py-2 rounded-lg text-shadow-md flex items-center justify-center font-extrabold text-left group hover:shadow-md bg-light-brown">
-        No records Availabel
+        No records Available
     </div>
 @endforelse

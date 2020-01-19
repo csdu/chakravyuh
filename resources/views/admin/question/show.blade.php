@@ -54,7 +54,7 @@
                     @empty
                     <tr class="border-t hover:bg-yellow-200">
                         <td class="table-fit text-left pl-6 py-2 text-base">
-                            No Hints Availabel
+                            No Hints Available
                         </td>
                     </tr>
                     @endforelse

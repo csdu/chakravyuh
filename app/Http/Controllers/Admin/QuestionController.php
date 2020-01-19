@@ -15,26 +15,32 @@ class QuestionController extends Controller
 
     public function create()
     {
-        $nextLevel = Question::all()->last()->id + 1;
+        $nextLevel = Question::max('level') + 1;
 
         return view('admin.question.create')->withNextLevel($nextLevel);
     }
 
     public function store(Request $request)
     {
-        $request->validate([
+        $data = $request->validate([
             'level' => 'required|numeric|gt:0|unique:questions,level',
             'answer' => 'required',
             'file' => 'required|file',
             'type' => 'required|in:audio,video,image',
-            'qroup' => 'required|in:25,50,75,90,100',
+            'group' => 'required|numeric|gt:0',
+            'max_score' => 'required|numeric|gt:0',
+            'min_score' => 'required|numeric|gt:0',
+            'hints' => 'required|array|min:1',
+            'hints.*' => 'required|string|min:2'
         ]);
 
         $question = Question::create([
             'level' => $request->level,
             'text' => $request->text,
-            'answer' => sha1($request->answer),
+            'answer' => $request->answer,
             'group' => $request->group,
+            'max_score' => $request->max_score,
+            'min_score' => $request->min_score,
         ]);
 
         $question->attachment()->create([

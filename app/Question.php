@@ -9,6 +9,15 @@ class Question extends Model
 {
     protected $guarded = [];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        static::creating(function($question) {
+            $question->answer = $question->hashAnswer($question->answer);
+        });
+    }
+
     public function attachment()
     {
         return $this->hasOne(QuestionAttachment::class);
@@ -19,9 +28,15 @@ class Question extends Model
         return $this->level == Auth::user()->level;
     }
 
+    protected function hashAnswer($plainAnswer)
+    {
+        return sha1(strtolower(preg_replace('/[^A-Za-z0-9]/', '', $plainAnswer)));
+    }
+
     public function isCorrectAnswer($answer)
     {
-        return strtolower(preg_replace('/[^A-Za-z0-9]/', '', $this->answer)) === strtolower(preg_replace('/[^A-Za-z0-9]/', '', $answer));
+        $hashedAnswer = $this->hashAnswer($answer);
+        return $this->answer === $hashedAnswer;
     }
 
     public function hints()
