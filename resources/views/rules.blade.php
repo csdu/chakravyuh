@@ -1,4 +1,4 @@
-<div class="bg-black-op2 w-full lg:px-32 flex relative flex-col my-16 md:text-base text-sm" >
+<div class="w-full lg:px-32 flex relative flex-col py-16 md:text-base text-sm" >
 
   <svg class="font-display absolute top-0 right-0 z-n md:w-2/3 w-11/12 scroll-down" version="1.1" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <text x="70%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="3.5rem" fill="rgba(255,255,255,0.07)">RULES</text>
@@ -41,11 +41,11 @@
     <div class="md:px-4 p-2 my-4">
 
       <p class="my-4 border-b w-64 p-1">Distribution of scores</p>
-      <span>Based on the correct answers given by participants</span>
+      <span>- based on the correct answers given by participants</span>
 
       <div class="flex justify-around my-8 md:text-sm text-xs">
         <div class="flex flex-col">
-          <div class="md:w-8 w-6 md:h-8 h-6 bg-red-500 border border-white self-center">
+          <div class="md:w-8 w-6 md:h-8 h-6 bg-red-700 border border-white self-center">
           </div>
           <p class="self-center">+10 <span class="md:inline hidden">score</span></p>
         </div>
@@ -81,7 +81,7 @@
         <p class="mt-4">1st Bracket [1]</p>
         <div class="md:h-16 h-12 md:text-sm text-xs my-4 flex">
           <div class="flex w-5/6">
-            <div class="w-1/5 bg-red-500 h-full flex justify-center">
+            <div class="w-1/5 bg-red-700 h-full flex justify-center">
               <p class="self-center ">top 20</p>
             </div>
             <div class="w-1/5 bg-yellow-500 h-full flex justify-center">
@@ -105,7 +105,7 @@
         <p class="mt-4">2nd Bracket [2]</p>
         <div class="md:h-16  h-12 md:text-sm text-xs my-4 flex">
           <div class="flex w-3/4">
-            <div class="w-1/5 bg-red-500 h-full flex justify-center">
+            <div class="w-1/5 bg-red-700 h-full flex justify-center">
               <p class="self-center ">top 15</p>
             </div>
             <div class="w-1/5 bg-yellow-500 h-full flex justify-center">
@@ -129,7 +129,7 @@
         <p class="mt-4">3rd Bracket [3]</p>
         <div class="md:h-16  h-12 md:text-sm text-xs my-4 flex">
           <div class="flex w-2/3">
-            <div class="w-1/5 bg-red-500 h-full flex justify-center">
+            <div class="w-1/5 bg-red-700 h-full flex justify-center">
               <p class="self-center ">top 10</p>
             </div>
             <div class="w-1/5 bg-yellow-500 h-full flex justify-center">
@@ -153,7 +153,7 @@
         <p class="mt-4">4th Bracket [4]</p>
         <div class="md:h-16 h-12 md:text-sm text-xs my-4 flex">
           <div class="flex w-1/2">
-            <div class="w-1/5 bg-red-500 h-full flex justify-center">
+            <div class="w-1/5 bg-red-700 h-full flex justify-center">
               <p class="self-center ">top 5</p>
             </div>
             <div class="w-1/5 bg-yellow-500 h-full flex justify-center">
@@ -178,7 +178,7 @@
         <p class="mt-4">5th Bracket [5]</p>
         <div class="md:h-16 h-12 md:text-sm text-xs my-4 flex">
           <div class="flex w-1/4">
-            <div class="w-1/5 bg-red-500 h-full flex justify-center">
+            <div class="w-1/5 bg-red-700 h-full flex justify-center">
               <p class="self-center ">1</p>
             </div>
             <div class="w-1/5 bg-yellow-500 h-full flex justify-center">
@@ -203,7 +203,7 @@
 
     </div>
 
-    <p class="my-4 md:px-4 px-2">For tie breakers, splitTime will be taken into consideration</p>
+    <p class="my-4 md:px-4 px-2">- For tie breakers, splitTime will be taken into consideration</p>
 
   </div>
 
