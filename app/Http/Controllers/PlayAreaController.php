@@ -10,11 +10,6 @@ class PlayAreaController extends Controller
 {
     public function show()
     {
-        if(Auth::user()->is_admin) {
-            flash('Man!!! You are admin. You should not be playing!')->error();
-            return redirect()->route('admin.dashboard');
-        };
-
         $question = Question::where('level', Auth::user()->level)->first();
 
         if(! $question) {
