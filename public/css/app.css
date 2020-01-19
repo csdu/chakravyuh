@@ -12558,6 +12558,11 @@ video {
   height: fit-content;
 }
 
+.table-fit {
+  width: 1%;
+  white-space: nowrap;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

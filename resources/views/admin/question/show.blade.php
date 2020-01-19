@@ -45,9 +45,9 @@
                         <td class="table-fit text-left pl-6 py-2 text-base">{{ $hint->text }}</td>
                         <td class="table-fit text-center pr-6 py-2 text-sm">
                             @if ($hint->is_visible)
-                                <a href="{{route('admin.question.hint.unset', [$question, $hint])}}" class="bg-red-500 hover:bg-red-700 text-white py-2 px-3 rounded">Not Visible</a>
+                                <a href="{{route('admin.questions.hint.unset', [$question, $hint])}}" class="bg-red-500 hover:bg-red-700 text-sm text-white py-2 px-3 rounded">Retract</a>
                             @else
-                                <a href="{{route('admin.question.hint.set', [$question, $hint])}}" class="bg-green-500 hover:bg-green-700 text-white py-2 px-3 rounded">Visible</a>
+                                <a href="{{route('admin.questions.hint.set', [$question, $hint])}}" class="bg-green-500 hover:bg-green-700 text-sm text-white py-2 px-3 rounded">Release</a>
                             @endif
                         </td>
                     </tr>

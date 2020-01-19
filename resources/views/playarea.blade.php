@@ -51,7 +51,7 @@
       <!-- main -->
       <div class="flex md:flex-row flex-col scroll">
         <!-- left container -->
-        <div class="md:w-3/4 w-full flex flex-col md:my-4 my-2 md:mx-1 p-1 bg-black-op2 rounded-sm" >
+        <div class="w-full md:w-2/3 lg:w-3/4  flex flex-col md:my-4 my-2 md:mx-1 p-1 bg-black-op2 rounded-sm" >
 
           <div id="scores" class="md:hidden flex p-1 justify-between text-sm" >
             <div class="p-1">
@@ -67,59 +67,52 @@
           </div>
 
           <!-- Level -->
-          <div class="md:text-2xl text-lg my-2 font-display text-shadow-2 scale-up-transition">
+          <div class="md:text-2xl text-lg mb-2 font-display text-shadow-2 scale-up-transition">
             <span>LEVEL</span>
             <span class="font-semi-bold">{{ Auth::user()->level }}</span>
           </div>
 
           <!-- Question -->
-          <div class="question-container w-full h-24rem flex my-2 pb-4 justify-center lg:shadow-lg shadow-md bg-center bg-cover bg-no-repeat" style="">
-            
+          <div class="px-4 question-container w-full shadow-md mb-3">
+
             @if ($question->text)
-                <p class="py-2">
+                <p class="mb-3">
                   {{$question->text}}
                 </p>
             @endif
 
             <transition appear name="blur">
-            @if ($question->attachment->type == 'image')
-                <img class="md:h-full md:w-auto h-fit-content w-full max-h-full" src="/question_attachments/{{ $question->attachment->id }}">
-            @elseif($question->attachment->type == 'video')
-                <video class="md:h-full md:w-auto h-fit-content w-full max-h-full" controls>
-                  <source src = "/question_attachments/{{ $question->attachment->id }}" type="video/mp4">
-                </video>
-            @elseif($question->attachment->type == 'audio')
-                <audio class="self-center" controls>
-                  <source src = "/question_attachments/{{ $question->attachment->id }}" type="audio/mpeg">
-                </audio>
-            @else
-                <div>
-                    <p>Question will appear here</p>
-                </div>
-            @endif
+                <a href="/question_attachments/{{ $question->attachment->id }}"
+                    target="_blank"
+                    class="inline-block" style="cursor: zoom-in;">
+                @if ($question->attachment->type == 'image')
+                    <img class="max-w-full" src="/question_attachments/{{ $question->attachment->id }}">
+                @elseif($question->attachment->type == 'video')
+                    <video class="md:h-full md:w-auto h-fit-content w-full max-h-full" controls>
+                        <source src = "/question_attachments/{{ $question->attachment->id }}" type="video/mp4">
+                    </video>
+                @elseif($question->attachment->type == 'audio')
+                    <audio class="self-center" controls>
+                        <source src = "/question_attachments/{{ $question->attachment->id }}" type="audio/mpeg">
+                    </audio>
+                @endif
+                </a>
             </transition>
-
           </div>
 
           <!-- answer input -->
-          <div class="answer lg:mb-4 my-2 text-black">
+          <div class="mb-3 text-black">
             <form class="flex justify-center" action="/playarea/{{ $question->id }}/submit" method="post">
               @csrf
-              <input class="md:w-1/2 w-3/4 md:h-12 py-2 px-4 md:text-sm text-xs text-yellow-900 bg-yellow-100 shadow-md rounded-tl-sm rounded-bl-sm" type="text" name="answer" placeholder="Enter your answer here">
+              <input class="md:w-1/2 w-3/4 md:h-12 py-2 px-4 md:text-sm text-xs text-yellow-900 bg-yellow-100 shadow-md rounded-tl-sm rounded-bl-sm" type="text" name="answer" placeholder="Enter your answer here" autofocus>
               <button class=" md:p-2 p-2 md:text-base text-xs font-bold bg-primary shadow-md hover:bg-yellow-500 rounded-tr-sm rounded-br-sm" type="submit">Submit</button>
             </form>
           </div>
 
-          <!-- @if (Session::has('status'))
-              <p>
-                  {{ Session::get('status') }}
-              </p>
-          @endif -->
-
         </div>
 
         <!-- right container -->
-        <div class="md:w-1/4 w-full md:flex hidden flex-col md:my-4 my-2 md:mx-1">
+        <div class="w-full md:w-1/3 lg:w-1/4 md:flex hidden flex-col md:my-4 my-2 md:mx-1">
 
           <!-- Score container -->
           <div id="scores" class="flex h-auto mb-2 p-1 justify-center md:text-sm bg-black-op2 rounded-sm" >

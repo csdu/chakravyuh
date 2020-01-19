@@ -36,17 +36,19 @@ Route::middleware('event_start_check')->group(function () {
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/', 'Admin\PagesController@dashboard')->name('admin.dashboard');
     Route::get('participants', 'Admin\PagesController@participants')->name('admin.participants');
-    Route::get('questions', 'Admin\QuestionController@index')->name('admin.question.index');
-    Route::get('question/create', 'Admin\QuestionController@create')->name('admin.question.create');
-    Route::post('questions', 'Admin\QuestionController@store')->name('admin.question.store');
-    Route::get('question/{question}/show', 'Admin\QuestionController@show')->name('admin.question.show');
-    Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.question.delete');
+    Route::get('questions', 'Admin\QuestionController@index')->name('admin.questions.index');
+    Route::get('questions/create', 'Admin\QuestionController@create')->name('admin.questions.create');
+    Route::post('questions', 'Admin\QuestionController@store')->name('admin.questions.store');
+    Route::patch('questions/{question}', 'Admin\QuestionController@update')->name('admin.questions.update');
+    Route::get('questions/{question}/show', 'Admin\QuestionController@show')->name('admin.questions.show');
+    Route::get('questions/{question}/edit', 'Admin\QuestionController@edit')->name('admin.questions.edit');
+    Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.questions.delete');
 
     Route::get('question/{question}/hint/{hint}/set', 'Admin\QuestionHintController@setVisible')
-        ->name('admin.question.hint.set');
+        ->name('admin.questions.hint.set');
 
     Route::get('question/{question}/hint/{hint}/unset', 'Admin\QuestionHintController@unsetVisible')
-        ->name('admin.question.hint.unset');
+        ->name('admin.questions.hint.unset');
 
     Route::post('event-start', 'Admin\EventController@start')->name('admin.event.start');
 

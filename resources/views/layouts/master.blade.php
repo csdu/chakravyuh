@@ -127,7 +127,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
             <nav class="flex flex-col">
                 <a href="{{ route('admin.dashboard') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Dashboard</a>
                 <a href="{{ route('admin.participants') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Participants</a>
-                <a href="{{ route('admin.question.index') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
+                <a href="{{ route('admin.questions.index') }}" class="bg-yellow-500 hover:bg-yellow-600 p-2 my-2 rounded">Questions</a>
             </nav>
         </div>
         <div class="px-6 py-4 flex-1 text-left">

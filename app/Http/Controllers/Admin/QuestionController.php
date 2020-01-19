@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Question;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class QuestionController extends Controller
 {
@@ -58,7 +59,43 @@ class QuestionController extends Controller
 
         flash('Question saved!')->success();
 
-        return redirect()->route('admin.question.index');
+        return redirect()->route('admin.questions.index');
+    }
+
+    public function edit(Question $question)
+    {
+        return view('admin.question.edit')->withQuestion($question);
+    }
+
+    public function update(Request $request, Question $question)
+    {
+        $data = $request->validate([
+            'level' => ['required', 'numeric', 'gt:0', Rule::unique('questions', 'level')->ignore($question)],
+            'answer' => 'nullable',
+            'type' => 'required|in:audio,video,image',
+            'group' => 'required|numeric|gt:0',
+            'max_score' => 'required|numeric|gt:0',
+            'min_score' => 'required|numeric|gt:0',
+        ]);
+
+        $question->update([
+            'level' => $request->level,
+            'text' => $request->text,
+            'answer' => $request->answer == '' ? $question->answer : $question->hashAnswer($request->answer),
+            'group' => $request->group,
+            'max_score' => $request->max_score,
+            'min_score' => $request->min_score,
+        ]);
+
+        if($request->has('type')) {
+            $question->attachment()->update([
+                'type' => $request->type,
+            ]);
+        }
+
+        flash('Question updated!')->success();
+
+        return redirect()->route('admin.questions.show', $question);
     }
 
     public function delete(Question $question)
@@ -67,7 +104,7 @@ class QuestionController extends Controller
 
         flash('Question deleted!')->info();
 
-        return redirect()->route('admin.question.index');
+        return redirect()->route('admin.questions.index');
     }
 
     public function show(Question $question)

@@ -13,7 +13,11 @@ class PlayAreaController extends Controller
         abort_if(Auth::user()->is_admin, '403', 'Admin can not play game');
 
         $question = Question::where('level', Auth::user()->level)->first();
-        abort_unless($question, 404, 'Question has not been uploaded yet');
+
+        if(! $question) {
+            flash('No More questions left! Contact Us for more questions')->warning();
+            return redirect('/leaderboard');
+        }
 
         return view('playarea', compact('question'));
     }

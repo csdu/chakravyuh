@@ -28,7 +28,7 @@ class Question extends Model
         return $this->level == Auth::user()->level;
     }
 
-    protected function hashAnswer($plainAnswer)
+    public function hashAnswer($plainAnswer)
     {
         return sha1(strtolower(preg_replace('/[^A-Za-z0-9]/', '', $plainAnswer)));
     }

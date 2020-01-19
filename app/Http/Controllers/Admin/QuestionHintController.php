@@ -16,7 +16,7 @@ class QuestionHintController extends Controller
 
         flash('Hint released!')->info();
 
-        return redirect()->route('admin.question.show', $question);
+        return redirect()->route('admin.questions.show', $question);
     }
 
     public function unsetVisible(Question $question, QuestionHint $hint)
@@ -27,6 +27,6 @@ class QuestionHintController extends Controller
 
         flash('Hint unreleased!')->info();
 
-        return redirect()->route('admin.question.show', $question);
+        return redirect()->route('admin.questions.show', $question);
     }
 }
