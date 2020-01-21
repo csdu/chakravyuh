@@ -44,12 +44,6 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('questions/{question}/edit', 'Admin\QuestionController@edit')->name('admin.questions.edit');
     Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.questions.delete');
 
-    Route::get('question/{question}/hint/{hint}/set', 'Admin\QuestionHintController@setVisible')
-        ->name('admin.questions.hint.set');
-
-    Route::get('question/{question}/hint/{hint}/unset', 'Admin\QuestionHintController@unsetVisible')
-        ->name('admin.questions.hint.unset');
-
     Route::post('event-start', 'Admin\EventController@start')->name('admin.event.start');
 
     Route::post('event-end', 'Admin\EventController@end')->name('admin.event.end');
