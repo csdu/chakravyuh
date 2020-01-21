@@ -22,7 +22,7 @@
         <h1 class="lg:text-4xl md:text-3xl text-2xl font-display text-shadow-2 scale-up-transition">PLAYGROUND</h1>
 
         <!-- for mobile screens -->
-        <div class="md:hidden flex absolute right-0 self-center mx-1 playground-toggle-menu">
+        <div v-if="isMobile()" class="flex absolute right-0 self-center mx-1 playground-toggle-menu">
           <a href="/leaderboard" class="mr-2">
             @include('svg.trophy')
           </a>
@@ -36,7 +36,7 @@
             <template v-slot:content>
               <ul class="p-2 pb-1 list-decimal w-64 max-h-12rem overflow-y-scroll bg-black text-xs text-left">
                 <li>
-                  <Hints question_id="{{ $question->id }}" />
+                  <Hints question_id="{{ $question->id }}" token="{{ Auth::user()->api_token }}" />
                 </li>
                 <li class="flex flex-col bg-black-op2 rounded-sm text-xs text-center p-2 text-shadow-1">
                   <p>for bonus hints keep track of <a href="#" class=" hover:text-white font-bold">SANKALAN facebook page</a> </p>
@@ -112,7 +112,7 @@
         </div>
 
         <!-- right container -->
-        <div class="w-full md:w-1/3 lg:w-1/4 md:flex hidden flex-col md:my-4 my-2 md:mx-1">
+        <div v-if="!isMobile()" class="w-full md:w-1/3 lg:w-1/4 md:flex flex-col md:my-4 my-2 md:mx-1">
 
           <!-- Score container -->
           <div id="scores" class="flex h-auto mb-2 p-1 justify-center md:text-sm bg-black-op2 rounded-sm" >
@@ -164,7 +164,7 @@
     </div>
 
     <!-- Leaderboard container -->
-    <div class="rounded m-2 lg:w-1/4 lg:flex flex-col hidden p-2 xl:p-4 bg-center"
+    <div v-if="!isMobile()" class="rounded m-2 md:w-1/3 lg:w-1/4 lg:flex flex-col p-2 xl:p-4 bg-center"
     style="
     background:linear-gradient(#000,rgba(255,180,0,1),#000),url('images/leaderboardbg.png');
     background-repeat: no-repeat,no-repeat;

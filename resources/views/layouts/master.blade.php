@@ -94,7 +94,7 @@ style="background-color : black;   font-family: 'Inconsolata', monospace;
           <span href="#" class="md:inline hidden self-center lg:p-2 p-1 m-1">{{ Auth::user()->name }}</span>
           <form action="/logout" method="post" class="self-center py-1 m-1">
             @csrf
-            <button type="submit" class="px-2 text-white hover:text-primary">
+            <button type="submit" title="Logout" class="px-2 text-white hover:text-primary">
               @include('svg.logout-icon')
             </button>
           </form>

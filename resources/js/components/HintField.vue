@@ -2,7 +2,7 @@
 export default {
 	data() {
 		return {
-			count: 1
+			count: 0
 		};
 	}
 };
