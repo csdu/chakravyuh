@@ -2024,7 +2024,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      count: 1
+      count: 0
     };
   }
 });
@@ -21168,7 +21168,10 @@ var render = function() {
   return _c("div", [
     _c(
       "h1",
-      { staticClass: "text-2xl mb-4 xl:mb-6 font-display text-shadow-2" },
+      {
+        staticClass:
+          "text-2xl mb-4 xl:mb-6 font-display text-shadow-2 scale-up-transition"
+      },
       [_vm._v("LEADERBOARD")]
     ),
     _vm._v(" "),
@@ -21218,7 +21221,7 @@ var render = function() {
           _vm._v(" "),
           _c("span", { staticClass: "w-1/3" }, [
             _vm._v(
-              "\n\t\t\t\tLVL\n\t\t\t\t" + _vm._s(_vm.topUser.level) + "\n\t\t\t"
+              "\n        LVL\n        " + _vm._s(_vm.topUser.level) + "\n      "
             )
           ])
         ]
@@ -21368,7 +21371,7 @@ var staticRenderFns = [
       "h2",
       { staticClass: "-mt-3 mb-3 font-display text-2xl text-primary" },
       [
-        _vm._v("\n\t\t\t1\n\t\t\t"),
+        _vm._v("\n      1\n      "),
         _c("span", { staticClass: "text-sm" }, [_vm._v("st")])
       ]
     )
@@ -34366,7 +34369,12 @@ Vue.mixin({
   }
 });
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  methods: {
+    isMobile: function isMobile() {
+      return window.innerWidth <= 400;
+    }
+  }
 });
 
 /***/ }),
@@ -35095,8 +35103,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /hdd/code/work/chakravyuh/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /hdd/code/work/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/yuvraj/Documents/chakravyuh/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/yuvraj/Documents/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -39,4 +39,9 @@ Vue.mixin({
 
 const app = new Vue({
     el: '#app',
+    methods: {
+        isMobile() {
+            return window.innerWidth <= 400;
+        }
+    }
 });

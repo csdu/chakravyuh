@@ -31,8 +31,7 @@ class QuestionController extends Controller
             'group' => 'required|numeric|gt:0',
             'max_score' => 'required|numeric|gt:0',
             'min_score' => 'required|numeric|gt:0',
-            'hints' => 'required|array|min:1',
-            'hints.*' => 'required|string|min:2'
+            'hints' => 'sometimes|array|min:1',
         ]);
 
         $question = Question::create([
@@ -49,12 +48,11 @@ class QuestionController extends Controller
             'type' => $request->type,
         ]);
 
-        foreach ($request->hints as $hint) {
-            if (!!$hint) {
-                $question->hints()->create([
-                    'text' => $hint,
-                ]);
-            }
+        foreach ($request->hints ?? [] as $hint) {
+            $question->hints()->create([
+                'text' => $hint['text'],
+                'release_after' => $hint['release'],
+            ]);
         }
 
         flash('Question saved!')->success();
@@ -87,7 +85,7 @@ class QuestionController extends Controller
             'min_score' => $request->min_score,
         ]);
 
-        if($request->has('type')) {
+        if ($request->has('type')) {
             $question->attachment()->update([
                 'type' => $request->type,
             ]);

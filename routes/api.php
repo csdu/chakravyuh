@@ -56,10 +56,16 @@ Route::get('dashboard', function () {
 })->middleware('auth:api');
 
 Route::get('/question/{question}/hints/', function ($questionId) {
-    return QuestionHint::where([
-        ['question_id', $questionId],
-        ['is_visible', true],
-    ])->get(['id', 'text']);
+    $hints = QuestionHint::where('question_id', $questionId)->get();
+
+    return $hints->map(function ($hint) {
+        if ($hint->releaseTime <= now()) {
+            return [
+                'id' => $hint->id,
+                'text' => $hint->text,
+            ];
+        }
+    });
 })->middleware('auth:api');
 
 Route::get('/leaderboard', function () {
@@ -70,7 +76,7 @@ Route::get('/leaderboard', function () {
 
             return !$user->is_admin;
         })->sort(function ($userA, $userB) {
-            if($userA->total_score == $userB->total_score) {
+            if ($userA->total_score == $userB->total_score) {
                 return $userA->split_time - $userB->split_time;
             }
 
