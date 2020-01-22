@@ -1,13 +1,8 @@
 @extends('layouts.master')
 
 @section('main')
-<div class="w-full h-screen flex justify-center bg-center"
-    style="
-    background:linear-gradient(#000,rgba(255,180,0,1),#000),url('images/leaderboardBG.svg'),url('images/leaderboardbg.png');
-    background-repeat: no-repeat,no-repeat;
-    background-position: center,center,bottom;
-    background-size:cover,contain,cover;
-    background-blend-mode : multiply;">
+<div class="h-full flex-1 flex justify-center bg-center bg-no-repeat bg-contain text-center"
+    style="background-image:url('images/leaderboardBG.svg');">
 
     <div class="sm:w-11/12 sm:m-4 m-auto p-2 xl:p-4 rounded sm:overflow-y-hidden text-primary flex flex-col sm:flex-row sm:justify-center sm:items-center">
         <div class="sm:w-5/12 lg:w-6/12 max-w-lg mt-8 sm:m-4 flex flex-col sm:justify-center">

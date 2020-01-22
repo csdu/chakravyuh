@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-2xl mb-4 xl:mb-6 font-display text-shadow-2 scale-up-transition">LEADERBOARD</h1>
+    <h1 class="text-2xl mb-4 xl:mb-6 font-display text-shadow-2">LEADERBOARD</h1>
     <!-- {{-- winner svg --}} -->
     <div class="w-full flex items-center justify-between">
       <!-- {{-- left person --}} -->
@@ -48,7 +48,7 @@
       <button
         @click="getLeaderBoard()"
         title="reload"
-        class="px-2 text-xl bg-black-op2 rounded-full"
+        class="px-2 text-xl bg-black-40 rounded-full"
       >&#x21ba;</button>
       <svg viewBox="0 0 300 6" fill="#0e0101">
         <polygon points="0,3 147,1.5 150,0 153,1.5 300,3 153,4.5 150,6 147,4.5" />

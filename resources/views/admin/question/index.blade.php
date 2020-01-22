@@ -1,25 +1,24 @@
-@extends('layouts.master')
-@section('main')
-    <div class="bg-yellow-100 text-black rounded">
+@extends('layouts.admin')
+@section('content')
+    <div class="bg-black-50 text-primary rounded overflow-hidden">
         <div class="py-3 px-4 flex justify-between">
-            <h1 class="text-xl">Questions</h1>
-            <a href="{{route('admin.questions.create')}}" class="bg-yellow-500 hover:bg-yellow-700 border border-yellow-700 text-white font-bold py-1 px-2 rounded">
+            <h1 class="text-xl font-display font-semibold text-shadow-1">Questions</h1>
+            <a href="{{route('admin.questions.create')}}" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-1 px-2 rounded">
                 Add new
             </a>
         </div>
-        <div class="pb-3">
         <table class="w-full border-collapse">
             <thead>
-                <tr class="bg-yellow-500">
-                    <th class="text-xs uppercase font-light text-left pl-12 pr-4 py-2">Level</th>
-                    <th class="text-xs uppercase font-light text-left pl-4 pr-12 py-2">Actions</th>
+                <tr class="border-t border-b border-primary bg-black-50">
+                    <th class="text-sm font-bold uppercase text-left pl-12 pr-4 py-2">Level</th>
+                    <th class="text-sm font-bold uppercase text-left pl-4 pr-12 py-2">Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($questions as $question)
-                <tr class="border-t hover:bg-yellow-200">
+                @forelse ($questions as $question)
+                <tr class="hover:bg-black-40">
                     <td class="text-left pl-12 pr-4 py-2 text-xs">
-                        <a href="{{route('admin.questions.show', $question)}}" class="text-yellow-700 font-bold text-base hover:underline">
+                        <a href="{{route('admin.questions.show', $question)}}" class="font-bold text-base hover:underline">
                             Question For Level: {{ $question->level }}
                         </a>
                     </td>
@@ -38,9 +37,12 @@
                         </div>
                     </td>
                 </tr>
-                @endforeach
+                @empty
+                <tr>
+                    <td colspan="2" class="text-center py-2">No Questions added yet.</td>
+                </tr>
+                @endforelse
             </tbody>
         </table>
-        </div>
     </div>
 @endsection

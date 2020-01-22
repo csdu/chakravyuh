@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('main')
+<div class="h-full flex items-center justify-center">
     @if (App\EventStatus::isLive())
         @if (Auth::user()->disqualified)
             You are disqualified.
@@ -11,4 +12,5 @@
     @else
         Chakravyuh will start {{ App\EventStatus::startTime() ? 'at '. App\EventStatus::startTime()->format('Y-m-d h:i:s a') : 'soon...' }}
     @endif
+</div>
 @endsection

@@ -2,20 +2,20 @@
 	<div>
 		<table class="w-full border-collapse">
 			<thead>
-				<tr class="bg-yellow-500">
-					<th class="text-xs uppercase font-light text-left pl-6 py-2">ID</th>
-					<th class="text-xs uppercase font-light text-left px-4 py-2">Name</th>
-					<th class="text-xs uppercase font-light text-left px-4 py-2">Email</th>
-					<th class="text-xs uppercase font-light text-center px-4 py-2">Level</th>
-					<th class="text-xs uppercase font-light text-center pr-6 py-2">Actions</th>
+				<tr class="border-t border-b border-primary bg-black-50">
+					<th class="text-sm font-bold uppercase text-left pl-6 py-2">ID</th>
+					<th class="text-sm font-bold uppercase text-left px-4 py-2">Name</th>
+					<th class="text-sm font-bold uppercase text-left px-4 py-2">Email</th>
+					<th class="text-sm font-bold uppercase text-center px-4 py-2">Level</th>
+					<th class="text-sm font-bold uppercase text-center pr-6 py-2">Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr v-if="users.length <= 0" class="border-t hover:bg-yellow-200">
-					<td class="table-fit text-left pl-6 py-2 text-sm">No Participants yet.</td>
+				<tr v-if="users.length <= 0" class="border-t">
+					<td colspan="5" class="table-fit text-left pl-6 py-2 text-sm">No Participants yet.</td>
 				</tr>
 
-				<tr class="border-t hover:bg-yellow-200" v-for="user in users" :key="user.id">
+				<tr class="border-t hover:bg-black-40" v-for="user in users" :key="user.id">
 					<td class="table-fit text-left pl-6 py-2 text-xs">{{ user.id }}</td>
 					<td class="table-fit text-left capitalize px-4 py-2">
 						<span class>{{ user.name }}</span>

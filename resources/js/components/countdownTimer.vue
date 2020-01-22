@@ -1,9 +1,9 @@
 <template>
 
 
-      <div class="timer p-2 lg:w-1/5 md:w-1/4 w-1/2" style="perspective-origin: bottom;perspective: 5px; ">
+      <div class="timer p-2 w-1/2 md:w-1/3 lg:w-1/4">
 
-        <div style="transform-style: preserve-3d; transform-origin: bottom; transform: rotateX(1deg);">
+        <div>
 
           <div class="days-container absolute left-50 translate-n50 top-50 w-1/2 ">
             <svg viewBox="0 0 428 424" fill="none" xmlns="http://www.w3.org/2000/svg">

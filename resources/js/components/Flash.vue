@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="fixed flex flex-col pin-b pin-x mb-4 items-end z-50 pointer-events-none container mx-auto"
+		class="fixed flex flex-col inset-x-0 top-0 mt-4 items-end z-50 pointer-events-none container mx-auto"
 	>
 		<transition-group
 			name="fade"

@@ -1,5 +1,5 @@
 <template>
-	<div class="flex flex-wrap mb-2">
+	<div class="flex flex-wrap mb-2 -mx-3">
 		<div class="w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pr-2">
 			<div class="bg-green-600 border rounded shadow p-2">
 				<div class="flex flex-row items-center">

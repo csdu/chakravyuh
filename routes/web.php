@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WelcomeController@show')->middleware('guest');
@@ -19,11 +21,6 @@ Route::get('/facebook/callback', 'Auth\FacebookLoginController@handleProviderCal
 Route::get('/google/login', 'Auth\GoogleLoginController@redirectToProvider')->middleware('guest');
 Route::get('/google/callback', 'Auth\GoogleLoginController@handleProviderCallback')->middleware('guest');
 Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
-
-// Route::get('/team', function () {
-//     return view('team');
-// });
-
 Route::get('/about', function () {
     return view('about');
 });

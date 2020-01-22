@@ -2061,25 +2061,26 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      hints: [],
-      previousHintsLength: 0
+      hints: []
     };
   },
   methods: {
     getQuestionHints: function getQuestionHints() {
       var _this = this;
 
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+        notify: true
+      };
       window.axios.get("api/question/" + this.question_id + "/hints/", {
         params: {
           api_token: this.token
         }
       }).then(function (res) {
-        _this.hints = res.data;
-
-        if (_this.previousHintsLength != Object.keys(_this.hints).length) {
+        if (_this.hints.length < res.data.length && options.notify) {
           flash("New Hints arrived! take a look..");
-          _this.previousHintsLength = Object.keys(_this.hints).length;
         }
+
+        _this.hints = res.data;
       })["catch"](function (err) {
         _this.hints = [];
       });
@@ -2088,7 +2089,9 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {
     var _this2 = this;
 
-    this.getQuestionHints();
+    this.getQuestionHints({
+      notify: false
+    });
     setInterval(function () {
       _this2.getQuestionHints();
     }, 60000);
@@ -2555,11 +2558,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2620,7 +2618,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".timer[data-v-25dc86c2]{\n  position: absolute;\n  top:85%;\n  left:50%;\n  transform: translateX(-50%);\n  font-weight : 400;\n}\n.hours-container[data-v-25dc86c2]{\n  position:absolute;\n  right:0;\n  transform: translate(-35%,-107%);\n}\n.minutes-container[data-v-25dc86c2]{\n  position:absolute;\n  left: 16%;\n  transform: translateY(-7%);\n}\n.seconds-container[data-v-25dc86c2]{\n  position:absolute;\n  right: 0;\n  transform: translate(-47%,-56%);\n}\n\n", ""]);
+exports.push([module.i, ".timer[data-v-25dc86c2]{\n  position: absolute;\n  top:90%;\n  left:50%;\n  transform: translateX(-50%);\n  font-weight : 400;\n}\n.hours-container[data-v-25dc86c2]{\n  position:absolute;\n  right:0;\n  transform: translate(-35%,-107%);\n}\n.minutes-container[data-v-25dc86c2]{\n  position:absolute;\n  left: 16%;\n  transform: translateY(-7%);\n}\n.seconds-container[data-v-25dc86c2]{\n  position:absolute;\n  right: 0;\n  transform: translate(-47%,-56%);\n}\n\n", ""]);
 
 // exports
 
@@ -20983,7 +20981,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex flex-wrap mb-2" }, [
+  return _c("div", { staticClass: "flex flex-wrap mb-2 -mx-3" }, [
     _c("div", { staticClass: "w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pr-2" }, [
       _c("div", { staticClass: "bg-green-600 border rounded shadow p-2" }, [
         _c("div", { staticClass: "flex flex-row items-center" }, [
@@ -21082,7 +21080,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "fixed flex flex-col pin-b pin-x mb-4 items-end z-50 pointer-events-none container mx-auto"
+        "fixed flex flex-col inset-x-0 top-0 mt-4 items-end z-50 pointer-events-none container mx-auto"
     },
     [
       _c(
@@ -21139,7 +21137,7 @@ var render = function() {
     { tag: "ul", staticClass: "px-2", attrs: { name: "wobble" } },
     [
       !_vm.hints.length
-        ? _c("li", { staticClass: "md:mb-2 mb-1 p-2 shadow-md bg-black-op2" }, [
+        ? _c("li", { staticClass: "md:mb-2 mb-1 p-2 shadow-md bg-black-40" }, [
             _vm._v("No Hints Available")
           ])
         : _vm._e(),
@@ -21149,7 +21147,7 @@ var render = function() {
           "li",
           {
             key: hint.id,
-            staticClass: "md:mb-2 mb-1 p-2 shadow-md bg-black-op2"
+            staticClass: "md:mb-2 mb-1 p-2 shadow-md bg-black-40"
           },
           [_vm._v(_vm._s(hint.text))]
         )
@@ -21183,10 +21181,7 @@ var render = function() {
   return _c("div", [
     _c(
       "h1",
-      {
-        staticClass:
-          "text-2xl mb-4 xl:mb-6 font-display text-shadow-2 scale-up-transition"
-      },
+      { staticClass: "text-2xl mb-4 xl:mb-6 font-display text-shadow-2" },
       [_vm._v("LEADERBOARD")]
     ),
     _vm._v(" "),
@@ -21247,7 +21242,7 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "px-2 text-xl bg-black-op2 rounded-full",
+          staticClass: "px-2 text-xl bg-black-40 rounded-full",
           attrs: { title: "reload" },
           on: {
             click: function($event) {
@@ -21437,10 +21432,13 @@ var render = function() {
         "tbody",
         [
           _vm.users.length <= 0
-            ? _c("tr", { staticClass: "border-t hover:bg-yellow-200" }, [
+            ? _c("tr", { staticClass: "border-t" }, [
                 _c(
                   "td",
-                  { staticClass: "table-fit text-left pl-6 py-2 text-sm" },
+                  {
+                    staticClass: "table-fit text-left pl-6 py-2 text-sm",
+                    attrs: { colspan: "5" }
+                  },
                   [_vm._v("No Participants yet.")]
                 )
               ])
@@ -21449,7 +21447,7 @@ var render = function() {
           _vm._l(_vm.users, function(user) {
             return _c(
               "tr",
-              { key: user.id, staticClass: "border-t hover:bg-yellow-200" },
+              { key: user.id, staticClass: "border-t hover:bg-black-40" },
               [
                 _c(
                   "td",
@@ -21520,37 +21518,45 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("thead", [
-      _c("tr", { staticClass: "bg-yellow-500" }, [
-        _c(
-          "th",
-          { staticClass: "text-xs uppercase font-light text-left pl-6 py-2" },
-          [_vm._v("ID")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          { staticClass: "text-xs uppercase font-light text-left px-4 py-2" },
-          [_vm._v("Name")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          { staticClass: "text-xs uppercase font-light text-left px-4 py-2" },
-          [_vm._v("Email")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          { staticClass: "text-xs uppercase font-light text-center px-4 py-2" },
-          [_vm._v("Level")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          { staticClass: "text-xs uppercase font-light text-center pr-6 py-2" },
-          [_vm._v("Actions")]
-        )
-      ])
+      _c(
+        "tr",
+        { staticClass: "border-t border-b border-primary bg-black-50" },
+        [
+          _c(
+            "th",
+            { staticClass: "text-sm font-bold uppercase text-left pl-6 py-2" },
+            [_vm._v("ID")]
+          ),
+          _vm._v(" "),
+          _c(
+            "th",
+            { staticClass: "text-sm font-bold uppercase text-left px-4 py-2" },
+            [_vm._v("Name")]
+          ),
+          _vm._v(" "),
+          _c(
+            "th",
+            { staticClass: "text-sm font-bold uppercase text-left px-4 py-2" },
+            [_vm._v("Email")]
+          ),
+          _vm._v(" "),
+          _c(
+            "th",
+            {
+              staticClass: "text-sm font-bold uppercase text-center px-4 py-2"
+            },
+            [_vm._v("Level")]
+          ),
+          _vm._v(" "),
+          _c(
+            "th",
+            {
+              staticClass: "text-sm font-bold uppercase text-center pr-6 py-2"
+            },
+            [_vm._v("Actions")]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -21634,505 +21640,486 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "timer p-2 lg:w-1/5 md:w-1/4 w-1/2",
-      staticStyle: { "perspective-origin": "bottom", perspective: "5px" }
-    },
-    [
+  return _c("div", { staticClass: "timer p-2 w-1/2 md:w-1/3 lg:w-1/4" }, [
+    _c("div", [
       _c(
         "div",
         {
-          staticStyle: {
-            "transform-style": "preserve-3d",
-            "transform-origin": "bottom",
-            transform: "rotateX(1deg)"
-          }
+          staticClass:
+            "days-container absolute left-50 translate-n50 top-50 w-1/2 "
         },
         [
           _c(
-            "div",
+            "svg",
             {
-              staticClass:
-                "days-container absolute left-50 translate-n50 top-50 w-1/2 "
+              attrs: {
+                viewBox: "0 0 428 424",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg"
+              }
             },
             [
-              _c(
-                "svg",
-                {
-                  attrs: {
-                    viewBox: "0 0 428 424",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg"
-                  }
-                },
-                [
-                  _c("defs", [
+              _c("defs", [
+                _c(
+                  "filter",
+                  {
+                    attrs: {
+                      id: "sofGlow",
+                      height: "300%",
+                      width: "300%",
+                      x: "-75%",
+                      y: "-75%"
+                    }
+                  },
+                  [
+                    _c("feMorphology", {
+                      attrs: {
+                        operator: "dilate",
+                        radius: "4",
+                        in: "SourceAlpha",
+                        result: "thicken"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feGaussianBlur", {
+                      attrs: {
+                        in: "thicken",
+                        stdDeviation: "10",
+                        result: "blurred"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feFlood", {
+                      attrs: {
+                        "flood-color": "rgba(0,0,0,0.3)",
+                        result: "glowColor"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("feComposite", {
+                      attrs: {
+                        in: "glowColor",
+                        in2: "blurred",
+                        operator: "in",
+                        result: "softGlow_colored"
+                      }
+                    }),
+                    _vm._v(" "),
                     _c(
-                      "filter",
-                      {
-                        attrs: {
-                          id: "sofGlow",
-                          height: "300%",
-                          width: "300%",
-                          x: "-75%",
-                          y: "-75%"
-                        }
-                      },
+                      "feMerge",
                       [
-                        _c("feMorphology", {
-                          attrs: {
-                            operator: "dilate",
-                            radius: "4",
-                            in: "SourceAlpha",
-                            result: "thicken"
-                          }
+                        _c("feMergeNode", {
+                          attrs: { in: "softGlow_colored" }
                         }),
                         _vm._v(" "),
-                        _c("feGaussianBlur", {
-                          attrs: {
-                            in: "thicken",
-                            stdDeviation: "10",
-                            result: "blurred"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("feFlood", {
-                          attrs: {
-                            "flood-color": "rgba(0,0,0,0.3)",
-                            result: "glowColor"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("feComposite", {
-                          attrs: {
-                            in: "glowColor",
-                            in2: "blurred",
-                            operator: "in",
-                            result: "softGlow_colored"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "feMerge",
-                          [
-                            _c("feMergeNode", {
-                              attrs: { in: "softGlow_colored" }
-                            }),
-                            _vm._v(" "),
-                            _c("feMergeNode", {
-                              attrs: { in: "SourceGraphic" }
-                            })
-                          ],
-                          1
-                        )
+                        _c("feMergeNode", { attrs: { in: "SourceGraphic" } })
                       ],
                       1
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                        fill: "#ffdc34"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                        fill: "#ffdc34"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                        fill: "#ffdc34"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                        fill: "#ffdc34"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("animateTransform", {
-                    attrs: {
-                      attributeName: "transform",
-                      type: "rotate",
-                      from: "0",
-                      to: "360",
-                      dur: "100s",
-                      repeatCount: "indefinite"
-                    }
-                  })
-                ],
-                1
-              )
-            ]
-          ),
-          _vm._v(" "),
+                  ],
+                  1
+                )
+              ]),
+              _vm._v(" "),
+              _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                    fill: "#ffdc34"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                    fill: "#ffdc34"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                    fill: "#ffdc34"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                    fill: "#ffdc34"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("animateTransform", {
+                attrs: {
+                  attributeName: "transform",
+                  type: "rotate",
+                  from: "0",
+                  to: "360",
+                  dur: "100s",
+                  repeatCount: "indefinite"
+                }
+              })
+            ],
+            1
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "days-container absolute left-50 translate-n50 top-50 w-1/2 "
+        },
+        [
           _c(
-            "div",
+            "svg",
             {
-              staticClass:
-                "days-container absolute left-50 translate-n50 top-50 w-1/2 "
+              attrs: {
+                viewBox: "0 0 428 424",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg"
+              }
             },
             [
               _c(
-                "svg",
+                "text",
                 {
                   attrs: {
-                    viewBox: "0 0 428 424",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg"
+                    x: "50%",
+                    y: "45%",
+                    "text-anchor": "middle",
+                    "dominant-baseline": "middle",
+                    "font-size": "6rem",
+                    fill: "#eee"
                   }
                 },
-                [
-                  _c(
-                    "text",
-                    {
-                      attrs: {
-                        x: "50%",
-                        y: "45%",
-                        "text-anchor": "middle",
-                        "dominant-baseline": "middle",
-                        "font-size": "6rem",
-                        fill: "#eee"
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.days))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "text",
-                    {
-                      attrs: {
-                        x: "50%",
-                        y: "58%",
-                        "text-anchor": "middle",
-                        "dominant-baseline": "middle",
-                        "font-size": "3rem",
-                        fill: "#eee"
-                      }
-                    },
-                    [_vm._v("DAYS")]
-                  )
-                ]
+                [_vm._v(_vm._s(_vm.days))]
+              ),
+              _vm._v(" "),
+              _c(
+                "text",
+                {
+                  attrs: {
+                    x: "50%",
+                    y: "58%",
+                    "text-anchor": "middle",
+                    "dominant-baseline": "middle",
+                    "font-size": "3rem",
+                    fill: "#eee"
+                  }
+                },
+                [_vm._v("DAYS")]
               )
             ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "hours-container w-1/3" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  viewBox: "0 0 428 424",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                      fill: "#ffdc34"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("animateTransform", {
-                  attrs: {
-                    attributeName: "transform",
-                    type: "rotate",
-                    from: "360",
-                    to: "0",
-                    dur: "60s",
-                    repeatCount: "indefinite"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "hours-container w-1/3" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  viewBox: "0 0 428 424",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c(
-                  "text",
-                  {
-                    attrs: {
-                      x: "50%",
-                      y: "45%",
-                      "text-anchor": "middle",
-                      "dominant-baseline": "middle",
-                      "font-size": "6rem",
-                      fill: "#eee"
-                    }
-                  },
-                  [_vm._v(_vm._s(_vm.hours))]
-                ),
-                _vm._v(" "),
-                _c(
-                  "text",
-                  {
-                    attrs: {
-                      x: "50%",
-                      y: "58%",
-                      "text-anchor": "middle",
-                      "dominant-baseline": "middle",
-                      "font-size": "3rem",
-                      fill: "#eee"
-                    }
-                  },
-                  [_vm._v("Hours")]
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "minutes-container w-1/4" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  viewBox: "0 0 428 424",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                      fill: "#ffdc34"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("animateTransform", {
-                  attrs: {
-                    attributeName: "transform",
-                    type: "rotate",
-                    from: "360",
-                    to: "0",
-                    dur: "30s",
-                    repeatCount: "indefinite"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "minutes-container w-1/4" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  viewBox: "0 0 428 424",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c(
-                  "text",
-                  {
-                    attrs: {
-                      x: "50%",
-                      y: "45%",
-                      "text-anchor": "middle",
-                      "dominant-baseline": "middle",
-                      "font-size": "6rem",
-                      fill: "#eee"
-                    }
-                  },
-                  [_vm._v(_vm._s(_vm.minutes))]
-                ),
-                _vm._v(" "),
-                _c(
-                  "text",
-                  {
-                    attrs: {
-                      x: "50%",
-                      y: "58%",
-                      "text-anchor": "middle",
-                      "dominant-baseline": "middle",
-                      "font-size": "3rem",
-                      fill: "#eee"
-                    }
-                  },
-                  [_vm._v("Minutes")]
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "seconds-container w-1/5" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  viewBox: "0 0 428 424",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
-                      fill: "#ffdc34"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
-                      fill: "#ffdc34"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("animateTransform", {
-                  attrs: {
-                    attributeName: "transform",
-                    type: "rotate",
-                    from: "0",
-                    to: "360",
-                    dur: "3s",
-                    repeatCount: "indefinite"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "seconds-container w-1/5" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  viewBox: "0 0 428 424",
-                  fill: "none",
-                  xmlns: "http://www.w3.org/2000/svg"
-                }
-              },
-              [
-                _c(
-                  "text",
-                  {
-                    attrs: {
-                      x: "50%",
-                      y: "50%",
-                      "text-anchor": "middle",
-                      "dominant-baseline": "middle",
-                      "font-size": "7rem",
-                      fill: "#eee"
-                    }
-                  },
-                  [_vm._v(_vm._s(_vm.seconds))]
-                )
-              ]
-            )
-          ])
+          )
         ]
-      )
-    ]
-  )
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "hours-container w-1/3" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "360",
+                to: "0",
+                dur: "60s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "hours-container w-1/3" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "45%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "6rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.hours))]
+            ),
+            _vm._v(" "),
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "58%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "3rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v("Hours")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "minutes-container w-1/4" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "360",
+                to: "0",
+                dur: "30s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "minutes-container w-1/4" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "45%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "6rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.minutes))]
+            ),
+            _vm._v(" "),
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "58%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "3rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v("Minutes")]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "seconds-container w-1/5" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c("g", { attrs: { filter: "url(#sofGlow)" } }, [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M194.715 347.68C218.565 351.102 242.895 348.186 265.261 339.225C271.809 345.378 285.794 358.403 292.174 360.762C300.148 363.711 335.677 334.426 335.547 328.133C335.443 323.098 326.404 304.757 321.897 296.217C336.786 277.273 346.115 254.726 349.537 230.876L328.863 229.62C326.652 244.74 321.716 258.808 313.887 271.931C306.058 285.055 295.721 296.508 283.466 305.636C271.21 314.764 257.277 321.389 242.462 325.133C227.646 328.877 211.928 329.361 196.807 327.15L194.715 347.68Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M163.691 84.354C186.057 75.3928 209.737 72.2436 233.587 75.6659L231.416 97.0083C216.312 94.6902 201.089 95.6576 186.247 99.2961C171.405 102.935 157.425 109.461 145.106 118.502C132.786 127.543 122.368 138.923 114.446 151.99C106.668 164.821 101.321 178.78 98.9399 193.589L77.7071 192.367C81.1294 168.517 91.9051 146.226 106.794 127.283C102.365 118.884 93.4853 100.844 93.4003 95.8761C93.2941 89.6666 128.557 60.545 136.438 63.4045C142.743 65.692 157.234 78.3239 163.691 84.354Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M341.505 160.484C332.543 138.119 317.853 118.506 298.909 103.617C300.907 94.9605 304.437 75.9278 303.266 69.2965C301.803 61.0073 258.92 45.1146 253.589 48.347C249.325 50.9329 238.653 67.5727 233.587 75.6659L231.416 97.0083C246.378 99.3486 261.141 104.649 274.098 112.493C287.17 120.407 298.555 130.818 307.604 143.132C316.653 155.446 323.188 169.422 326.835 184.262C330.483 199.101 331.172 214.514 328.863 229.62L349.537 230.876C358.024 228.356 376.679 222.536 381.855 218.254C388.324 212.902 381.046 167.751 375.626 164.701C371.289 162.262 351.011 160.912 341.505 160.484Z",
+                  fill: "#ffdc34"
+                }
+              }),
+              _vm._v(" "),
+              _c("path", {
+                attrs: {
+                  d:
+                    "M129.273 319.452C110.329 304.563 95.6385 284.95 86.6773 262.584C77.1449 262.226 57.171 261.088 52.8075 258.68C47.3531 255.67 39.7552 210.571 46.2052 205.172C51.3651 200.852 69.2152 194.95 77.7071 192.367L98.9399 193.589C98.9518 193.514 98.9658 193.426 98.9443 193.566C96.6503 208.513 97.1627 224.587 100.706 239.294C104.314 254.269 110.86 268.38 119.963 280.806C129.067 293.233 140.547 303.728 153.738 311.683C166.929 319.639 181.569 324.896 196.807 327.15L194.715 347.68C189.556 355.866 178.119 372.328 173.819 374.943C168.445 378.211 125.634 362.12 124.253 353.734C123.148 347.025 127.182 328.208 129.273 319.452Z",
+                  fill: "#ffdc34"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("animateTransform", {
+              attrs: {
+                attributeName: "transform",
+                type: "rotate",
+                from: "0",
+                to: "360",
+                dur: "3s",
+                repeatCount: "indefinite"
+              }
+            })
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "seconds-container w-1/5" }, [
+        _c(
+          "svg",
+          {
+            attrs: {
+              viewBox: "0 0 428 424",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg"
+            }
+          },
+          [
+            _c(
+              "text",
+              {
+                attrs: {
+                  x: "50%",
+                  y: "50%",
+                  "text-anchor": "middle",
+                  "dominant-baseline": "middle",
+                  "font-size": "7rem",
+                  fill: "#eee"
+                }
+              },
+              [_vm._v(_vm._s(_vm.seconds))]
+            )
+          ]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -22184,10 +22171,7 @@ var render = function() {
         _vm.show
           ? _c(
               "div",
-              {
-                staticClass:
-                  "z-10 absolute top-10 right-0 bg-black-op2 rounded-sm my-1"
-              },
+              { staticClass: "z-10 absolute top-10 right-0 my-1" },
               [_vm._t("content")],
               2
             )
@@ -35129,8 +35113,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/yuvraj/Documents/chakravyuh/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/yuvraj/Documents/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /hdd/code/work/chakravyuh/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /hdd/code/work/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
