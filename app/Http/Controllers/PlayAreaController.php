@@ -5,15 +5,9 @@ namespace App\Http\Controllers;
 use App\Question;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cache;
 
 class PlayAreaController extends Controller
 {
-    protected function chechCacheSet($question)
-    {
-        return !!Cache::get(Auth::id().':'.$question->id);
-    }
-
     public function show()
     {
         $question = Question::where('level', Auth::user()->level)->first();
@@ -24,9 +18,7 @@ class PlayAreaController extends Controller
             return redirect('/leaderboard');
         }
 
-        if (!$this->chechCacheSet($question)) {
-            Cache::put(Auth::id().':'.$question->id, now());
-        }
+        $question->setEnterTime(Auth::user());
 
         return view('playarea', compact('question'));
     }
@@ -41,10 +33,6 @@ class PlayAreaController extends Controller
             flash("Incorrect answer but don't lose hope, try again...")->error();
 
             return redirect()->back();
-        }
-
-        if ($this->chechCacheSet($question)) {
-            Cache::pull(Auth::id().':'.$question->id);
         }
 
         Auth::user()->incrementLevel();

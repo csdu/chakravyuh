@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 
 class Question extends Model
 {
@@ -13,7 +14,7 @@ class Question extends Model
     {
         parent::boot();
 
-        static::creating(function($question) {
+        static::creating(function ($question) {
             $question->answer = $question->hashAnswer($question->answer);
         });
     }
@@ -36,6 +37,7 @@ class Question extends Model
     public function isCorrectAnswer($answer)
     {
         $hashedAnswer = $this->hashAnswer($answer);
+
         return $this->answer === $hashedAnswer;
     }
 
@@ -47,5 +49,19 @@ class Question extends Model
     public function responses()
     {
         return $this->hasMany(QuestionResponse::class);
+    }
+
+    public function setEnterTime(User $user)
+    {
+        if (Cache::has($user->id.':'.$this->id)) {
+            return false;
+        }
+
+        return Cache::put($user->id.':'.$this->id, $now = now()) ? $now : false;
+    }
+
+    public function getEnterTime(User $user)
+    {
+        return Cache::get($user->id.':'.$this->id);
     }
 }

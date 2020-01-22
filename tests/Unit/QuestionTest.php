@@ -3,10 +3,11 @@
 namespace Tests\Unit;
 
 use App\Question;
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
+use Tests\TestCase;
 
 class QuestionTest extends TestCase
 {
@@ -31,5 +32,38 @@ class QuestionTest extends TestCase
         $this->assertTrue($question->isCorrectAnswer(Str::studly($answer)));
         $this->assertTrue($question->isCorrectAnswer(Str::ucfirst($answer)));
         $this->assertTrue($question->isCorrectAnswer(Str::upper($answer)));
+    }
+
+    public function testQuestionEnterTimeSet()
+    {
+        $user = factory(User::class)->create();
+        $question = factory(Question::class)->create();
+
+        Carbon::setTestNow($now = now());
+
+        $this->assertEquals($now, $question->setEnterTime($user));
+    }
+
+    public function testQuestionEnterTimeGet()
+    {
+        $user = factory(User::class)->create();
+        $question = factory(Question::class)->create();
+
+        $now = $question->setEnterTime($user);
+        $this->assertInstanceOf(Carbon::class, $question->getEnterTime($user));
+        $this->assertEquals($now, $question->getEnterTime($user));
+    }
+
+    public function testQuestionEnterTimeIsntUpdatedWhenAgainSet()
+    {
+        $user = factory(User::class)->create();
+        $question = factory(Question::class)->create();
+
+        $now = $question->setEnterTime($user);
+        Carbon::setTestNow($now->addMinutes(5));
+        $question->setEnterTime($user);
+
+        $this->assertInstanceOf(Carbon::class, $question->getEnterTime($user));
+        $this->assertEquals($now, $question->getEnterTime($user));
     }
 }

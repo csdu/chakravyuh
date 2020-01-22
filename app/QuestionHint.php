@@ -4,7 +4,6 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Cache;
 
 class QuestionHint extends Model
 {
@@ -17,10 +16,10 @@ class QuestionHint extends Model
         return $this->belongsTo(Question::class);
     }
 
-    public function getReleaseTimeAttribute()
+    public function releaseTime()
     {
-        $enterTime = Cache::get(Auth::id().':'.$this->question->id);
-
-        return $enterTime->addMinutes($this->release_after);
+        return ($enterTime = $this->question->getEnterTime(Auth::user()))
+            ? $enterTime->addMinutes($this->release_after)
+            : null;
     }
 }

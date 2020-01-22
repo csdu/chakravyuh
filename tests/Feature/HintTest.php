@@ -8,6 +8,7 @@ use App\QuestionAttachment;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Cache;
 use Tests\TestCase;
 
 class HintTest extends TestCase
@@ -18,17 +19,10 @@ class HintTest extends TestCase
     public function test_hint_wont_be_displayed_before_time()
     {
         EventStatus::startAt(now());
-        $user = factory(User::class)->create([
-            'level' => 1,
-            'api_token' => $token = 'valid_token',
-        ]);
+        $user = factory(User::class)->create();
 
         $question = factory(Question::class)->create([
             'level' => 1,
-        ]);
-
-        $questionAttachment = factory(QuestionAttachment::class)->create([
-            'question_id' => $question->id,
         ]);
 
         $hint = $question->hints()->create([
@@ -38,12 +32,15 @@ class HintTest extends TestCase
 
         $this->be($user);
 
-        $response = $this->withoutExceptionHandling()->get('/playarea');
+        Carbon::setTestNow($enterTime = now());
 
-        $response->assertOk();
+        $question->setEnterTime($user);
 
-        $response = $this->get("api/question/{$question->id}/hints/?api_token={$token}");
-        $response->assertJson([null]);
+        Carbon::setTestNow($enterTime->addMinutes(3));
+
+        $hints = $this->getJson("api/question/{$question->id}/hints/?api_token={$user->api_token}")->json();
+
+        $this->assertCount(0, $hints);
     }
 
     /** @test */
@@ -63,21 +60,26 @@ class HintTest extends TestCase
             'question_id' => $question->id,
         ]);
 
-        $hint = $question->hints()->create([
-            'text' => 'this hint',
-            'release_after' => 5,
+        $hints = $question->hints()->createMany([
+            [
+                'text' => 'this hint',
+                'release_after' => 5,
+            ],
+            [
+                'text' => 'major hint',
+                'release_after' => 15,
+            ],
         ]);
 
         $this->be($user);
 
-        $response = $this->withoutExceptionHandling()->get('/playarea');
-
-        $response->assertOk();
+        Cache::put($user->id.':'.$question->id, now());
 
         // after 5 minutes
-        Carbon::setTestNow(Carbon::now()->addMinutes(5));
+        Carbon::setTestNow(Carbon::now()->addMinutes(6));
 
-        $response = $this->get("api/question/{$question->id}/hints/?api_token={$token}");
-        $response->assertSeeText('this hint');
+        $jsonHints = $this->getJson("api/question/{$question->id}/hints/?api_token={$token}")->json();
+        $this->assertCount(1, $jsonHints);
+        $this->assertEquals('this hint', $jsonHints[0]['text']);
     }
 }
