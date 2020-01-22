@@ -24,6 +24,14 @@ Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 //     return view('team');
 // });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/rules', function () {
+    return view('rules');
+});
+
 Route::get('/home', 'HomeController@show')->middleware('auth');
 Route::get('/leaderboard', 'PagesController@leaderboard')->middleware('auth');
 

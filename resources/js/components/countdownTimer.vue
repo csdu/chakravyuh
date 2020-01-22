@@ -163,7 +163,7 @@ export default{
 
   .timer{
     position: absolute;
-    top:85%;
+    top:90%;
     left:50%;
     transform: translateX(-50%);
     font-weight : 400;
