@@ -2061,7 +2061,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      hints: []
+      hints: [],
+      previousHintsLength: 0
     };
   },
   methods: {
@@ -2074,6 +2075,11 @@ __webpack_require__.r(__webpack_exports__);
         }
       }).then(function (res) {
         _this.hints = res.data;
+
+        if (_this.previousHintsLength !== _this.hints.lenght) {
+          flash("New Hints arrived! take a look..");
+          _this.previousHintsLength = _this.hints.lenght;
+        }
       })["catch"](function (err) {
         _this.hints = [];
       });
@@ -2085,7 +2091,7 @@ __webpack_require__.r(__webpack_exports__);
     this.getQuestionHints();
     setInterval(function () {
       _this2.getQuestionHints();
-    }, 3000);
+    }, 60000);
   }
 });
 
@@ -2586,7 +2592,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".wobble-enter-active {\n  -webkit-animation: wobble .5s linear forwards;\n          animation: wobble .5s linear forwards;\n}\n@-webkit-keyframes wobble {\n0% {\n    transform: translateX(-20%) rotate(-5deg);\n}\n50% {\n    transform: translateX(20%) rotate(5deg);\n}\n66% {\n    transform: translateX(-20%) rotate(-2deg);\n}\n84% {\n    transform: translateX(20%) rotate(2deg);\n}\n100% {\n    transform: translateX(0);\n}\n}\n@keyframes wobble {\n0% {\n    transform: translateX(-20%) rotate(-5deg);\n}\n50% {\n    transform: translateX(20%) rotate(5deg);\n}\n66% {\n    transform: translateX(-20%) rotate(-2deg);\n}\n84% {\n    transform: translateX(20%) rotate(2deg);\n}\n100% {\n    transform: translateX(0);\n}\n}\n", ""]);
+exports.push([module.i, ".wobble-enter-active {\n  -webkit-animation: wobble 0.5s linear forwards;\n          animation: wobble 0.5s linear forwards;\n}\n@-webkit-keyframes wobble {\n0% {\n    transform: translateX(-20%) rotate(-5deg);\n}\n50% {\n    transform: translateX(20%) rotate(5deg);\n}\n66% {\n    transform: translateX(-20%) rotate(-2deg);\n}\n84% {\n    transform: translateX(20%) rotate(2deg);\n}\n100% {\n    transform: translateX(0);\n}\n}\n@keyframes wobble {\n0% {\n    transform: translateX(-20%) rotate(-5deg);\n}\n50% {\n    transform: translateX(20%) rotate(5deg);\n}\n66% {\n    transform: translateX(-20%) rotate(-2deg);\n}\n84% {\n    transform: translateX(20%) rotate(2deg);\n}\n100% {\n    transform: translateX(0);\n}\n}\n", ""]);
 
 // exports
 

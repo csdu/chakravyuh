@@ -16,7 +16,8 @@ export default {
 	},
 	data() {
 		return {
-			hints: []
+			hints: [],
+			previousHintsLength: 0
 		};
 	},
 	methods: {
@@ -29,6 +30,10 @@ export default {
 				})
 				.then(res => {
 					this.hints = res.data;
+					if (this.previousHintsLength !== this.hints.lenght) {
+						flash("New Hints arrived! take a look..");
+						this.previousHintsLength = this.hints.lenght;
+					}
 				})
 				.catch(err => {
 					this.hints = [];
@@ -39,29 +44,29 @@ export default {
 		this.getQuestionHints();
 		setInterval(() => {
 			this.getQuestionHints();
-		}, 3000);
+		}, 60000);
 	}
 };
 </script>
 <style>
-    .wobble-enter-active {
-        animation: wobble .5s linear forwards;
-    }
-    @keyframes wobble {
-        0% {
-            transform: translateX(-20%) rotate(-5deg);
-        }
-        50% {
-            transform: translateX(20%) rotate(5deg);
-        }
-        66% {
-            transform: translateX(-20%) rotate(-2deg);
-        }
-        84% {
-            transform: translateX(20%) rotate(2deg);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
+.wobble-enter-active {
+	animation: wobble 0.5s linear forwards;
+}
+@keyframes wobble {
+	0% {
+		transform: translateX(-20%) rotate(-5deg);
+	}
+	50% {
+		transform: translateX(20%) rotate(5deg);
+	}
+	66% {
+		transform: translateX(-20%) rotate(-2deg);
+	}
+	84% {
+		transform: translateX(20%) rotate(2deg);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
 </style>
