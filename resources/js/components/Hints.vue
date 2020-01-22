@@ -30,9 +30,9 @@ export default {
 				})
 				.then(res => {
 					this.hints = res.data;
-					if (this.previousHintsLength !== this.hints.lenght) {
+					if (this.previousHintsLength != Object.keys(this.hints).length) {
 						flash("New Hints arrived! take a look..");
-						this.previousHintsLength = this.hints.lenght;
+						this.previousHintsLength = Object.keys(this.hints).length;
 					}
 				})
 				.catch(err => {
