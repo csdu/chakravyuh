@@ -56,9 +56,14 @@ Route::get('dashboard', function () {
 })->middleware('auth:api');
 
 Route::get('/question/{question}/hints/', function ($questionId) {
-    return QuestionHint::where('question_id', $questionId)->get()
+    return QuestionHint::where('question_id', $questionId)->orderBy('id', 'desc')->get()
         ->filter(function ($hint) {
             return ($time = $hint->releaseTime()) && $time <= now();
+        })->map(function ($hint) {
+            return [
+                'id' => $hint->id,
+                'text' => $hint->text,
+            ];
         });
 })->middleware('auth:api');
 
