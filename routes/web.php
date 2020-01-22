@@ -27,7 +27,7 @@ Route::post('/logout', 'Auth\LoginController@logout')->middleware('auth');
 Route::get('/home', 'HomeController@show')->middleware('auth');
 Route::get('/leaderboard', 'PagesController@leaderboard')->middleware('auth');
 
-Route::middleware('event_start_check')->group(function () {
+Route::middleware(['event_start_check', 'disqualify_participant_check'])->group(function () {
     Route::get('/playarea', 'PlayAreaController@show')->middleware('auth', 'event_start_check');
     Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
     Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
@@ -47,4 +47,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::post('event-start', 'Admin\EventController@start')->name('admin.event.start');
 
     Route::post('event-end', 'Admin\EventController@end')->name('admin.event.end');
+
+    Route::get('participants/{participant}/disqualify', 'Admin\ParticipantsController@disqualify');
+    Route::get('participants/{participant}/undisqualify', 'Admin\ParticipantsController@undisqualify');
 });

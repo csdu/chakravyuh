@@ -22,7 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/users', function () {
-    return User::get(['id', 'name', 'email', 'level'])->reject(function ($user) {
+    return User::get(['id', 'name', 'email', 'level', 'disqualified'])->reject(function ($user) {
         return $user->is_admin;
     });
 })->middleware('auth:api');

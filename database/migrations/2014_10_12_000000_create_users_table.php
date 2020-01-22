@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->text('token');
             $table->rememberToken();
             $table->integer('level')->default(1);
+            $table->boolean('disqualified')->default(false);
             $table->timestamps();
         });
     }

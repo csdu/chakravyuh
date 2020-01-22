@@ -2076,9 +2076,9 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (res) {
         _this.hints = res.data;
 
-        if (_this.previousHintsLength !== _this.hints.lenght) {
+        if (_this.previousHintsLength != Object.keys(_this.hints).length) {
           flash("New Hints arrived! take a look..");
-          _this.previousHintsLength = _this.hints.lenght;
+          _this.previousHintsLength = Object.keys(_this.hints).length;
         }
       })["catch"](function (err) {
         _this.hints = [];
@@ -2247,6 +2247,15 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -21469,7 +21478,33 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(1, true)
+                _c("td", { staticClass: "table-fit text-center pr-6 py-2" }, [
+                  user.disqualified
+                    ? _c(
+                        "a",
+                        {
+                          staticClass:
+                            "bg-blue-500 hover:bg-blue-700 text-white py-2 px-3 rounded",
+                          attrs: {
+                            href:
+                              "/admin/participants/" + user.id + "/undisqualify"
+                          }
+                        },
+                        [_vm._v("Mercy")]
+                      )
+                    : _c(
+                        "a",
+                        {
+                          staticClass:
+                            "bg-red-500 hover:bg-red-700 text-white py-2 px-3 rounded",
+                          attrs: {
+                            href:
+                              "/admin/participants/" + user.id + "/disqualify"
+                          }
+                        },
+                        [_vm._v("Disqualify")]
+                      )
+                ])
               ]
             )
           })
@@ -21516,21 +21551,6 @@ var staticRenderFns = [
           [_vm._v("Actions")]
         )
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("td", { staticClass: "table-fit text-center pr-6 py-2" }, [
-      _c(
-        "a",
-        {
-          staticClass:
-            "bg-red-500 hover:bg-red-700 text-white py-2 px-3 rounded"
-        },
-        [_vm._v("Disqualify")]
-      )
     ])
   }
 ]
