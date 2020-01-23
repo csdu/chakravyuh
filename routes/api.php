@@ -73,7 +73,7 @@ Route::get('/leaderboard', function () {
             $user['split_time'] = $user->responses->sum->split_time;
             $user['total_score'] = $user->responses->sum('score');
 
-            return !$user->is_admin;
+            return !$user->is_admin && !$user->disqualified;
         })->sort(function ($userA, $userB) {
             if ($userA->total_score == $userB->total_score) {
                 return $userA->split_time - $userB->split_time;
