@@ -6,9 +6,9 @@
         <p class="self-center">1</p>
       </div>
       <div class="md:ml-6 ml-4">
-        <p>Abhishek kansal</p>
-        <p>abhishek.mcs18.du@gmail.com</p>
-        <p>+91-9650744474</p>
+        <p>Abhishek Sen</p>
+        <p><a href="mailto:abhishek.mcs18.du@gmail.com">abhishek.mcs18.du@gmail.com</a></p>
+        <p><a href="tel:+917059931910">+91-7059931910</a></p>
       </div>
     </div>
     <div class="my-4 flex">
@@ -17,8 +17,8 @@
       </div>
       <div class="md:ml-6 ml-4">
         <p>Krishna Agarwal</p>
-        <p>krishna.mcs18.du@gmail.com</p>
-        <p>+91-9935590973</p>
+        <p><a href="mailto:krishna.mcs18.du@gmail.com">krishna.mcs18.du@gmail.com</a></p>
+        <p><a href="+919935590973">+91-9935590973</a></p>
       </div>
     </div>
 
