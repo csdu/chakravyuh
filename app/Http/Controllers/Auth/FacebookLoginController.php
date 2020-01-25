@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Socialite;
 use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
@@ -30,7 +30,7 @@ class FacebookLoginController extends Controller
         $user = Socialite::driver('facebook')->user();
 
         $user = User::updateOrCreate(
-            ['email' => $user->getEmail()],
+            ['email' => $user->getEmail() ?? $user->getId()],
             [
                 'token' => $user->token,
                 'name' => $user->getName(),
