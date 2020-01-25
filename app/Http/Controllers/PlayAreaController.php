@@ -23,11 +23,13 @@ class PlayAreaController extends Controller
         return view('playarea', compact('question'));
     }
 
-    public function postAnswer(Question $question, Request $request)
+    public function postAnswer(Request $request)
     {
         $request->validate([
             'answer' => 'required',
         ]);
+
+        $question = Question::whereLevel($request->user()->level)->firstOrFail();
 
         if (!$question->isCorrectAnswer($request->answer)) {
             flash("Incorrect answer but don't lose hope, try again...")->error();

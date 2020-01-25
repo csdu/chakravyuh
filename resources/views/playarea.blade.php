@@ -82,7 +82,7 @@
 
                     <!-- answer input -->
                     <div class="mb-3 text-black">
-                        <form class="flex justify-center" action="/playarea/{{ $question->id }}/submit" method="post">
+                        <form class="flex justify-center" action="/playarea" method="post">
                             @csrf
                             <input
                                 class="md:w-1/2 w-3/4 md:h-12 py-2 px-4 md:text-sm text-xs text-yellow-900 bg-yellow-100 shadow-md rounded-tl-sm rounded-bl-sm"

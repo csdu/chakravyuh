@@ -31,8 +31,8 @@ Route::get('/home', 'HomeController@show')->middleware('auth');
 Route::get('/leaderboard', 'PagesController@leaderboard')->middleware('auth');
 
 Route::middleware(['event_start_check', 'disqualify_participant_check'])->group(function () {
-    Route::get('/playarea', 'PlayAreaController@show')->middleware('auth', 'event_start_check');
-    Route::post('/playarea/{question}/submit', 'PlayAreaController@postAnswer')->middleware('auth');
+    Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');
+    Route::post('/playarea', 'PlayAreaController@postAnswer')->middleware('auth');
     Route::get('/question_attachments/{attachment}', 'QuestionAttachmentController@show')->middleware('auth');
 });
 

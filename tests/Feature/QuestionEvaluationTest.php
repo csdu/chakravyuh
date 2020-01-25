@@ -40,7 +40,7 @@ class QuestionEvaluationTest extends TestCase
         $this->be($user);
 
         $response = $this->withoutExceptionHandling()->post(
-            '/playarea/' . $question->id . '/submit',
+            '/playarea',
             ['answer' => $answer]
         )->assertRedirect()
         ->assertSessionHasNoErrors();
@@ -64,7 +64,7 @@ class QuestionEvaluationTest extends TestCase
         $this->be($user = factory(User::class)->create(['level' => 1]));
 
         $this->withoutExceptionHandling()->post(
-            '/playarea/' . $question->id . '/submit',
+            '/playarea',
             ['answer' => $answer]
         )->assertRedirect()
         ->assertSessionHasNoErrors();
@@ -90,7 +90,7 @@ class QuestionEvaluationTest extends TestCase
         $this->be($user = factory(User::class)->create(['level' => 1]));
 
         $this->withoutExceptionHandling()->post(
-            '/playarea/' . $question->id . '/submit',
+            '/playarea',
             ['answer' => $answer]
         )->assertRedirect()
         ->assertSessionHasNoErrors();
