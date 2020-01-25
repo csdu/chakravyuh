@@ -58,7 +58,7 @@ Route::get('dashboard', function () {
 Route::get('/question/{question}/hints/', function ($questionId) {
     return QuestionHint::where('question_id', $questionId)->orderBy('id', 'desc')->get()
         ->filter(function ($hint) {
-            return ($time = $hint->releaseTime()) && $time <= now();
+            return $hint->shouldRelease();
         })->map(function ($hint) {
             return [
                 'id' => $hint->id,

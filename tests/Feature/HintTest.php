@@ -7,6 +7,7 @@ use App\Question;
 use App\QuestionAttachment;
 use App\User;
 use Carbon\Carbon;
+use Carbon\CarbonImmutable;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Cache;
 use Tests\TestCase;
@@ -60,6 +61,7 @@ class HintTest extends TestCase
             'question_id' => $question->id,
         ]);
 
+
         $hints = $question->hints()->createMany([
             [
                 'text' => 'this hint',
@@ -73,13 +75,17 @@ class HintTest extends TestCase
 
         $this->be($user);
 
-        Cache::put($user->id.':'.$question->id, now());
+        Carbon::setTestNow($now = now());
+        $question->setEnterTime($user);
 
-        // after 5 minutes
-        Carbon::setTestNow(Carbon::now()->addMinutes(6));
+        // after more than 5 minutes
+        Carbon::setTestNow($now->addMinutes(6));
 
-        $jsonHints = $this->getJson("api/question/{$question->id}/hints/?api_token={$token}")->json();
+        $jsonHints = $this->withoutExceptionHandling()
+            ->getJson("api/question/{$question->id}/hints/?api_token={$token}")
+            ->json();
+
         $this->assertCount(1, $jsonHints);
-        $this->assertEquals('this hint', $jsonHints[0]['text']);
+        $this->assertEquals('this hint', head($jsonHints)['text']);
     }
 }

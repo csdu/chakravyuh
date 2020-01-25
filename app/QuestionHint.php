@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Carbon\Carbon;
+use Carbon\CarbonImmutable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,10 +18,10 @@ class QuestionHint extends Model
         return $this->belongsTo(Question::class);
     }
 
-    public function releaseTime()
+    public function shouldRelease()
     {
-        return ($enterTime = $this->question->getEnterTime(Auth::user()))
-            ? $enterTime->addMinutes($this->release_after)
-            : null;
+        $enterTime = $this->question->getEnterTime(Auth::user());
+
+        return now()->diffInMinutes($enterTime) > $this->release_after;
     }
 }
