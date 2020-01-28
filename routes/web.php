@@ -47,6 +47,12 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('questions/{question}/edit', 'Admin\QuestionController@edit')->name('admin.questions.edit');
     Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.questions.delete');
 
+    Route::post('questions/{question}/hints/create', 'Admin\QuestionHintController@create')->name('admin.questions.hints.create');
+    Route::delete('hints/{hint}/delete', 'Admin\QuestionHintController@delete')->name('admin.questions.hints.delete');
+
+    Route::get('hints/{hint}/edit', 'Admin\QuestionHintController@edit')->name('admin.questions.hints.edit');
+    Route::post('hints/{hint}/update', 'Admin\QuestionHintController@update')->name('admin.questions.hints.update');
+
     Route::post('event-start', 'Admin\EventController@start')->name('admin.event.start');
 
     Route::post('event-end', 'Admin\EventController@end')->name('admin.event.end');
