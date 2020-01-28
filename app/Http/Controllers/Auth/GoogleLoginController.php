@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
-use Auth;
-use Socialite;
-use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
+use App\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use Socialite;
 
 class GoogleLoginController extends Controller
 {
@@ -40,6 +40,7 @@ class GoogleLoginController extends Controller
         );
 
         Auth::login($user, true);
+        Auth::logoutOtherDevices(null);
 
         return redirect()->to('/home');
     }
