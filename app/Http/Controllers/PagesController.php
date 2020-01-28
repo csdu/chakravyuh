@@ -20,8 +20,7 @@ class PagesController extends Controller
                 }
 
                 return $userB->total_score - $userA->total_score;
-            })->values()->take(10);
-
+            })->values();
 
         return view('leaderboard')->withUsers($users);
     }

@@ -80,5 +80,5 @@ Route::get('/leaderboard', function () {
             }
 
             return $userB->total_score - $userA->total_score;
-        })->values()->take(10);
+        })->values();
 })->middleware('auth:api');
