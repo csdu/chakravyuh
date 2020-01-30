@@ -18,7 +18,9 @@
 				<tr class="border-t hover:bg-black-40" v-for="user in users" :key="user.id">
 					<td class="table-fit text-left pl-6 py-2 text-xs">{{ user.id }}</td>
 					<td class="table-fit text-left capitalize px-4 py-2">
-						<span class>{{ user.name }}</span>
+						<a class="hover:underline font-bold" :href="'/admin/participants/' + user.id + '/tries'">
+							<span class>{{ user.name }}</span>
+						</a>
 					</td>
 					<td class="table-fit text-left px-4 py-2">
 						<span class>{{ user.email }}</span>

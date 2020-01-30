@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Question;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redis;
 
 class PlayAreaController extends Controller
 {
@@ -30,6 +31,16 @@ class PlayAreaController extends Controller
         ]);
 
         $question = Question::whereLevel($request->user()->level)->firstOrFail();
+
+        if (Redis::hexists($key = "user:{$request->user()->id}:tries", "question:{$question->id}")) {
+            Redis::hmset(
+                $key,
+                "question:{$question->id}",
+                Redis::hget($key, "question:{$question->id}")."|{$request->answer}"
+            );
+        } else {
+            Redis::hmset($key, "question:{$question->id}", $request->answer);
+        }
 
         if (!$question->isCorrectAnswer($request->answer)) {
             flash("Incorrect answer but don't lose hope, try again...")->error();

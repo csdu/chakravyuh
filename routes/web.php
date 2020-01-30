@@ -39,6 +39,8 @@ Route::middleware(['event_start_check', 'disqualify_participant_check'])->group(
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/', 'Admin\PagesController@dashboard')->name('admin.dashboard');
     Route::get('participants', 'Admin\PagesController@participants')->name('admin.participants');
+    Route::get('participants/{user}/tries', 'Admin\PagesController@participantsTries');
+
     Route::get('questions', 'Admin\QuestionController@index')->name('admin.questions.index');
     Route::get('questions/create', 'Admin\QuestionController@create')->name('admin.questions.create');
     Route::post('questions', 'Admin\QuestionController@store')->name('admin.questions.store');
