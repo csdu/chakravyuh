@@ -8,28 +8,29 @@
     <title>Chakravyuh</title>
 </head>
 
-<body class="font-inconsolata antialiased bg-black text-white h-screen overflow-hidden"
+<body class="font-inconsolata antialiased text-white h-screen"
     style="{{ isset($withoutBackground)
         ? '' :
         "background:linear-gradient(#000,rgba(255,180,0,1),#000),url(" . asset('images/leaderboardbg.png') . ");
         background-repeat: no-repeat,no-repeat;
+        background-attachment:fixed;
         background-position: center,bottom;
         background-size:cover,cover;
         background-blend-mode : multiply;"
     }}">
     <div class="h-full flex flex-col overflow-y-auto" id="app">
-        <header class="px-4 md:px-6 lg:px-12 py-4 flex items-center">
-            <div class="mr-4 text-primary font-display">
+        <header class="px-2 py-4 flex items-center">
+            <div class="md:ml-2 md:mr-4 text-primary font-display">
                 <a href="/home" class="text-xl">CHAKRAVYUH</a>
             </div>
 
             {{-- Desktop Nav --}}
-            <nav class="flex-1 hidden md:flex md:items-center">
+            <nav class="flex-1 hidden lg:flex lg:items-center">
                 @include('partials.nav-links')
                 @include('partials.auth-links')
             </nav>
             {{-- Mobile Nav --}}
-            <div class="md:hidden block ml-auto">
+            <div class="lg:hidden block ml-auto md:mr-2">
                 <dropdown>
                     <template v-slot:unactive>
                         @include('svg.cross')
