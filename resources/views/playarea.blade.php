@@ -85,7 +85,7 @@
 
                     <!-- hints container for mobile screens-->
                     <div id="hints"
-                        class="flex-1 md:hidden flex flex-col h-auto mb-2 pb-2 mx-3 mt-1 bg-black-40 rounded-sm max-h-22rem md:overflow-y-auto scrollbar-style md:text-sm text-xs text-left">
+                        class="flex-1 md:hidden flex flex-col mb-2 pb-2 mx-3 mt-1 bg-black-40 rounded-sm max-h-22rem md:overflow-y-auto scrollbar-style md:text-sm text-xs text-left">
                         <p class="self-center my-4 font-display text-base">
                             @include('svg.hint') HINTS
                         </p>
