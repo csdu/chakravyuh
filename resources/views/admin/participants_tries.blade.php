@@ -8,19 +8,26 @@
             <table class="w-full border-collapse">
                 <thead>
                     <tr class="border-t border-b border-primary bg-black-50">
-                        <th class="text-sm font-bold uppercase text-left pl-6 py-2">Tried</th>
-                        <th class="text-sm font-bold uppercase text-left pr-6 py-2">Level</th>
+                        <th class="text-sm font-bold uppercase text-left pl-6 py-2">Level</th>
+                        <th class="text-sm font-bold uppercase text-left px-4 py-2">Tried</th>
+                        <th class="text-sm font-bold uppercase text-left pr-6 py-2">Timestamp</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($allTries as $question => $tries)
-                        @foreach (explode('|', $tries) as $try)
+                    @forelse ($allTries as $level => $tries)
+                        @foreach ($tries as $try)
                             <tr class="border-t hover:bg-black-40">
-                                <td class="table-fit text-left pl-6 py-2">{{ $try }}</td>
-                                <td class="table-fit text-left pr-6 py-2">{{ explode(':', $question)[1] }}</td>
+                                <td class="table-fit text-left pl-6 py-2">{{ $level }}</td>
+                                <td class="table-fit text-left px-4 py-2">{{ $try->text }}</td>
+                                <td class="table-fit text-left pr-6 py-2">{{ $try->timestamp }}</td>
                             </tr>
                         @endforeach
-                    @endforeach
+                    @empty
+                        <tr class="border-t hover:bg-black-40">
+                            <td colspan="3" class="table-fit text-left pl-6 pr-6 py-2">No Record Found</td>
+                        </tr>
+                    @endforelse
                 </tbody>
             </table>
         </div>

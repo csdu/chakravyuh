@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\QuestionTriesRepository;
 use App\User;
-use Illuminate\Support\Facades\Redis;
 
 class PagesController extends Controller
 {
@@ -18,9 +18,9 @@ class PagesController extends Controller
         return view('admin.participants');
     }
 
-    public function participantsTries(User $user)
+    public function participantsTries(User $user, QuestionTriesRepository $questionTriesRepository)
     {
-        $allTries = Redis::hgetall("user:{$user->id}:tries");
+        $allTries = $questionTriesRepository->get($user);
 
         return view('admin.participants_tries')->withAllTries($allTries);
     }
