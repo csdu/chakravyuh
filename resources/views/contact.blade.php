@@ -1,4 +1,4 @@
-<div class= "p-4 my-8 flex flex-col md:text-center text-left">
+<div class="p-4 my-8 flex flex-col md:text-center text-left">
   <p class="md:my-4 my-2 md:text-xl text-base text-center">CONTACT</p>
   <div class="flex md:flex-row flex-col justify-around">
     <div class="my-4 flex">
