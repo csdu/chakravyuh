@@ -26,6 +26,9 @@ Route::get('/about', function () {
 Route::get('/rules', function () {
     return view('rules');
 });
+Route::get('/team', function () {
+    return view('team');
+});
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
 Route::get('/leaderboard', 'PagesController@leaderboard')->middleware('auth');

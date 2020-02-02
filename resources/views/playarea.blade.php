@@ -56,7 +56,7 @@
                             <span class="font-semi-bold">{{ Auth::user()->level }}</span>
                     </div>
                     <!-- Question -->
-                    <div class="px-4 question-container w-full md:mb-4 mb-2">
+                    <div class="md:px-4 px-3 question-container w-full md:mb-4 mb-2">
                         @if ($question->text)
                         <p class="mb-3 text-center">
                             {{$question->text}}
@@ -85,7 +85,7 @@
 
                     <!-- hints container for mobile screens-->
                     <div id="hints"
-                        class="flex-1 md:hidden flex flex-col h-auto mb-2 pb-2 m-1 bg-black-40 rounded-sm max-h-22rem md:overflow-y-auto scrollbar-style md:text-sm text-xs text-left">
+                        class="flex-1 md:hidden flex flex-col h-auto mb-2 pb-2 mx-3 mt-1 bg-black-40 rounded-sm max-h-22rem md:overflow-y-auto scrollbar-style md:text-sm text-xs text-left">
                         <p class="self-center my-4 font-display text-base">
                             @include('svg.hint') HINTS
                         </p>

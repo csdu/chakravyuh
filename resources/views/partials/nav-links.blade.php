@@ -5,6 +5,9 @@
     <li class="my-2 md:my-0 md:mx-2">
         <a class="nav-button hover:text-primary px-4 py-2{{ request()->is('rules') ? ' text-primary font-bold' : '' }}" href="/rules">Rules</a>
     </li>
+    <li class="my-2 md:my-0 md:mx-2">
+        <a class="nav-button hover:text-primary px-4 py-2{{ request()->is('team') ? ' text-primary font-bold' : '' }}" href="/team">DeveloperTeam</a>
+    </li>
     @auth
     <li class="my-2 md:my-0 md:mx-2">
         <a href="/leaderboard"

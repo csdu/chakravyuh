@@ -19,7 +19,7 @@
         background-blend-mode : multiply;"
     }}">
     <div class="h-full flex flex-col overflow-y-auto" id="app">
-        <header class="px-2 py-4 flex items-center">
+        <header class="px-3 md:py-4 py-2 flex items-center">
             <div class="md:ml-2 md:mr-4 text-primary font-display">
                 <a href="/home" class="text-xl">CHAKRAVYUH</a>
             </div>
@@ -57,20 +57,6 @@
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Major+Mono+Display&display=swap" rel="stylesheet">
     <script src="{{asset('js/app.js')}}"></script>
-    <script type="text/javascript">
-        var scrollWindow = document.querySelector('#main');
-        scrollWindow.addEventListener('scroll', function(e) {
-            var target = document.querySelectorAll('.scroll');
-            var target2 = document.querySelectorAll('.scroll-down');
-            var offsety = e.target.pageYOffset * 0.3;
-            for (var i = 0; i < target.length; i++) {
-            target[i].style.transform = 'translateY(-'+offsety+'px)';
-            }
-            for (var i = 0; i < target2.length; i++) {
-            target2[i].style.transform = 'translateY('+offsety+'px)';
-            }
-        });
-    </script>
 </body>
 
 </html>
