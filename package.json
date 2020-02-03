@@ -27,6 +27,8 @@
     },
     "dependencies": {
         "@fortawesome/free-solid-svg-icons": "^5.12.0",
-        "@fortawesome/vue-fontawesome": "^0.1.9"
+        "@fortawesome/vue-fontawesome": "^0.1.9",
+        "laravel-echo": "^1.6.1",
+        "pusher-js": "^5.0.3"
     }
 }

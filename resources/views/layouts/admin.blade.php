@@ -15,6 +15,10 @@
                 <a href="{{ route('admin.questions.index') }}"
                     class="inline-block w-full bg-black-50 hover:bg-black-70 text-primary px-3 py-2 rounded">Questions</a>
             </li>
+            <li class="my-2">
+                <a href="{{ route('admin.message.create') }}"
+                    class="inline-block w-full bg-black-50 hover:bg-black-70 text-primary px-3 py-2 rounded">Notify Players</a>
+            </li>
         </ul>
     </aside>
     <div class="px-6 py-4 flex-1 text-left">

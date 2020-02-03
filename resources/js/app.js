@@ -12,6 +12,8 @@ Vue.component('dropdown', require('./components/dropdown.vue').default);
 Vue.component('leader-board', require('./components/Leaderboard.vue').default);
 Vue.component('winner-circle', require('./components/WinnerCircle.vue').default);
 
+Vue.component('message-notification', require('./components/MessageNotification.vue').default);
+
 import FlashMessages from "./components/Flash.vue";
 Vue.component("v-flash", FlashMessages);
 

@@ -2,8 +2,9 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -39,6 +40,16 @@ class User extends Authenticatable
     public function incrementLevel()
     {
         return $this->increment('level');
+    }
+
+    /**
+     * The channels the user receives notification broadcasts on.
+     *
+     * @return string
+     */
+    public function receivesBroadcastNotificationsOn()
+    {
+        return 'participants.'.$this->id;
     }
 
     public function getIsAdminAttribute($value)

@@ -61,4 +61,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
 
     Route::get('participants/{participant}/disqualify', 'Admin\ParticipantsController@disqualify');
     Route::get('participants/{participant}/undisqualify', 'Admin\ParticipantsController@undisqualify');
+
+    Route::get('message/create', 'Admin\MessageController@create')->name('admin.message.create');
+    Route::post('message', 'Admin\MessageController@send')->name('admin.message.notify');
 });
