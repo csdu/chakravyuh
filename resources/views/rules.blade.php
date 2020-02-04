@@ -1,13 +1,13 @@
 @extends('layouts.master')
 @section('main')
 <div class="w-full lg:px-32 relative md:py-12 py-4 md:text-base text-sm">
-    <svg class="font-display absolute top-20 right-0 z-n md:w-2/3 w-11/12 scroll-down" version="1.1"
+    <svg class="font-display fixed top-30 right-0 z-n md:w-2/3 w-11/12" version="1.1"
         viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <text x="70%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="3.5rem"
             fill="rgba(255,255,255,0.07)">RULES</text>
     </svg>
 
-    <div class="flex flex-col scroll">
+    <div class="flex flex-col">
 
         <h2 class="md:text-3xl text-2xl border-b border-white w-64 font-display self-center my-4 ">Rules</h2>
 

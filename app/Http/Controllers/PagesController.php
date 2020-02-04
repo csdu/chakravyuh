@@ -30,4 +30,19 @@ class PagesController extends Controller
     {
         return view('notification')->withNotifications(Auth::user()->notifications);
     }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function rules()
+    {
+        return view('rules');
+    }
+
+    public function team()
+    {
+        return view('team');
+    }
 }
