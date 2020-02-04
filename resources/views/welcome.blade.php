@@ -2,11 +2,11 @@
 @section('main')
 <div class="h-full flex flex-col justify-center">
     <div class="text-center font-display text-primary mb-16 -mt-12">
-        <h4 class="text-2xl lg:text-4xl">Sankalan</h4>
-        <p class="font-inconsolata text-lg lg:text-2xl">Presents</p>
+        <h4 class="text-3xl lg:text-4xl">sankalan</h4>
+        <p class="font-inconsolata text-base lg:text-xl">presents</p>
         <h1 class="text-4xl lg:text-6xl">CHAKRAVYUH</h1>
     </div>
-    <div class="relative flex items-center justify-center">
+    <div class="flex items-center justify-center">
         @if(App\EventStatus::isLive())
         <p class="py-4 text-xl font-bold text-primary">
             Game has Started.

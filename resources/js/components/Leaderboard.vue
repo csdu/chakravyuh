@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="text-2xl mb-4 xl:mb-6 font-display text-shadow-2">LEADERBOARD</h1>
+    <h1 class="text-2xl my-2 lg:mb-6 font-display text-shadow-2">LEADERBOARD</h1>
     <!-- {{-- winner svg --}} -->
-    <div class="w-full flex items-center justify-between">
+    <div class="w-10/12 mx-auto flex items-center justify-between mb-2">
       <!-- {{-- left person --}} -->
       <div class="w-3/12">
         <img src="/images/ancient-person.svg" />

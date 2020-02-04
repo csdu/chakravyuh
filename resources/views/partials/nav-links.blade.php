@@ -8,11 +8,11 @@
     @auth
     <li class="my-2 md:my-0 md:mx-2">
         <a href="/leaderboard"
-            class="nav-button hover:text-primary px-4 py-2{{ request()->is('leaderboard') ? ' text-primary font-bold' : '' }} ">Leaderboard</a>
+        class="nav-button hover:text-primary px-4 py-2{{ request()->is('leaderboard') ? ' text-primary font-bold' : '' }} ">Leaderboard</a>
     </li>
     <li class="my-2 md:my-0 md:mx-2">
         <a href="/notifications"
-            class="nav-button hover:text-primary px-4 py-2{{ request()->is('notifications') ? ' text-primary font-bold' : '' }} ">Notifications</a>
+        class="nav-button hover:text-primary px-4 py-2{{ request()->is('notifications') ? ' text-primary font-bold' : '' }} ">Notifications</a>
     </li>
     @if (Auth::user()->is_admin)
     <li class="my-2 md:my-0 md:mx-2">
@@ -20,4 +20,7 @@
     </li>
     @endif
     @endauth
+    <li class="my-2 md:my-0 md:mx-2">
+        <a class="nav-button hover:text-primary px-4 py-2{{ request()->is('team') ? ' text-primary font-bold' : '' }}" href="/team">DeveloperTeam</a>
+    </li>
 </ul>

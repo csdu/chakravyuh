@@ -3,7 +3,7 @@
     <img src="/images/ancient-person.svg">
 </div>
 
-<div class="w-5/12 relative">
+<div class="w-6/12 relative">
     <div class="absolute w-4/12" style="top: -12%; left: 62%; transform: rotate(30deg);">
         <img src="/images/crown.svg" alt="">
     </div>
