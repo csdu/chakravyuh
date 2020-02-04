@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="fixed flex flex-col inset-x-0 top-0 mt-4 items-end z-50 pointer-events-none container mx-auto"
-	>
+	<div class="fixed flex flex-col inset-x-0 top-0 mt-4 items-end z-50 container mx-auto">
 		<transition-group
 			name="fade"
 			enter-active-class="fadeIn"
@@ -13,7 +11,18 @@
 				:class="classes[message.level]"
 				v-for="message in messages"
 				:key="message.id"
-			>{{ message.message }}</div>
+			>
+				<div v-if="message.important" class="flex justify-between">
+					<p class="font-semibold text-base text-gray-800">Important</p>
+					<div class="inline ml-4">
+						<button
+							@click="remove(message)"
+							class="bg-gray-800 hover:bg-gray-900 cursor-pointer border-transparent border rounded-full px-1 text-white leading-none text-sm"
+						>&#9747;</button>
+					</div>
+				</div>
+				{{ message.message }}
+			</div>
 		</transition-group>
 	</div>
 </template>
@@ -39,10 +48,17 @@ export default {
 	methods: {
 		clear() {
 			for (let i = 0; i < this.messages.length; i++) {
-				setTimeout(() => {
-					this.messages.splice(0, 1);
-				}, i * 500);
+				if (!this.messages[i].important) {
+					setTimeout(() => {
+						this.remove(this.messages[i]);
+					}, i * 500);
+				}
 			}
+		},
+		remove(message) {
+			this.messages = this.messages.filter(function(msg) {
+				return msg.id != message.id;
+			});
 		},
 		flash(message) {
 			this.messages.push(message);

@@ -51,6 +51,8 @@
             @yield('main')
         </main>
         @include('flash::message')
+
+        <message-notification user_id="{{ Auth::id() }}"></message-notification>
     </div>
 
     <!-- googlefont -->

@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('main')
 <div class="h-full flex items-center justify-center">
-    <message-notification user_id="{{ Auth::id() }}"></message-notification>
     @if (App\EventStatus::isLive())
         @if (Auth::user()->disqualified)
             You are disqualified.

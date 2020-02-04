@@ -1,20 +1,19 @@
-<template>
-	<h1>text</h1>
-</template>
+<template></template>
 
 <script>
 export default {
 	props: {
 		user_id: { required: true }
-    },
-    methods: {
-        onNotificationReceived(notification) {
-            flash(notification.message, 'info', true);
-        }
-    },
-    created() {
-        Echo.private(`participants.${this.user_id}`)
-            .notification(this.onNotificationReceived);
-    }
+	},
+	methods: {
+		onNotificationReceived(notification) {
+			flash(notification.message, "info", true);
+		}
+	},
+	created() {
+		Echo.private(`participants.${this.user_id}`).notification(
+			this.onNotificationReceived
+		);
+	}
 };
 </script>

@@ -28,7 +28,8 @@ Route::get('/rules', function () {
 });
 
 Route::get('/home', 'HomeController@show')->middleware('auth');
-Route::get('/leaderboard', 'PagesController@leaderboard')->middleware('auth');
+Route::get('/leaderboard', 'PagesController@leaderboard')->middleware(['event_start_check', 'auth']);
+Route::get('/notifications', 'PagesController@notifications')->middleware('auth');
 
 Route::middleware(['event_start_check', 'disqualify_participant_check'])->group(function () {
     Route::get('/playarea', 'PlayAreaController@show')->middleware('auth');

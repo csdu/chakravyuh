@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller
 {
@@ -23,5 +24,10 @@ class PagesController extends Controller
             })->values();
 
         return view('leaderboard')->withUsers($users);
+    }
+
+    public function notifications()
+    {
+        return view('notification')->withNotifications(Auth::user()->notifications);
     }
 }

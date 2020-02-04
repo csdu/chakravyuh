@@ -1956,6 +1956,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     "data-messages": {
@@ -1977,11 +1986,22 @@ __webpack_require__.r(__webpack_exports__);
     clear: function clear() {
       var _this = this;
 
+      var _loop = function _loop(i) {
+        if (!_this.messages[i].important) {
+          setTimeout(function () {
+            _this.remove(_this.messages[i]);
+          }, i * 500);
+        }
+      };
+
       for (var i = 0; i < this.messages.length; i++) {
-        setTimeout(function () {
-          _this.messages.splice(0, 1);
-        }, i * 500);
+        _loop(i);
       }
+    },
+    remove: function remove(message) {
+      this.messages = this.messages.filter(function (msg) {
+        return msg.id != message.id;
+      });
     },
     flash: function flash(message) {
       var _this2 = this;
@@ -2252,8 +2272,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     user_id: {
@@ -2262,7 +2280,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     onNotificationReceived: function onNotificationReceived(notification) {
-      flash(notification.message, 'info', true);
+      flash(notification.message, "info", true);
     }
   },
   created: function created() {
@@ -2776,7 +2794,7 @@ function fromByteArray (uint8) {
 /* WEBPACK VAR INJECTION */(function(global) {/*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <http://feross.org>
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
  * @license  MIT
  */
 /* eslint-disable no-proto */
@@ -13859,7 +13877,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "fixed flex flex-col inset-x-0 top-0 mt-4 items-end z-50 pointer-events-none container mx-auto"
+        "fixed flex flex-col inset-x-0 top-0 mt-4 items-end z-50 container mx-auto"
     },
     [
       _c(
@@ -13880,7 +13898,34 @@ var render = function() {
               staticClass: "border rounded mb-2 p-3 max-w-5/6 md:max-w-1/3",
               class: _vm.classes[message.level]
             },
-            [_vm._v(_vm._s(message.message))]
+            [
+              message.important
+                ? _c("div", { staticClass: "flex justify-between" }, [
+                    _c(
+                      "p",
+                      { staticClass: "font-semibold text-base text-gray-800" },
+                      [_vm._v("Important")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inline ml-4" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "bg-gray-800 hover:bg-gray-900 cursor-pointer border-transparent border rounded-full px-1 text-white leading-none text-sm",
+                          on: {
+                            click: function($event) {
+                              return _vm.remove(message)
+                            }
+                          }
+                        },
+                        [_vm._v("☓")]
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v("\n\t\t\t" + _vm._s(message.message) + "\n\t\t")
+            ]
           )
         }),
         0
@@ -14203,7 +14248,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("text")])
+  return _c("div")
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -27180,7 +27225,7 @@ var app = new Vue({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var laravel_echo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! laravel-echo */ "./node_modules/laravel-echo/dist/echo.js");
+/* harmony import */ var laravel_echo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! laravel-echo */ "./node_modules/laravel-echo/dist/echo.js");
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -27196,7 +27241,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
-window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_1__["default"]({
+window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: 'myappkey',
   wsHost: window.location.hostname,
@@ -27967,8 +28012,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /hdd/code/work/chakravyuh/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /hdd/code/work/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/yuvraj/Documents/chakravyuh/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/yuvraj/Documents/chakravyuh/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
