@@ -13780,42 +13780,57 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "flex flex-wrap mb-2 -mx-3" }, [
     _c("div", { staticClass: "w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pr-2" }, [
-      _c("div", { staticClass: "bg-green-600 border rounded shadow p-2" }, [
-        _c("div", { staticClass: "flex flex-row items-center" }, [
-          _c("div", { staticClass: "flex-1 text-right" }, [
-            _c("h5", { staticClass: "text-white" }, [
-              _vm._v("Total Participants")
-            ]),
-            _vm._v(" "),
-            _c("h3", { staticClass: "text-white text-3xl" }, [
-              _vm._v(_vm._s(_vm.totalParticipants))
+      _c(
+        "div",
+        {
+          staticClass:
+            "bg-green-600 border border-yellow-800 rounded shadow p-2"
+        },
+        [
+          _c("div", { staticClass: "flex flex-row items-center" }, [
+            _c("div", { staticClass: "flex-1 text-right" }, [
+              _c("h5", { staticClass: "text-white" }, [
+                _vm._v("Total Participants")
+              ]),
+              _vm._v(" "),
+              _c("h3", { staticClass: "text-white text-3xl" }, [
+                _vm._v(_vm._s(_vm.totalParticipants))
+              ])
             ])
           ])
-        ])
-      ])
+        ]
+      )
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pl-2" }, [
-      _c("div", { staticClass: "bg-blue-600 border rounded shadow p-2" }, [
-        _c("div", { staticClass: "flex flex-row items-center" }, [
-          _c("div", { staticClass: "flex-1 text-right" }, [
-            _c("h5", { staticClass: "text-white" }, [_vm._v("Highest Level")]),
-            _vm._v(" "),
-            _c("h3", { staticClass: "text-white text-3xl" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "hover:text-gray-300 hover:underline",
-                  attrs: {
-                    href: "/admin/question/" + _vm.highestLevel.id + "/show"
-                  }
-                },
-                [_vm._v(_vm._s(_vm.highestLevel.level || "None"))]
-              )
+      _c(
+        "div",
+        {
+          staticClass: "bg-blue-600 border border-yellow-800 rounded shadow p-2"
+        },
+        [
+          _c("div", { staticClass: "flex flex-row items-center" }, [
+            _c("div", { staticClass: "flex-1 text-right" }, [
+              _c("h5", { staticClass: "text-white" }, [
+                _vm._v("Highest Level")
+              ]),
+              _vm._v(" "),
+              _c("h3", { staticClass: "text-white text-3xl" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "hover:text-gray-300 hover:underline",
+                    attrs: {
+                      href: "/admin/question/" + _vm.highestLevel.id + "/show"
+                    }
+                  },
+                  [_vm._v(_vm._s(_vm.highestLevel.level || "None"))]
+                )
+              ])
             ])
           ])
-        ])
-      ])
+        ]
+      )
     ]),
     _vm._v(" "),
     _c(
@@ -13825,28 +13840,35 @@ var render = function() {
           "w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pr-2 xl:pr-3 xl:pl-1"
       },
       [
-        _c("div", { staticClass: "bg-orange-600 border rounded shadow p-2" }, [
-          _c("div", { staticClass: "flex flex-row items-center" }, [
-            _c("div", { staticClass: "flex-1 text-right pr-1" }, [
-              _c("h5", { staticClass: "text-white" }, [
-                _vm._v("Most Users Stuck On Level")
-              ]),
-              _vm._v(" "),
-              _c("h3", { staticClass: "text-white text-3xl" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "hover:text-gray-300 hover:underline",
-                    attrs: {
-                      href: "/admin/question/" + _vm.stuckLevel.id + "/show"
-                    }
-                  },
-                  [_vm._v(_vm._s(_vm.stuckLevel.level || "None"))]
-                )
+        _c(
+          "div",
+          {
+            staticClass:
+              "bg-orange-600 border border-yellow-800 rounded shadow p-2"
+          },
+          [
+            _c("div", { staticClass: "flex flex-row items-center" }, [
+              _c("div", { staticClass: "flex-1 text-right pr-1" }, [
+                _c("h5", { staticClass: "text-white" }, [
+                  _vm._v("Most Users Stuck On Level")
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "text-white text-3xl" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "hover:text-gray-300 hover:underline",
+                      attrs: {
+                        href: "/admin/question/" + _vm.stuckLevel.id + "/show"
+                      }
+                    },
+                    [_vm._v(_vm._s(_vm.stuckLevel.level || "None"))]
+                  )
+                ])
               ])
             ])
-          ])
-        ])
+          ]
+        )
       ]
     )
   ])
@@ -14295,7 +14317,10 @@ var render = function() {
           _vm._l(_vm.users, function(user) {
             return _c(
               "tr",
-              { key: user.id, staticClass: "border-t hover:bg-black-40" },
+              {
+                key: user.id,
+                staticClass: "border-b border-yellow-800 hover:bg-black-40"
+              },
               [
                 _c(
                   "td",

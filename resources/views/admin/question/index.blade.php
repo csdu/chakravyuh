@@ -16,7 +16,7 @@
             </thead>
             <tbody>
                 @forelse ($questions as $question)
-                <tr class="hover:bg-black-40">
+                <tr class="hover:bg-black-40 border-b border-yellow-800">
                     <td class="text-left pl-12 pr-4 py-2 text-xs">
                         <a href="{{route('admin.questions.show', $question)}}" class="font-bold text-base hover:underline">
                             Question For Level: {{ $question->level }}

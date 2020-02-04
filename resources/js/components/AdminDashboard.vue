@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-wrap mb-2 -mx-3">
 		<div class="w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pr-2">
-			<div class="bg-green-600 border rounded shadow p-2">
+			<div class="bg-green-600 border border-yellow-800 rounded shadow p-2">
 				<div class="flex flex-row items-center">
 					<div class="flex-1 text-right">
 						<h5 class="text-white">Total Participants</h5>
@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pl-2">
-			<div class="bg-blue-600 border rounded shadow p-2">
+			<div class="bg-blue-600 border border-yellow-800 rounded shadow p-2">
 				<div class="flex flex-row items-center">
 					<div class="flex-1 text-right">
 						<h5 class="text-white">Highest Level</h5>
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="w-full md:w-1/2 xl:w-1/3 pt-3 px-3 md:pr-2 xl:pr-3 xl:pl-1">
-			<div class="bg-orange-600 border rounded shadow p-2">
+			<div class="bg-orange-600 border border-yellow-800 rounded shadow p-2">
 				<div class="flex flex-row items-center">
 					<div class="flex-1 text-right pr-1">
 						<h5 class="text-white">Most Users Stuck On Level</h5>

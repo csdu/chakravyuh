@@ -16,7 +16,7 @@
     </li>
     @if (Auth::user()->is_admin)
     <li class="my-2 md:my-0 md:mx-2">
-        <a href="/admin" class="nav-button hover:text-primary px-4 py-2{{ request()->is('admin') ? ' text-primary font-bold' : '' }} ">Admin</a>
+        <a href="/admin" class="nav-button hover:text-primary px-4 py-2{{ request()->is('admin*') ? ' text-primary font-bold' : '' }} ">Admin</a>
     </li>
     @endif
     @endauth
