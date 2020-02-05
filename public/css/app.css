@@ -14787,11 +14787,15 @@ video {
   width: 20rem;
 }
 
-.max-h-20rem {
+.max-h-24rem {
+  max-height: 24rem;
+}
+
+.max-h-22rem {
   max-height: 22rem;
 }
 
-.max-h-12rem {
+.max-h-8rem {
   max-height: 8rem;
 }
 
@@ -14799,6 +14803,10 @@ video {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.font-4rem {
+  font-size: 4rem;
 }
 
 .table-fit {
@@ -28869,11 +28877,15 @@ video {
     width: 20rem;
   }
 
-  .sm\:max-h-20rem {
+  .sm\:max-h-24rem {
+    max-height: 24rem;
+  }
+
+  .sm\:max-h-22rem {
     max-height: 22rem;
   }
 
-  .sm\:max-h-12rem {
+  .sm\:max-h-8rem {
     max-height: 8rem;
   }
 
@@ -28881,6 +28893,10 @@ video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .sm\:font-4rem {
+    font-size: 4rem;
   }
 }
 
@@ -42947,11 +42963,15 @@ video {
     width: 20rem;
   }
 
-  .md\:max-h-20rem {
+  .md\:max-h-24rem {
+    max-height: 24rem;
+  }
+
+  .md\:max-h-22rem {
     max-height: 22rem;
   }
 
-  .md\:max-h-12rem {
+  .md\:max-h-8rem {
     max-height: 8rem;
   }
 
@@ -42959,6 +42979,10 @@ video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:font-4rem {
+    font-size: 4rem;
   }
 }
 
@@ -57025,11 +57049,15 @@ video {
     width: 20rem;
   }
 
-  .lg\:max-h-20rem {
+  .lg\:max-h-24rem {
+    max-height: 24rem;
+  }
+
+  .lg\:max-h-22rem {
     max-height: 22rem;
   }
 
-  .lg\:max-h-12rem {
+  .lg\:max-h-8rem {
     max-height: 8rem;
   }
 
@@ -57037,6 +57065,10 @@ video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .lg\:font-4rem {
+    font-size: 4rem;
   }
 }
 
@@ -71103,11 +71135,15 @@ video {
     width: 20rem;
   }
 
-  .xl\:max-h-20rem {
+  .xl\:max-h-24rem {
+    max-height: 24rem;
+  }
+
+  .xl\:max-h-22rem {
     max-height: 22rem;
   }
 
-  .xl\:max-h-12rem {
+  .xl\:max-h-8rem {
     max-height: 8rem;
   }
 
@@ -71115,5 +71151,9 @@ video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .xl\:font-4rem {
+    font-size: 4rem;
   }
 }

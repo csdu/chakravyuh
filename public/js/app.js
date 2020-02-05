@@ -14027,26 +14027,30 @@ var render = function() {
   return _c("div", [
     _c(
       "h1",
-      { staticClass: "text-2xl mb-4 xl:mb-6 font-display text-shadow-2" },
+      { staticClass: "text-2xl my-2 lg:mb-6 font-display text-shadow-2" },
       [_vm._v("LEADERBOARD")]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "w-full flex items-center justify-between" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "w-5/12 relative" },
-        [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("winner-circle", { attrs: { imageUrl: _vm.topUser.avatar_url } })
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _vm._m(2)
-    ]),
+    _c(
+      "div",
+      { staticClass: "w-10/12 mx-auto flex items-center justify-between mb-2" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "w-5/12 relative" },
+          [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("winner-circle", { attrs: { imageUrl: _vm.topUser.avatar_url } })
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(2)
+      ]
+    ),
     _vm._v(" "),
     _c("div", { staticClass: "text-shadow-1 font-extrabold uppercase" }, [
       _vm._m(3),
@@ -27268,7 +27272,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: 'myappkey',
+  key: "myappkey",
   wsHost: window.location.hostname,
   wsPort: 6001,
   disableStats: true
