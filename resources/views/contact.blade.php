@@ -16,9 +16,9 @@
         <p class="self-center">2</p>
       </div>
       <div class="md:ml-6 ml-4">
-        <p>Krishna Agarwal</p>
-        <p><a href="mailto:krishna.mcs18.du@gmail.com">krishna.mcs18.du@gmail.com</a></p>
-        <p><a href="+919935590973">+91-9935590973</a></p>
+        <p>Abhinav Rastogi</p>
+        <p><a href="mailto:abhinav.mcs19.du@gmail.com">abhinav.mcs19.du@gmail.com</a></p>
+        <p><a href="+919808727553">+91-9808727553</a></p>
       </div>
     </div>
 
