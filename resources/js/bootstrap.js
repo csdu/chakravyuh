@@ -21,9 +21,9 @@ window.Pusher = require('pusher-js');
 window.Echo = new Echo({
     broadcaster: "pusher",
     key: process.env.MIX_PUSHER_APP_KEY,
-    wsHost: window.location.hostname,
+    wsHost: process.env.MIX_LARAVEL_WEBSOCKETS_HOST,
     wsPort: process.env.MIX_LARAVEL_WEBSOCKETS_PORT,
     wssPort: process.env.MIX_LARAVEL_WEBSOCKETS_PORT,
     disableStats: true,
-    wsPath: process.env.MIX_PUSHER_APP_PATH
+    encrypted: process.env.NODE_ENV === 'production',
 });
