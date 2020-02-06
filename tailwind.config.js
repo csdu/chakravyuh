@@ -49,6 +49,10 @@ module.exports = {
                 "72": "18rem",
                 "96": "24rem",
             },
+            translate: {
+                'full': '100%',
+                '1/2': '50%',
+            }
         }
     },
     variants: {

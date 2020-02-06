@@ -10,23 +10,23 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "^0.19",
+        "axios": "^0.19.2",
         "browser-sync": "^2.26.7",
-        "browser-sync-webpack-plugin": "^2.0.1",
+        "browser-sync-webpack-plugin": "^2.2.2",
         "cross-env": "^5.1",
-        "laravel-mix": "^5.0.0",
+        "laravel-mix": "^5.0.1",
         "laravel-mix-purgecss": "^4.2.0",
         "laravel-mix-tailwind": "^0.1.0",
         "lodash": "^4.17.13",
         "resolve-url-loader": "^2.3.1",
-        "sass": "^1.15.2",
+        "sass": "^1.25.0",
         "sass-loader": "^7.1.0",
-        "tailwindcss": "^1.1.2",
-        "vue": "^2.6.10",
-        "vue-template-compiler": "^2.6.10"
+        "tailwindcss": "^1.2.0",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "@fortawesome/free-solid-svg-icons": "^5.12.0",
+        "@fortawesome/free-solid-svg-icons": "^5.12.1",
         "@fortawesome/vue-fontawesome": "^0.1.9",
         "laravel-echo": "^1.6.1",
         "pusher-js": "^5.0.3"
