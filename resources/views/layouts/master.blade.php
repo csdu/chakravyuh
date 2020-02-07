@@ -9,7 +9,7 @@
     <title>Chakravyuh</title>
 </head>
 
-<body class="font-inconsolata antialiased text-white h-screen"
+<body class="font-inconsolata antialiased text-white min-h-screen"
     style="{{ isset($withoutBackground)
         ? '' :
         "background:linear-gradient(#000,rgba(255,180,0,1),#000),url(" . asset('images/leaderboardbg.png') . ");
@@ -63,3 +63,4 @@
 </body>
 
 </html>
+
