@@ -24,6 +24,8 @@
                     </td>
                     <td class="table-fit text-center pl-4 pr-12 py-2">
                         <div class="inline-flex items-center">
+                            <a class="bg-green-500 hover:bg-green-700 text-white text-sm py-1 px-2 rounded mr-2"
+                                href="{{ route('admin.questions.responses', $question) }}">View Responses</a>
                             <a class="bg-blue-500 hover:bg-blue-700 text-white text-sm py-1 px-2 rounded mr-2"
                                 href="{{ route('admin.questions.edit', $question) }}">Edit</a>
                             <form action="{{route('admin.questions.delete', $question)}}" method="post">

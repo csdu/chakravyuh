@@ -47,6 +47,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('questions/{question}/edit', 'Admin\QuestionController@edit')->name('admin.questions.edit');
     Route::delete('question/{question}/delete', 'Admin\QuestionController@delete')->name('admin.questions.delete');
 
+    Route::get('question/{question}/responses', 'Admin\PagesController@showQuestionResponses')->name('admin.questions.responses');
+
     Route::post('questions/{question}/hints/create', 'Admin\QuestionHintController@create')->name('admin.questions.hints.create');
     Route::delete('hints/{hint}/delete', 'Admin\QuestionHintController@delete')->name('admin.questions.hints.delete');
 
