@@ -51,8 +51,8 @@ class PagesController extends Controller
                 'designation' => 'Lead Developer',
                 'links' => [
                     'github' => 'https://github.com/rumansaleem',
-                    'twitter' => 'https://twitter.com/ruman_saleem'
-                ]
+                    'twitter' => 'https://twitter.com/ruman_saleem',
+                ],
             ],
             [
                 'name' => 'Abhishek Kansal',
@@ -60,8 +60,8 @@ class PagesController extends Controller
                 'designation' => 'Frontend Developer',
                 'links' => [
                     'github' => 'https://github.com/abhishall',
-                    'linkedin' => '#',
-                ]
+                    // 'linkedin' => '#',
+                ],
             ],
             [
                 'name' => 'Yuvraj Sablania',
@@ -69,8 +69,8 @@ class PagesController extends Controller
                 'designation' => 'Backend Developer',
                 'links' => [
                     'github' => 'https://github.com/yuvrajsab',
-                    'linkedin' => '#',
-                ]
+                    'twitter' => 'https://twitter.com/iamyuvrajsab',
+                ],
             ],
             [
                 'name' => 'Shubham Pal',
@@ -78,8 +78,8 @@ class PagesController extends Controller
                 'designation' => 'Backend Developer',
                 'links' => [
                     'github' => 'https://github.com/shubham-pal',
-                    'linkedin' => '#',
-                ]
+                    // 'linkedin' => '#',
+                ],
             ],
             [
                 'name' => 'Abhinav Rastogi',
@@ -87,8 +87,8 @@ class PagesController extends Controller
                 'designation' => 'Frontend Developer',
                 'links' => [
                     'github' => 'https://github.com/abhinav2188',
-                    'linkedin' => '#',
-                ]
+                    // 'linkedin' => '#',
+                ],
             ],
         ]);
 
