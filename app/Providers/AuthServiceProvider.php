@@ -33,14 +33,5 @@ class AuthServiceProvider extends ServiceProvider
 
             return $user && in_array($user->email, config('app.admin_emails'));
         });
-
-        Gate::define('viewTelescope', function ($user) {
-            if (! App::environment('production')) {
-                return true;
-            }
-
-            return $user && in_array($user->email, config('app.admin_emails'));
-        });
-
     }
 }
