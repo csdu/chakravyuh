@@ -9,7 +9,7 @@
     <title>Chakravyuh</title>
 </head>
 
-<body class="font-inconsolata antialiased text-white min-h-screen"
+<body class="font-inconsolata antialiased text-white"
     style="{{ isset($withoutBackground)
         ? '' :
         "background:linear-gradient(#000,rgba(255,180,0,1),#000),url(" . asset('images/leaderboardbg.png') . ");
@@ -19,7 +19,7 @@
         background-size:cover,cover;
         background-blend-mode : multiply;"
     }}">
-    <div class="h-full flex flex-col overflow-y-auto" id="app">
+    <div class="h-full flex flex-col overflow-y-auto h-screen" id="app">
         <header class="px-3 md:py-4 py-2 flex items-center">
             <div class="md:ml-2 md:mr-4 text-primary font-display">
                 <a href="/home" class="text-xl">CHAKRAVYUH</a>
