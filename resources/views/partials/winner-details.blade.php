@@ -9,8 +9,8 @@
     <span class="w-1/3 flex items-center justify-center">
         <span class="w-4 mr-1">
             <img src="/images/coin.svg" alt="">
-        </span><span class="text-yellow-100">{{ $topUser->total_score ?? null }}</span>
+        </span><span class="text-yellow-100">{{ $topUser->score ?? null }}</span>
     </span>
     <span class="text-dark-brown">|</span>
-    <span class="w-1/3">LVL {{ $topUser->level ?? null }}</span>   
+    <span class="w-1/3">LVL {{ $topUser->level ?? null }}</span>
 </h3>

@@ -4,6 +4,7 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 
 class QuestionResponse extends Model
 {
@@ -21,6 +22,14 @@ class QuestionResponse extends Model
 
     public function getSplitTimeAttribute($value)
     {
-        return Carbon::parse(QuestionResponse::where('question_id', $this->question_id)->min('created_at'))->diffInSeconds($this->created_at);
+        $question_id = $this->question_id;
+        $earliestTime = Cache::rememberForever(
+            "questions.{$question_id}.earliest_response_time",
+            function() use ($question_id) {
+                return QuestionResponse::where('question_id', $question_id)->min('created_at');
+            }
+        );
+
+        return Carbon::parse($earliestTime)->diffInSeconds($this->created_at);
     }
 }

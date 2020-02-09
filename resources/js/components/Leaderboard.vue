@@ -34,7 +34,7 @@
           <span class="w-5 mr-1">
             <img src="/images/coin.svg" alt />
           </span>
-          <span class="text-yellow-100">{{ topUser.total_score }}</span>
+          <span class="text-yellow-100">{{ topUser.score }}</span>
         </span>
         <span>|</span>
         <span class="w-1/3">
@@ -78,7 +78,7 @@
               <span class="w-4 h-4 mr-1">
                 <img src="/images/coin.svg" />
               </span>
-              <span class="text-orange-400 group-hover:text-yellow-100">{{ user.total_score }}</span>
+              <span class="text-orange-400 group-hover:text-yellow-100">{{ user.score }}</span>
             </span>
           </div>
           <div class="uppercase font-extrabold group-hover:text-orange-400">
@@ -105,9 +105,10 @@ export default {
     getLeaderBoard() {
       window.axios
         .get("api/leaderboard", {
-          params: {
-            api_token: this.token
-          }
+            params: {
+                api_token: this.token,
+                top: 50,
+            }
         })
         .then(res => {
           if (Object.keys(res.data).length > 0) {

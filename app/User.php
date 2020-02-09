@@ -57,9 +57,14 @@ class User extends Authenticatable
         return in_array($this->email, config('app.admin_emails'));
     }
 
-    public function getScoreAttribute()
+    public function scopeWithScores($q)
     {
-        return QuestionResponse::where('user_id', $this->id)->sum('score');
+        return $q->addSelect(['score' => QuestionResponse::selectRaw('SUM(score) as score')->whereColumn('user_id', 'users.id')]);
+    }
+
+    public function scopeActive($q)
+    {
+        return $q->where('disqualified', false);
     }
 
     public function responses()

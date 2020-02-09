@@ -68,17 +68,15 @@ Route::get('/question/{question}/hints/', function ($questionId) {
 })->middleware('auth:api');
 
 Route::get('/leaderboard', function () {
-    return User::with(['responses'])->get()
-        ->filter(function ($user) {
-            $user['split_time'] = $user->responses->sum->split_time;
-            $user['total_score'] = $user->responses->sum('score');
-
-            return !$user->is_admin && !$user->disqualified;
-        })->sort(function ($userA, $userB) {
-            if ($userA->total_score == $userB->total_score) {
+    return User::withScores()->active()
+        ->orderBy('score', 'desc')
+        ->limit(request()->top ?? 100)
+        ->get()
+        ->sort(function ($userA, $userB) {
+            if ($userA->score == $userB->score) {
                 return $userA->split_time - $userB->split_time;
             }
 
-            return $userB->total_score - $userA->total_score;
+            return $userB->score - $userA->score;
         })->values();
 })->middleware('auth:api');
