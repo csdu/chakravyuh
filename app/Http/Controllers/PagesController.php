@@ -11,6 +11,7 @@ class PagesController extends Controller
     public function leaderboard(Request $request)
     {
         $users = User::withScores()->active()
+            ->with(['responses'])
             ->orderBy('score', 'desc')
             ->limit($request->top ?? 100)
             ->get()

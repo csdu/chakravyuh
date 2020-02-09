@@ -69,6 +69,7 @@ Route::get('/question/{question}/hints/', function ($questionId) {
 
 Route::get('/leaderboard', function () {
     return User::withScores()->active()
+        ->with(['responses'])
         ->orderBy('score', 'desc')
         ->limit(request()->top ?? 100)
         ->get()
