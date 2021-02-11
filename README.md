@@ -18,10 +18,10 @@ Before you begin installing make sure you run `sudo apt update` to get the lates
 sudo apt install mysql-server
 
 # php & required extensions
-sudo apt install php7.2 php7.2-mysql php7.2-xml php7.2-mbstring php7.2-bcmath php7.2-sqlite php7.2-json
+sudo apt install php7.2 php7.2-mysql php7.2-xml php7.2-mbstring php7.2-bcmath php7.2-sqlite php7.2-json php7.2-redis
 
-# composer & nodejs
-sudo apt install nodejs composer
+# composer & nodejs & redis
+sudo apt install nodejs composer redis
 ```
 
 ##### Using `pacman` package manager (ArchLinux, Manjaro, Antergos)
@@ -32,10 +32,10 @@ Before you begin installing make sure you run `sudo pacman -Sy` to get the lates
 sudo pacman -S mysql
 
 # php & required extensions
-sudo pacman -S php php-mysql php-xml php-mbstring php-bcmath php-sqlite php-json
+sudo pacman -S php php-mysql php-xml php-mbstring php-bcmath php-sqlite php-json php-redis
 
-# composer & nodejs
-sudo pacman -S nodejs composer
+# composer & nodejs & redis
+sudo pacman -S nodejs composer redis
 ```
 
 ##### Make sure you have pdo extension enabled in `php.ini`

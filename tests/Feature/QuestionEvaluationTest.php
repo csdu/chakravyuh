@@ -44,9 +44,11 @@ class QuestionEvaluationTest extends TestCase
             ['answer' => $answer]
         )->assertRedirect()
         ->assertSessionHasNoErrors();
-
-        $this->assertEquals(2, $user->fresh()->level);
-        $this->assertEquals($question->max_score, $user->fresh()->score);
+        
+        $user = User::WithScores()->where("id", $user->id)->first();
+        
+        $this->assertEquals(2, $user->level);
+        $this->assertEquals($question->max_score, $user->score);
     }
 
     public function test_one_minus_max_score_score_is_given_when_response_is_in_second_group()
@@ -68,9 +70,11 @@ class QuestionEvaluationTest extends TestCase
             ['answer' => $answer]
         )->assertRedirect()
         ->assertSessionHasNoErrors();
+        
+        $user = User::WithScores()->where("id", $user->id)->first();
 
-        $this->assertEquals(2, $user->fresh()->level);
-        $this->assertEquals($question->max_score - 1, $user->fresh()->score);
+        $this->assertEquals(2, $user->level);
+        $this->assertEquals($question->max_score - 1, $user->score);
     }
 
     public function test_minimum_score_is_given_when_response_reaches_beyond_minimum_score()
@@ -94,8 +98,10 @@ class QuestionEvaluationTest extends TestCase
             ['answer' => $answer]
         )->assertRedirect()
         ->assertSessionHasNoErrors();
+        
+        $user = User::WithScores()->where("id", $user->id)->first();
 
-        $this->assertEquals(2, $user->fresh()->level);
-        $this->assertEquals($question->min_score, $user->fresh()->score);
+        $this->assertEquals(2, $user->level);
+        $this->assertEquals($question->min_score, $user->score);
     }
 }
