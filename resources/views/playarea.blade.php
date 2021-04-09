@@ -17,7 +17,7 @@
                         <div class="flex">
                             <div class="p-1 inline-flex items-center mr-4">
                                 @include('svg.score')
-                                <span class="ml-1 text-shadow-1">{{ Auth::user()->score }}</span>
+                                <span class="ml-1 text-shadow-1">{{ App\User::withScores()->where('id', Auth::id())->first()->score }}</span>
                             </div>
                             <div class="p-1 inline-flex items-center">
                                 @include('svg.split-time')
@@ -118,7 +118,7 @@
                                 @include('svg.score')
                                 Score
                             </p>
-                            <span class="md:text-2xl text-xl text-shadow-1">{{ Auth::user()->score }}</span>
+                            <span class="md:text-2xl text-xl text-shadow-1">{{ App\User::withScores()->where('id', Auth::id())->first()->score }}</span>
                         </div>
                         <div class="w-1/2 p-2">
                             <p class="mb-1">

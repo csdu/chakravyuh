@@ -26,7 +26,7 @@
         If you and your browser can dive into the virtual world, then pull up your surfing skills and be ready to engage in competitive one-upmanship to create the ultimate artificial illusion.
         <br><br>
         <span class="md:text-xl text-base">
-          Sankalan 2020 - The Annual Tech Fest of Department Of Computer Science, brings you the much awaited event - Chakravyuh (The online treasure hunt).
+          Sankalan 2021 - The Annual Tech Fest of Department Of Computer Science, brings you the much awaited event - Chakravyuh (The online treasure hunt).
         </span>
         <br><br>
         - Solve all the levels first and you win!<br>

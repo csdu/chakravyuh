@@ -17,6 +17,10 @@ class QuestionTableSeeder extends Seeder
             factory(QuestionAttachment::class)->create([
                 'question_id' => $question->id
             ]);
+
+            factory(App\QuestionHint::class, rand(1, 3))->create([
+                'question_id' => $question->id
+            ]);
         });
     }
 }

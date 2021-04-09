@@ -6,9 +6,9 @@
         <p class="self-center">1</p>
       </div>
       <div class="md:ml-6 ml-4">
-        <p>Abhishek Sen</p>
-        <p><a href="mailto:abhishek.mcs18.du@gmail.com">abhishek.mcs18.du@gmail.com</a></p>
-        <p><a href="tel:+917059931910">+91-7059931910</a></p>
+        <p>Hemant</p>
+        <p><a href="mailto:hemant.mca19.du@gmail.com">hemant.mca19.du@gmail.com</a></p>
+        <p><a href="tel:+917004687071">+91-7004687071</a></p>
       </div>
     </div>
     <div class="my-4 flex">
@@ -17,7 +17,7 @@
       </div>
       <div class="md:ml-6 ml-4">
         <p>Abhinav Rastogi</p>
-        <p><a href="mailto:abhinav.mcs19.du@gmail.com">abhinav.mcs19.du@gmail.com</a></p>
+        <p><a href="mailto:abhinav.mca19.du@gmail.com">abhinav.mca19.du@gmail.com</a></p>
         <p><a href="+919808727553">+91-9808727553</a></p>
       </div>
     </div>

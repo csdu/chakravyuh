@@ -47,16 +47,17 @@ export default {
 	},
 	methods: {
 		clear() {
-			for (let i = 0; i < this.messages.length; i++) {
-				if (!this.messages[i].important) {
+			this.messages.forEach((msg, i) => {
+				if (!msg.important) {
 					setTimeout(() => {
-						this.remove(this.messages[i]);
+						this.remove(msg);
 					}, i * 500);
 				}
-			}
+			});
 		},
 		remove(message) {
 			this.messages = this.messages.filter(function(msg) {
+				console.log(message);
 				return msg.id != message.id;
 			});
 		},

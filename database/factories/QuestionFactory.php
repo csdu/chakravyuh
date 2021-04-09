@@ -8,7 +8,7 @@ $factory->define(Question::class, function (Faker $faker) {
     static $level = 1;
     return [
         'level' => $level++,
-        'answer' => $faker->safeColorName(),
+        'answer' => "test",
         'group' => $faker->randomElement([20, 15, 10, 5]),
         'max_score' => 10,
         'min_score' => 5,

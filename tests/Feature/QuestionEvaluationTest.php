@@ -45,7 +45,7 @@ class QuestionEvaluationTest extends TestCase
         )->assertRedirect()
         ->assertSessionHasNoErrors();
         
-        $user = User::WithScores()->where("id", $user->id)->first();
+        $user = User::withScores()->where("id", $user->id)->first();
         
         $this->assertEquals(2, $user->level);
         $this->assertEquals($question->max_score, $user->score);
@@ -71,7 +71,7 @@ class QuestionEvaluationTest extends TestCase
         )->assertRedirect()
         ->assertSessionHasNoErrors();
         
-        $user = User::WithScores()->where("id", $user->id)->first();
+        $user = User::withScores()->where("id", $user->id)->first();
 
         $this->assertEquals(2, $user->level);
         $this->assertEquals($question->max_score - 1, $user->score);
@@ -99,7 +99,7 @@ class QuestionEvaluationTest extends TestCase
         )->assertRedirect()
         ->assertSessionHasNoErrors();
         
-        $user = User::WithScores()->where("id", $user->id)->first();
+        $user = User::withScores()->where("id", $user->id)->first();
 
         $this->assertEquals(2, $user->level);
         $this->assertEquals($question->min_score, $user->score);
