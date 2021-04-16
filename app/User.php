@@ -17,14 +17,18 @@ class User extends Authenticatable
      */
     protected $guarded = [];
 
+    protected $appends = ['split_time'];
+
     /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
      */
     protected $hidden = [
-        'remember_token',
+        'remember_token', 'api_token', 'password', 'token'
     ];
+
+    // $user->api_token
 
     public function addNew($input)
     {

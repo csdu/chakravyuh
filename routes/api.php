@@ -78,12 +78,14 @@ Route::get('/leaderboard', function () {
         ->with(['responses'])
         ->orderBy('score', 'desc')
         ->limit(request()->top ?? 100)
-        ->get(['id', 'name', 'level', 'score'])
+        ->get()
         ->sort(function ($userA, $userB) {
             if ($userA->score == $userB->score) {
                 return $userA->split_time - $userB->split_time;
             }
 
             return $userB->score - $userA->score;
-        })->values();
+        })
+        ->makeHidden(['api_token', 'token', 'password', 'responses'])
+        ->values();
 })->middleware('auth:api');
