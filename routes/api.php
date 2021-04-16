@@ -56,6 +56,12 @@ Route::get('dashboard', function () {
 })->middleware('auth:api');
 
 Route::get('/question/{question}/hints/', function ($questionId) {
+
+    $userLevel = \Auth::user()->level;
+    $question = \App\Question::find($questionId);
+
+    abort_unless((int) $question->level === (int) $userLevel, 403);
+
     return QuestionHint::where('question_id', $questionId)->orderBy('id', 'desc')->get()
         ->filter(function ($hint) {
             return $hint->shouldRelease();
@@ -72,7 +78,7 @@ Route::get('/leaderboard', function () {
         ->with(['responses'])
         ->orderBy('score', 'desc')
         ->limit(request()->top ?? 100)
-        ->get()
+        ->get(['id', 'name', 'level', 'score'])
         ->sort(function ($userA, $userB) {
             if ($userA->score == $userB->score) {
                 return $userA->split_time - $userB->split_time;

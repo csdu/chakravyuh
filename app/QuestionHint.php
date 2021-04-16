@@ -22,6 +22,10 @@ class QuestionHint extends Model
     {
         $enterTime = $this->question->getEnterTime(Auth::user());
 
+        if ($enterTime == null) {
+            return false;
+        }
+
         return now()->diffInMinutes($enterTime) > $this->release_after;
     }
 }
