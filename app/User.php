@@ -17,8 +17,6 @@ class User extends Authenticatable
      */
     protected $guarded = [];
 
-    protected $appends = ['split_time'];
-
     /**
      * The attributes that should be hidden for arrays.
      *
