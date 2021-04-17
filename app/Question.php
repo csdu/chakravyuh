@@ -51,17 +51,31 @@ class Question extends Model
         return $this->hasMany(QuestionResponse::class);
     }
 
+    public function getEarliestResponseTimeAtrribute()
+    {
+        $question_id = $this->id;
+
+        $earliestTime = Cache::rememberForever(
+            "questions.{$question_id}.earliest_response_time",
+            function () {
+                return $this->responses()->min('created_at');
+            }
+        );
+
+        return $earliestTime;
+    }
+
     public function setEnterTime(User $user)
     {
-        if (Cache::has($user->id.':'.$this->id)) {
+        if (Cache::has($user->id . ':' . $this->id)) {
             return false;
         }
 
-        return Cache::put($user->id.':'.$this->id, $now = now()) ? $now : false;
+        return Cache::put($user->id . ':' . $this->id, $now = now()) ? $now : false;
     }
 
     public function getEnterTime(User $user)
     {
-        return Cache::get($user->id.':'.$this->id);
+        return Cache::get($user->id . ':' . $this->id);
     }
 }

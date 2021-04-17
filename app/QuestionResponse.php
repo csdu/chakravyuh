@@ -22,14 +22,7 @@ class QuestionResponse extends Model
 
     public function getSplitTimeAttribute($value)
     {
-        $question_id = $this->question_id;
-        $earliestTime = Cache::rememberForever(
-            "questions.{$question_id}.earliest_response_time",
-            function() use ($question_id) {
-                return QuestionResponse::where('question_id', $question_id)->min('created_at');
-            }
-        );
-
-        return Carbon::parse($earliestTime)->diffInSeconds($this->created_at);
+        return Carbon::parse($this->question->earliestTime)
+            ->diffInSeconds($this->created_at);
     }
 }

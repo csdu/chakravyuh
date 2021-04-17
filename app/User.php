@@ -53,7 +53,7 @@ class User extends Authenticatable
      */
     public function receivesBroadcastNotificationsOn()
     {
-        return 'participants.'.$this->id;
+        return 'participants.' . $this->id;
     }
 
     public function getIsAdminAttribute($value)
