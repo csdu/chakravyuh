@@ -33,5 +33,13 @@ class AuthServiceProvider extends ServiceProvider
 
             return $user && in_array($user->email, config('app.admin_emails'));
         });
+
+        Gate::define('viewTelescope', function ($user = null) {
+            if (! App::environment('production')) {
+                return true;
+            }
+
+            return $user && $user->isAdmin;
+        });
     }
 }
