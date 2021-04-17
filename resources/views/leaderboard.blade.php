@@ -4,7 +4,7 @@
 <div class="h-full flex-1 flex justify-center bg-center bg-no-repeat bg-contain text-center"
     style="background-image:url('images/leaderboardBG.svg');">
 
-    <div class="sm:w-11/12 sm:m-4 m-auto p-2 xl:p-4 rounded sm:overflow-y-hidden text-primary flex flex-col sm:flex-row sm:justify-center sm:items-center">
+    <div class="sm:w-11/12 sm:m-4 m-auto p-2 xl:p-4 rounded text-primary flex flex-col sm:flex-row sm:justify-center sm:items-center">
         <div class="sm:w-1/2 lg:7/12 sm:m-4 flex flex-col sm:justify-center self-center sm:self-start lg:p-8">
             @php($winner = $users->pull(0))
             <div>
