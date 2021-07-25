@@ -1,6 +1,25 @@
 # Chakravyuh
 Chakravyuh is the online Treasure hunt organised by students of Department of Computer Science, University of Delhi. This is student managed application, built with Laravel, Vue.js & TailwindCSS.
 
+## Screenshots
+
+#### Unauthenticated User
+
+![event not started](https://github.com/csdu/chakravyuh/blob/master/screenshots/home.PNG)
+
+#### Admin
+
+![dashboard admin](https://github.com/csdu/chakravyuh/blob/master/screenshots/dashboard_admin.PNG)
+
+![question CRUD](https://github.com/csdu/chakravyuh/blob/master/screenshots/question_admin.PNG)
+
+#### Authenticated User
+
+![home](https://github.com/csdu/chakravyuh/blob/master/screenshots/home_user.PNG)
+
+##### PLAYAREA
+![playarea](https://github.com/csdu/chakravyuh/blob/master/screenshots/playarea_user.PNG)
+
 ## Local Development
 This is project is built with Laravel & Vue.js. Before you can start local development you need to take care of a few prerequisites, required by laravel.
 
